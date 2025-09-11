@@ -1,0 +1,1795 @@
+{
+    "area": {
+        "START": { 
+            "micon": "none",
+            "image": "Domino_City.webp",
+            "audio": "none",
+            "mdata": [
+                ["text: intro"],
+                ["pack: lob1"],
+                ["duel: lob"]
+            ]  
+        },
+        "mrd": {
+            "micon": "none",
+            "image": "Duelist_Kingdom.webp",
+            "audio": "none",
+            "mdata": [
+                ["pack: mrd1"],
+                ["duel: mrd"]
+            ]
+        },
+        "srl": {
+            "micon": "none",
+            "image": "Duelist_Kingdom_Finals.webp",
+            "audio": "none",
+            "mdata": [
+                ["pack: srl1"],
+                ["duel: srl"]
+            ]
+        },
+        "psv": {
+            "micon": "none",
+            "image": "Battle_City.webp",
+            "audio": "none",
+            "mdata": [
+                ["pack: psv1"],
+                ["duel: psv"]
+            ]
+        },
+        "lon": {
+            "micon": "none",
+            "image": "Battle_City.webp",
+            "audio": "none",
+            "mdata": [
+                ["pack: lon1"],
+                ["duel: lon"]
+            ]
+        },
+        "lod": {
+            "micon": "none",
+            "image": "Digital_World.webp",
+            "audio": "none",
+            "mdata": [
+                ["pack: lod1"],
+                ["duel: lod"]
+            ]
+        },
+        "pgd": {
+            "micon": "none",
+            "image": "pgd.webp",
+            "audio": "none",
+            "mdata": [
+                ["pack: pgd1"],
+                ["duel: pgd"]
+            ]
+        },
+        "mfc": {
+            "micon": "none",
+            "image": "mfc.webp",
+            "audio": "none",
+            "mdata": [
+                ["pack: mfc1"],
+                ["duel: mfc"]
+            ]
+        },
+        "dcr": {
+            "micon": "none",
+            "image": "dcr.webp",
+            "audio": "none",
+            "mdata": [
+                ["pack: dcr1"],
+                ["duel: dcr"]
+            ]
+        },
+        "ioc": {
+            "micon": "none",
+            "image": "ioc.webp",
+            "audio": "none",
+            "mdata": [
+                ["pack: ioc1"],
+                ["duel: ioc"]
+            ]
+        },
+        "ast": {
+            "micon": "none",
+            "image": "ast.webp",
+            "audio": "none",
+            "mdata": [
+                ["pack: ast1"],
+                ["duel: ast"]
+            ]
+        }
+    },
+    "text": {
+        "intro": {
+            "micon": "Yusei.webp",
+            "mdesc": "???",
+            "image": "Synchro_Summon.webp",
+            "parts": [
+                    {"type": "bust", "content": "Yusei.webp"},
+                    {"type": "text", "content": "Woah..."},
+                    {"type": "text", "content": "Who are you? How did you get here?"},
+                    {"type": "text", "content": "I guess it doesn't matter now."},
+                    {"type": "text", "content": "Sorry for the late introduction, I am Yusei Fudo."},
+                    {"type": "name", "content": "Yusei Fudo"},
+                    {"type": "text", "content": "I'm a Time Runner. Our job is to patrol all of Duel Monsters history and investigate anomolous spikes in Duel Energy."},
+                    {"type": "text", "content": "I was investigating such a spike when I found you."},
+                    {"type": "text", "content": "I don't know how you are related to all of this, but I can tell you aren't the enemy."},
+                    {"type": "text", "content": "Look at this."},
+                    {"type": "text", "content": "This is a Time Runner."},
+                    {"type": "text", "content": "You can think of it as a time machine fueled by Duel Energy."},
+                    {"type": "text", "content": "Normally, there would be enough ambient Duel Energy to maneuver history freely. However since you appeared, the Duel Energy seems to have dispersed."},
+                    {"type": "text", "content": "If we want to return to the future, we will have to generate some Duel Energy by dueling."},
+                    {"type": "text", "content": "Oh yeah, I forgot to mention, we are currently in the distant past."},
+                    {"type": "text", "content": "The year is currently 1996, when Duel Monsters first launched as a modern card game."},
+                    {"type": "text", "content": "In fact, I believe this Old Dominoe City, meaning we should be able to meet some friendly faces."},
+                    {"type": "text", "content": "Follow me. The first thing we need to do is build you a deck so that you can help generate Duel Energy."}
+            ]
+        },
+        "credits":{
+            "parts": [
+                {"text": "Images"},
+                {"text": "Icon - Starter Deck Yugi (Product Image): tcgplayer.com https://tcgplayer-cdn.tcgplayer.com/product/153326_in_1000x1000.jpg"},
+                {"text": "Icon - Starter Deck Kaiba (Product Image): tcgplayer.com https://tcgplayer-cdn.tcgplayer.com/product/153329_in_1000x1000.jpg"},
+                {"text": "Icon - Legend of Blue Eyes Pack (Product Image): yugioh.fandom.com https://static.wikia.nocookie.net/yugioh/images/b/bc/LOB-BoosterEN.png/revision/latest?cb=20120723012728"},
+                {"text": "Icon - Magic Ruler Pack (Product Image): yugipedia.com https://ms.yugipedia.com//thumb/e/e4/MRL-BoosterNA.png/257px-MRL-BoosterNA.png"}
+            ]
+        }
+    },
+
+    "pack": {
+        "lob1": {
+            "title": "Opening Legend of Blue Eyes White Dragon Booster Box Pack 1",
+            "micon": "lob.webp",
+            "iconSize": 200,
+            "mdesc": "Open Legend of Blue Eyes White Dragon Booster Box",
+            "image": "lob_background.webp",
+            "composes": ["lob"],
+            "chain": "pack: lob2"
+        },
+        "lob2": {
+            "title": "Opening Legend of Blue Eyes White Dragon Booster Box Pack 2",
+            "image": "lob_background.webp",
+            "composes": ["lob"],
+            "chain": "pack: lob3"
+        },
+        "lob3": {
+            "title": "Opening Legend of Blue Eyes White Dragon Booster Box Pack 3",
+            "image": "lob_background.webp",
+            "composes": ["lob"],
+            "chain": "pack: lob4"
+        },
+        "lob4": {
+            "title": "Opening Legend of Blue Eyes White Dragon Booster Box Pack 4",
+            "image": "lob_background.webp",
+            "composes": ["lob"],
+            "chain": "pack: lob5"
+        },
+        "lob5": {
+            "title": "Opening Legend of Blue Eyes White Dragon Booster Box Pack 5",
+            "image": "lob_background.webp",
+            "composes": ["lob"],
+            "chain": "pack: lob6"
+        },
+        "lob6": {
+            "title": "Opening Legend of Blue Eyes White Dragon Booster Box Pack 6",
+            "image": "lob_background.webp",
+            "composes": ["lob"],
+            "chain": "pack: lob7"
+        },
+        "lob7": {
+            "title": "Opening Legend of Blue Eyes White Dragon Booster Box Pack 7",
+            "image": "lob_background.webp",
+            "composes": ["lob"],
+            "chain": "pack: lob8"
+        },
+        "lob8": {
+            "title": "Opening Legend of Blue Eyes White Dragon Booster Box Pack 8",
+            "image": "lob_background.webp",
+            "composes": ["lob"],
+            "chain": "pack: lob9"
+        },
+        "lob9": {
+            "title": "Opening Legend of Blue Eyes White Dragon Booster Box Pack 9",
+            "image": "lob_background.webp",
+            "composes": ["lob"],
+            "chain": "pack: lob10"
+        },
+        "lob10": {
+            "title": "Opening Legend of Blue Eyes White Dragon Booster Box Pack 10",
+            "image": "lob_background.webp",
+            "composes": ["lob"],
+            "chain": "pack: lob11"
+        },
+        "lob11": {
+            "title": "Opening Legend of Blue Eyes White Dragon Booster Box Pack 11",
+            "image": "lob_background.webp",
+            "composes": ["lob"],
+            "chain": "pack: lob12"
+        },
+        "lob12": {
+            "title": "Opening Legend of Blue Eyes White Dragon Booster Box Pack 12",
+            "image": "lob_background.webp",
+            "composes": ["lob"],
+            "chain": "pack: lob13"
+        },
+        "lob13": {
+            "title": "Opening Legend of Blue Eyes White Dragon Booster Box Pack 13",
+            "image": "lob_background.webp",
+            "composes": ["lob"],
+            "chain": "pack: lob14"
+        },
+        "lob14": {
+            "title": "Opening Legend of Blue Eyes White Dragon Booster Box Pack 14",
+            "image": "lob_background.webp",
+            "composes": ["lob"],
+            "chain": "pack: lob15"
+        },
+        "lob15": {
+            "title": "Opening Legend of Blue Eyes White Dragon Booster Box Pack 15",
+            "image": "lob_background.webp",
+            "composes": ["lob"],
+            "chain": "pack: lob16"
+        },
+        "lob16": {
+            "title": "Opening Legend of Blue Eyes White Dragon Booster Box Pack 16",
+            "image": "lob_background.webp",
+            "composes": ["lob"],
+            "chain": "pack: lob17"
+        },
+        "lob17": {
+            "title": "Opening Legend of Blue Eyes White Dragon Booster Box Pack 17",
+            "image": "lob_background.webp",
+            "composes": ["lob"],
+            "chain": "pack: lob18"
+        },
+        "lob18": {
+            "title": "Opening Legend of Blue Eyes White Dragon Booster Box Pack 18",
+            "image": "lob_background.webp",
+            "composes": ["lob"],
+            "chain": "pack: lob19"
+        },
+        "lob19": {
+            "title": "Opening Legend of Blue Eyes White Dragon Booster Box Pack 19",
+            "image": "lob_background.webp",
+            "composes": ["lob"],
+            "chain": "pack: lob20"
+        },
+        "lob20": {
+            "title": "Opening Legend of Blue Eyes White Dragon Booster Box Pack 20",
+            "image": "lob_background.webp",
+            "composes": ["lob"],
+            "chain": "pack: lob21"
+        },
+        "lob21": {
+            "title": "Opening Legend of Blue Eyes White Dragon Booster Box Pack 21",
+            "image": "lob_background.webp",
+            "composes": ["lob"],
+            "chain": "pack: lob22"
+        },
+        "lob22": {
+            "title": "Opening Legend of Blue Eyes White Dragon Booster Box Pack 22",
+            "image": "lob_background.webp",
+            "composes": ["lob"],
+            "chain": "pack: lob23"
+        },
+        "lob23": {
+            "title": "Opening Legend of Blue Eyes White Dragon Booster Box Pack 23",
+            "image": "lob_background.webp",
+            "composes": ["lob"],
+            "chain": "pack: lob24"
+        },
+        "lob24": {
+            "title": "Opening Legend of Blue Eyes White Dragon Booster Box Pack 24",
+            "image": "lob_background.webp",
+            "composes": ["lob"]
+        },
+
+        "mrd1": {
+            "title": "Opening Metal Raiders Booster Box Pack 1",
+            "mdesc": "Open Metal Raiders Booster Box",
+            "micon": "MRD.webp",
+            "image": "mrd_background.webp",
+            "composes": ["mrd"],
+            "chain": "pack: mrd2"
+        },
+        "mrd2": {
+            "title": "Opening Metal Raiders Booster Box Pack 2",
+            "image": "mrd_background.webp",
+            "composes": ["mrd"],
+            "chain": "pack: mrd3"
+        },
+        "mrd3": {
+            "title": "Opening Metal Raiders Booster Box Pack 3",
+            "image": "mrd_background.webp",
+            "composes": ["mrd"],
+            "chain": "pack: mrd4"
+        },
+        "mrd4": {
+            "title": "Opening Metal Raiders Booster Box Pack 4",
+            "image": "mrd_background.webp",
+            "composes": ["mrd"],
+            "chain": "pack: mrd5"
+        },
+        "mrd5": {
+            "title": "Opening Metal Raiders Booster Box Pack 5",
+            "image": "mrd_background.webp",
+            "composes": ["mrd"],
+            "chain": "pack: mrd6"
+        },
+        "mrd6": {
+            "title": "Opening Metal Raiders Booster Box Pack 6",
+            "image": "mrd_background.webp",
+            "composes": ["mrd"],
+            "chain": "pack: mrd7"
+        },
+        "mrd7": {
+            "title": "Opening Metal Raiders Booster Box Pack 7",
+            "image": "mrd_background.webp",
+            "composes": ["mrd"],
+            "chain": "pack: mrd8"
+        },
+        "mrd8": {
+            "title": "Opening Metal Raiders Booster Box Pack 8",
+            "image": "mrd_background.webp",
+            "composes": ["mrd"],
+            "chain": "pack: mrd9"
+        },
+        "mrd9": {
+            "title": "Opening Metal Raiders Booster Box Pack 9",
+            "image": "mrd_background.webp",
+            "composes": ["mrd"],
+            "chain": "pack: mrd10"
+        },
+        "mrd10": {
+            "title": "Opening Metal Raiders Booster Box Pack 10",
+            "image": "mrd_background.webp",
+            "composes": ["mrd"],
+            "chain": "pack: mrd11"
+        },
+        "mrd11": {
+            "title": "Opening Metal Raiders Booster Box Pack 11",
+            "image": "mrd_background.webp",
+            "composes": ["mrd"],
+            "chain": "pack: mrd12"
+        },
+        "mrd12": {
+            "title": "Opening Metal Raiders Booster Box Pack 12",
+            "image": "mrd_background.webp",
+            "composes": ["mrd"],
+            "chain": "pack: mrd13"
+        },
+        "mrd13": {
+            "title": "Opening Metal Raiders Booster Box Pack 13",
+            "image": "mrd_background.webp",
+            "composes": ["mrd"],
+            "chain": "pack: mrd14"
+        },
+        "mrd14": {
+            "title": "Opening Metal Raiders Booster Box Pack 14",
+            "image": "mrd_background.webp",
+            "composes": ["mrd"],
+            "chain": "pack: mrd15"
+        },
+        "mrd15": {
+            "title": "Opening Metal Raiders Booster Box Pack 15",
+            "image": "mrd_background.webp",
+            "composes": ["mrd"],
+            "chain": "pack: mrd16"
+        },
+        "mrd16": {
+            "title": "Opening Metal Raiders Booster Box Pack 16",
+            "image": "mrd_background.webp",
+            "composes": ["mrd"],
+            "chain": "pack: mrd17"
+        },
+        "mrd17": {
+            "title": "Opening Metal Raiders Booster Box Pack 17",
+            "image": "mrd_background.webp",
+            "composes": ["mrd"],
+            "chain": "pack: mrd18"
+        },
+        "mrd18": {
+            "title": "Opening Metal Raiders Booster Box Pack 18",
+            "image": "mrd_background.webp",
+            "composes": ["mrd"],
+            "chain": "pack: mrd19"
+        },
+        "mrd19": {
+            "title": "Opening Metal Raiders Booster Box Pack 19",
+            "image": "mrd_background.webp",
+            "composes": ["mrd"],
+            "chain": "pack: mrd20"
+        },
+        "mrd20": {
+            "title": "Opening Metal Raiders Booster Box Pack 20",
+            "image": "mrd_background.webp",
+            "composes": ["mrd"],
+            "chain": "pack: mrd21"
+        },
+        "mrd21": {
+            "title": "Opening Metal Raiders Booster Box Pack 21",
+            "image": "mrd_background.webp",
+            "composes": ["mrd"],
+            "chain": "pack: mrd22"
+        },
+        "mrd22": {
+            "title": "Opening Metal Raiders Booster Box Pack 22",
+            "image": "mrd_background.webp",
+            "composes": ["mrd"],
+            "chain": "pack: mrd23"
+        },
+        "mrd23": {
+            "title": "Opening Metal Raiders Booster Box Pack 23",
+            "image": "mrd_background.webp",
+            "composes": ["mrd"],
+            "chain": "pack: mrd24"
+        },
+        "mrd24": {
+            "title": "Opening Metal Raiders Booster Box Pack 24",
+            "image": "mrd_background.webp",
+            "composes": ["mrd"]
+        },
+
+        "srl1": {
+            "title": "Opening Spell Ruler Booster Box Pack 1",
+            "mdesc": "Open Spell Ruler Booster Box",
+            "micon": "srl.webp",
+            "image": "srl_background.webp",
+            "composes": ["srl"],
+            "chain": "pack: srl2"
+        },
+         "srl2": {
+            "title": "Opening Spell Ruler Booster Box Pack 2",
+            "image": "srl_background.webp",
+            "composes": ["srl"],
+            "chain": "pack: srl3"
+        },
+        "srl3": {
+            "title": "Opening Spell Ruler Booster Box Pack 3",
+            "image": "srl_background.webp",
+            "composes": ["srl"],
+            "chain": "pack: srl4"
+        },
+        "srl4": {
+            "title": "Opening Spell Ruler Booster Box Pack 4",
+            "image": "srl_background.webp",
+            "composes": ["srl"],
+            "chain": "pack: srl5"
+        },
+        "srl5": {
+            "title": "Opening Spell Ruler Booster Box Pack 5",
+            "image": "srl_background.webp",
+            "composes": ["srl"],
+            "chain": "pack: srl6"
+        },
+        "srl6": {
+            "title": "Opening Spell Ruler Booster Box Pack 6",
+            "image": "srl_background.webp",
+            "composes": ["srl"],
+            "chain": "pack: srl7"
+        },
+        "srl7": {
+            "title": "Opening Spell Ruler Booster Box Pack 7",
+            "image": "srl_background.webp",
+            "composes": ["srl"],
+            "chain": "pack: srl8"
+        },
+        "srl8": {
+            "title": "Opening Spell Ruler Booster Box Pack 8",
+            "image": "srl_background.webp",
+            "composes": ["srl"],
+            "chain": "pack: srl9"
+        },
+        "srl9": {
+            "title": "Opening Spell Ruler Booster Box Pack 9",
+            "image": "srl_background.webp",
+            "composes": ["srl"],
+            "chain": "pack: srl10"
+        },
+        "srl10": {
+            "title": "Opening Spell Ruler Booster Box Pack 10",
+            "image": "srl_background.webp",
+            "composes": ["srl"],
+            "chain": "pack: srl11"
+        },
+        "srl11": {
+            "title": "Opening Spell Ruler Booster Box Pack 11",
+            "image": "srl_background.webp",
+            "composes": ["srl"],
+            "chain": "pack: srl12"
+        },
+        "srl12": {
+            "title": "Opening Spell Ruler Booster Box Pack 12",
+            "image": "srl_background.webp",
+            "composes": ["srl"],
+            "chain": "pack: srl13"
+        },
+        "srl13": {
+            "title": "Opening Spell Ruler Booster Box Pack 13",
+            "image": "srl_background.webp",
+            "composes": ["srl"],
+            "chain": "pack: srl14"
+        },
+        "srl14": {
+            "title": "Opening Spell Ruler Booster Box Pack 14",
+            "image": "srl_background.webp",
+            "composes": ["srl"],
+            "chain": "pack: srl15"
+        },
+        "srl15": {
+            "title": "Opening Spell Ruler Booster Box Pack 15",
+            "image": "srl_background.webp",
+            "composes": ["srl"],
+            "chain": "pack: srl16"
+        },
+        "srl16": {
+            "title": "Opening Spell Ruler Booster Box Pack 16",
+            "image": "srl_background.webp",
+            "composes": ["srl"],
+            "chain": "pack: srl17"
+        },
+        "srl17": {
+            "title": "Opening Spell Ruler Booster Box Pack 17",
+            "image": "srl_background.webp",
+            "composes": ["srl"],
+            "chain": "pack: srl18"
+        },
+        "srl18": {
+            "title": "Opening Spell Ruler Booster Box Pack 18",
+            "image": "srl_background.webp",
+            "composes": ["srl"],
+            "chain": "pack: srl19"
+        },
+        "srl19": {
+            "title": "Opening Spell Ruler Booster Box Pack 19",
+            "image": "srl_background.webp",
+            "composes": ["srl"],
+            "chain": "pack: srl20"
+        },
+        "srl20": {
+            "title": "Opening Spell Ruler Booster Box Pack 20",
+            "image": "srl_background.webp",
+            "composes": ["srl"],
+            "chain": "pack: srl21"
+        },
+        "srl21": {
+            "title": "Opening Spell Ruler Booster Box Pack 21",
+            "image": "srl_background.webp",
+            "composes": ["srl"],
+            "chain": "pack: srl22"
+        },
+        "srl22": {
+            "title": "Opening Spell Ruler Booster Box Pack 22",
+            "image": "srl_background.webp",
+            "composes": ["srl"],
+            "chain": "pack: srl23"
+        },
+        "srl23": {
+            "title": "Opening Spell Ruler Booster Box Pack 23",
+            "image": "srl_background.webp",
+            "composes": ["srl"],
+            "chain": "pack: srl24"
+        },
+        "srl24": {
+            "title": "Opening Spell Ruler Booster Box Pack 24",
+            "image": "srl_background.webp",
+            "composes": ["srl"]
+        },
+
+        "psv1": {
+            "title": "Opening Pharaoh's Servant Booster Box Pack 1",
+            "mdesc": "Open Pharaoh's Servant Booster Box",
+            "micon": "psv.webp",
+            "image": "psv_background.webp",
+            "composes": ["psv"],
+            "chain": "pack: psv2"
+        },
+        "psv2": {
+            "title": "Opening Pharaoh's Servant Booster Box Pack 2",
+            "image": "psv_background.webp",
+            "composes": ["psv"],
+            "chain": "pack: psv3"
+        },
+        "psv3": {
+            "title": "Opening Pharaoh's Servant Booster Box Pack 3",
+            "image": "psv_background.webp",
+            "composes": ["psv"],
+            "chain": "pack: psv4"
+        },
+        "psv4": {
+            "title": "Opening Pharaoh's Servant Booster Box Pack 4",
+            "image": "psv_background.webp",
+            "composes": ["psv"],
+            "chain": "pack: psv5"
+        },
+        "psv5": {
+            "title": "Opening Pharaoh's Servant Booster Box Pack 5",
+            "image": "psv_background.webp",
+            "composes": ["psv"],
+            "chain": "pack: psv6"
+        },
+        "psv6": {
+            "title": "Opening Pharaoh's Servant Booster Box Pack 6",
+            "image": "psv_background.webp",
+            "composes": ["psv"],
+            "chain": "pack: psv7"
+        },
+        "psv7": {
+            "title": "Opening Pharaoh's Servant Booster Box Pack 7",
+            "image": "psv_background.webp",
+            "composes": ["psv"],
+            "chain": "pack: psv8"
+        },
+        "psv8": {
+            "title": "Opening Pharaoh's Servant Booster Box Pack 8",
+            "image": "psv_background.webp",
+            "composes": ["psv"],
+            "chain": "pack: psv9"
+        },
+        "psv9": {
+            "title": "Opening Pharaoh's Servant Booster Box Pack 9",
+            "image": "psv_background.webp",
+            "composes": ["psv"],
+            "chain": "pack: psv10"
+        },
+        "psv10": {
+            "title": "Opening Pharaoh's Servant Booster Box Pack 10",
+            "image": "psv_background.webp",
+            "composes": ["psv"],
+            "chain": "pack: psv11"
+        },
+        "psv11": {
+            "title": "Opening Pharaoh's Servant Booster Box Pack 11",
+            "image": "psv_background.webp",
+            "composes": ["psv"],
+            "chain": "pack: psv12"
+        },
+        "psv12": {
+            "title": "Opening Pharaoh's Servant Booster Box Pack 12",
+            "image": "psv_background.webp",
+            "composes": ["psv"],
+            "chain": "pack: psv13"
+        },
+        "psv13": {
+            "title": "Opening Pharaoh's Servant Booster Box Pack 13",
+            "image": "psv_background.webp",
+            "composes": ["psv"],
+            "chain": "pack: psv14"
+        },
+        "psv14": {
+            "title": "Opening Pharaoh's Servant Booster Box Pack 14",
+            "image": "psv_background.webp",
+            "composes": ["psv"],
+            "chain": "pack: psv15"
+        },
+        "psv15": {
+            "title": "Opening Pharaoh's Servant Booster Box Pack 15",
+            "image": "psv_background.webp",
+            "composes": ["psv"],
+            "chain": "pack: psv16"
+        },
+        "psv16": {
+            "title": "Opening Pharaoh's Servant Booster Box Pack 16",
+            "image": "psv_background.webp",
+            "composes": ["psv"],
+            "chain": "pack: psv17"
+        },
+        "psv17": {
+            "title": "Opening Pharaoh's Servant Booster Box Pack 17",
+            "image": "psv_background.webp",
+            "composes": ["psv"],
+            "chain": "pack: psv18"
+        },
+        "psv18": {
+            "title": "Opening Pharaoh's Servant Booster Box Pack 18",
+            "image": "psv_background.webp",
+            "composes": ["psv"],
+            "chain": "pack: psv19"
+        },
+        "psv19": {
+            "title": "Opening Pharaoh's Servant Booster Box Pack 19",
+            "image": "psv_background.webp",
+            "composes": ["psv"],
+            "chain": "pack: psv20"
+        },
+        "psv20": {
+            "title": "Opening Pharaoh's Servant Booster Box Pack 20",
+            "image": "psv_background.webp",
+            "composes": ["psv"],
+            "chain": "pack: psv21"
+        },
+        "psv21": {
+            "title": "Opening Pharaoh's Servant Booster Box Pack 21",
+            "image": "psv_background.webp",
+            "composes": ["psv"],
+            "chain": "pack: psv22"
+        },
+        "psv22": {
+            "title": "Opening Pharaoh's Servant Booster Box Pack 22",
+            "image": "psv_background.webp",
+            "composes": ["psv"],
+            "chain": "pack: psv23"
+        },
+        "psv23": {
+            "title": "Opening Pharaoh's Servant Booster Box Pack 23",
+            "image": "psv_background.webp",
+            "composes": ["psv"],
+            "chain": "pack: psv24"
+        },
+        "psv24": {
+            "title": "Opening Pharaoh's Servant Booster Box Pack 24",
+            "image": "psv_background.webp",
+            "composes": ["psv"]
+        },
+
+        "lon1": {
+            "title": "Opening Labyrinth of Nightmare Booster Box Pack 1",
+            "mdesc": "Open Labyrinth of Nightmare Booster Box",
+            "micon": "lon.webp",
+            "image": "lon_background.webp",
+            "composes": ["lon"],
+            "chain": "pack: lon2"
+        },
+        "lon2": {
+            "title": "Opening Labyrinth of Nightmare Booster Box Pack 2",
+            "image": "lon_background.webp",
+            "composes": ["lon"],
+            "chain": "pack: lon3"
+        },
+        "lon3": {
+            "title": "Opening Labyrinth of Nightmare Booster Box Pack 3",
+            "image": "lon_background.webp",
+            "composes": ["lon"],
+            "chain": "pack: lon4"
+        },
+        "lon4": {
+            "title": "Opening Labyrinth of Nightmare Booster Box Pack 4",
+            "image": "lon_background.webp",
+            "composes": ["lon"],
+            "chain": "pack: lon5"
+        },
+        "lon5": {
+            "title": "Opening Labyrinth of Nightmare Booster Box Pack 5",
+            "image": "lon_background.webp",
+            "composes": ["lon"],
+            "chain": "pack: lon6"
+        },
+        "lon6": {
+            "title": "Opening Labyrinth of Nightmare Booster Box Pack 6",
+            "image": "lon_background.webp",
+            "composes": ["lon"],
+            "chain": "pack: lon7"
+        },
+        "lon7": {
+            "title": "Opening Labyrinth of Nightmare Booster Box Pack 7",
+            "image": "lon_background.webp",
+            "composes": ["lon"],
+            "chain": "pack: lon8"
+        },
+        "lon8": {
+            "title": "Opening Labyrinth of Nightmare Booster Box Pack 8",
+            "image": "lon_background.webp",
+            "composes": ["lon"],
+            "chain": "pack: lon9"
+        },
+        "lon9": {
+            "title": "Opening Labyrinth of Nightmare Booster Box Pack 9",
+            "image": "lon_background.webp",
+            "composes": ["lon"],
+            "chain": "pack: lon10"
+        },
+        "lon10": {
+            "title": "Opening Labyrinth of Nightmare Booster Box Pack 10",
+            "image": "lon_background.webp",
+            "composes": ["lon"],
+            "chain": "pack: lon11"
+        },
+        "lon11": {
+            "title": "Opening Labyrinth of Nightmare Booster Box Pack 11",
+            "image": "lon_background.webp",
+            "composes": ["lon"],
+            "chain": "pack: lon12"
+        },
+        "lon12": {
+            "title": "Opening Labyrinth of Nightmare Booster Box Pack 12",
+            "image": "lon_background.webp",
+            "composes": ["lon"],
+            "chain": "pack: lon13"
+        },
+        "lon13": {
+            "title": "Opening Labyrinth of Nightmare Booster Box Pack 13",
+            "image": "lon_background.webp",
+            "composes": ["lon"],
+            "chain": "pack: lon14"
+        },
+        "lon14": {
+            "title": "Opening Labyrinth of Nightmare Booster Box Pack 14",
+            "image": "lon_background.webp",
+            "composes": ["lon"],
+            "chain": "pack: lon15"
+        },
+        "lon15": {
+            "title": "Opening Labyrinth of Nightmare Booster Box Pack 15",
+            "image": "lon_background.webp",
+            "composes": ["lon"],
+            "chain": "pack: lon16"
+        },
+        "lon16": {
+            "title": "Opening Labyrinth of Nightmare Booster Box Pack 16",
+            "image": "lon_background.webp",
+            "composes": ["lon"],
+            "chain": "pack: lon17"
+        },
+        "lon17": {
+            "title": "Opening Labyrinth of Nightmare Booster Box Pack 17",
+            "image": "lon_background.webp",
+            "composes": ["lon"],
+            "chain": "pack: lon18"
+        },
+        "lon18": {
+            "title": "Opening Labyrinth of Nightmare Booster Box Pack 18",
+            "image": "lon_background.webp",
+            "composes": ["lon"],
+            "chain": "pack: lon19"
+        },
+        "lon19": {
+            "title": "Opening Labyrinth of Nightmare Booster Box Pack 19",
+            "image": "lon_background.webp",
+            "composes": ["lon"],
+            "chain": "pack: lon20"
+        },
+        "lon20": {
+            "title": "Opening Labyrinth of Nightmare Booster Box Pack 20",
+            "image": "lon_background.webp",
+            "composes": ["lon"],
+            "chain": "pack: lon21"
+        },
+        "lon21": {
+            "title": "Opening Labyrinth of Nightmare Booster Box Pack 21",
+            "image": "lon_background.webp",
+            "composes": ["lon"],
+            "chain": "pack: lon22"
+        },
+        "lon22": {
+            "title": "Opening Labyrinth of Nightmare Booster Box Pack 22",
+            "image": "lon_background.webp",
+            "composes": ["lon"],
+            "chain": "pack: lon23"
+        },
+        "lon23": {
+            "title": "Opening Labyrinth of Nightmare Booster Box Pack 23",
+            "image": "lon_background.webp",
+            "composes": ["lon"],
+            "chain": "pack: lon24"
+        },
+         "lon24": {
+            "title": "Opening Labyrinth of Nightmare Booster Box Pack 24",
+            "image": "lon_background.webp",
+            "composes": ["lon"]
+        },
+
+        "lod1": {
+            "title": "Opening Legacy of Darkness Booster Box Pack 1",
+            "mdesc": "Open Legacy of Darkness Booster Box",
+            "micon": "lod.webp",
+            "image": "lod_background.webp",
+            "composes": ["lod"],
+            "chain": "pack: lod2"
+        },
+        "lod2": {
+            "title": "Opening Legacy of Darkness Booster Box Pack 2",
+            "image": "lod_background.webp",
+            "composes": ["lod"],
+            "chain": "pack: lod3"
+        },
+        "lod3": {
+            "title": "Opening Legacy of Darkness Booster Box Pack 3",
+            "image": "lod_background.webp",
+            "composes": ["lod"],
+            "chain": "pack: lod4"
+        },
+        "lod4": {
+            "title": "Opening Legacy of Darkness Booster Box Pack 4",
+            "image": "lod_background.webp",
+            "composes": ["lod"],
+            "chain": "pack: lod5"
+        },
+        "lod5": {
+            "title": "Opening Legacy of Darkness Booster Box Pack 5",
+            "image": "lod_background.webp",
+            "composes": ["lod"],
+            "chain": "pack: lod6"
+        },
+        "lod6": {
+            "title": "Opening Legacy of Darkness Booster Box Pack 6",
+            "image": "lod_background.webp",
+            "composes": ["lod"],
+            "chain": "pack: lod7"
+        },
+        "lod7": {
+            "title": "Opening Legacy of Darkness Booster Box Pack 7",
+            "image": "lod_background.webp",
+            "composes": ["lod"],
+            "chain": "pack: lod8"
+        },
+        "lod8": {
+            "title": "Opening Legacy of Darkness Booster Box Pack 8",
+            "image": "lod_background.webp",
+            "composes": ["lod"],
+            "chain": "pack: lod9"
+        },
+        "lod9": {
+            "title": "Opening Legacy of Darkness Booster Box Pack 9",
+            "image": "lod_background.webp",
+            "composes": ["lod"],
+            "chain": "pack: lod10"
+        },
+        "lod10": {
+            "title": "Opening Legacy of Darkness Booster Box Pack 10",
+            "image": "lod_background.webp",
+            "composes": ["lod"],
+            "chain": "pack: lod11"
+        },
+        "lod11": {
+            "title": "Opening Legacy of Darkness Booster Box Pack 11",
+            "image": "lod_background.webp",
+            "composes": ["lod"],
+            "chain": "pack: lod12"
+        },
+        "lod12": {
+            "title": "Opening Legacy of Darkness Booster Box Pack 12",
+            "image": "lod_background.webp",
+            "composes": ["lod"],
+            "chain": "pack: lod13"
+        },
+        "lod13": {
+            "title": "Opening Legacy of Darkness Booster Box Pack 13",
+            "image": "lod_background.webp",
+            "composes": ["lod"],
+            "chain": "pack: lod14"
+        },
+        "lod14": {
+            "title": "Opening Legacy of Darkness Booster Box Pack 14",
+            "image": "lod_background.webp",
+            "composes": ["lod"],
+            "chain": "pack: lod15"
+        },
+        "lod15": {
+            "title": "Opening Legacy of Darkness Booster Box Pack 15",
+            "image": "lod_background.webp",
+            "composes": ["lod"],
+            "chain": "pack: lod16"
+        },
+        "lod16": {
+            "title": "Opening Legacy of Darkness Booster Box Pack 16",
+            "image": "lod_background.webp",
+            "composes": ["lod"],
+            "chain": "pack: lod17"
+        },
+        "lod17": {
+            "title": "Opening Legacy of Darkness Booster Box Pack 17",
+            "image": "lod_background.webp",
+            "composes": ["lod"],
+            "chain": "pack: lod18"
+        },
+        "lod18": {
+            "title": "Opening Legacy of Darkness Booster Box Pack 18",
+            "image": "lod_background.webp",
+            "composes": ["lod"],
+            "chain": "pack: lod19"
+        },
+        "lod19": {
+            "title": "Opening Legacy of Darkness Booster Box Pack 19",
+            "image": "lod_background.webp",
+            "composes": ["lod"],
+            "chain": "pack: lod20"
+        },
+        "lod20": {
+            "title": "Opening Legacy of Darkness Booster Box Pack 20",
+            "image": "lod_background.webp",
+            "composes": ["lod"],
+            "chain": "pack: lod21"
+        },
+        "lod21": {
+            "title": "Opening Legacy of Darkness Booster Box Pack 21",
+            "image": "lod_background.webp",
+            "composes": ["lod"],
+            "chain": "pack: lod22"
+        },
+        "lod22": {
+            "title": "Opening Legacy of Darkness Booster Box Pack 22",
+            "image": "lod_background.webp",
+            "composes": ["lod"],
+            "chain": "pack: lod23"
+        },
+        "lod23": {
+            "title": "Opening Legacy of Darkness Booster Box Pack 23",
+            "image": "lod_background.webp",
+            "composes": ["lod"],
+            "chain": "pack: lod24"
+        },
+        "lod24": {
+            "title": "Opening Legacy of Darkness Booster Box Pack 24",
+            "image": "lod_background.webp",
+            "composes": ["lod"]
+        },
+
+        "pgd1": {
+            "title": "Opening Pharaonic Guardian Booster Box Pack 1",
+            "mdesc": "Open Pharaonic Guardian Booster Box",
+            "micon": "pgd.webp",
+            "image": "pgd_background.webp",
+            "composes": ["pgd"],
+            "chain": "pack: pgd2"
+        },
+        "pgd2": {
+            "title": "Opening Pharaonic Guardian Booster Box Pack 23",
+            "image": "pgd_background.webp",
+            "composes": ["pgd"],
+            "chain": "pack: pgd3"
+        },
+        "pgd3": {
+            "title": "Opening Pharaonic Guardian Booster Box Pack 23",
+            "image": "pgd_background.webp",
+            "composes": ["pgd"],
+            "chain": "pack: pgd4"
+        },
+        "pgd4": {
+            "title": "Opening Pharaonic Guardian Booster Box Pack 23",
+            "image": "pgd_background.webp",
+            "composes": ["pgd"],
+            "chain": "pack: pgd5"
+        },
+        "pgd5": {
+            "title": "Opening Pharaonic Guardian Booster Box Pack 23",
+            "image": "pgd_background.webp",
+            "composes": ["pgd"],
+            "chain": "pack: pgd6"
+        },
+        "pgd6": {
+            "title": "Opening Pharaonic Guardian Booster Box Pack 23",
+            "image": "pgd_background.webp",
+            "composes": ["pgd"],
+            "chain": "pack: pgd7"
+        },
+        "pgd7": {
+            "title": "Opening Pharaonic Guardian Booster Box Pack 23",
+            "image": "pgd_background.webp",
+            "composes": ["pgd"],
+            "chain": "pack: pgd8"
+        },
+        "pgd8": {
+            "title": "Opening Pharaonic Guardian Booster Box Pack 23",
+            "image": "pgd_background.webp",
+            "composes": ["pgd"],
+            "chain": "pack: pgd9"
+        },
+        "pgd9": {
+            "title": "Opening Pharaonic Guardian Booster Box Pack 23",
+            "image": "pgd_background.webp",
+            "composes": ["pgd"],
+            "chain": "pack: pgd10"
+        },
+        "pgd10": {
+            "title": "Opening Pharaonic Guardian Booster Box Pack 23",
+            "image": "pgd_background.webp",
+            "composes": ["pgd"],
+            "chain": "pack: pgd11"
+        },
+        "pgd11": {
+            "title": "Opening Pharaonic Guardian Booster Box Pack 23",
+            "image": "pgd_background.webp",
+            "composes": ["pgd"],
+            "chain": "pack: pgd12"
+        },
+        "pgd12": {
+            "title": "Opening Pharaonic Guardian Booster Box Pack 23",
+            "image": "pgd_background.webp",
+            "composes": ["pgd"],
+            "chain": "pack: pgd13"
+        },
+        "pgd13": {
+            "title": "Opening Pharaonic Guardian Booster Box Pack 23",
+            "image": "pgd_background.webp",
+            "composes": ["pgd"],
+            "chain": "pack: pgd14"
+        },
+        "pgd14": {
+            "title": "Opening Pharaonic Guardian Booster Box Pack 23",
+            "image": "pgd_background.webp",
+            "composes": ["pgd"],
+            "chain": "pack: pgd15"
+        },
+        "pgd15": {
+            "title": "Opening Pharaonic Guardian Booster Box Pack 23",
+            "image": "pgd_background.webp",
+            "composes": ["pgd"],
+            "chain": "pack: pgd16"
+        },
+        "pgd16": {
+            "title": "Opening Pharaonic Guardian Booster Box Pack 23",
+            "image": "pgd_background.webp",
+            "composes": ["pgd"],
+            "chain": "pack: pgd17"
+        },
+        "pgd17": {
+            "title": "Opening Pharaonic Guardian Booster Box Pack 23",
+            "image": "pgd_background.webp",
+            "composes": ["pgd"],
+            "chain": "pack: pgd18"
+        },
+        "pgd18": {
+            "title": "Opening Pharaonic Guardian Booster Box Pack 23",
+            "image": "pgd_background.webp",
+            "composes": ["pgd"],
+            "chain": "pack: pgd19"
+        },
+        "pgd19": {
+            "title": "Opening Pharaonic Guardian Booster Box Pack 23",
+            "image": "pgd_background.webp",
+            "composes": ["pgd"],
+            "chain": "pack: pgd20"
+        },
+        "pgd20": {
+            "title": "Opening Pharaonic Guardian Booster Box Pack 23",
+            "image": "pgd_background.webp",
+            "composes": ["pgd"],
+            "chain": "pack: pgd21"
+        },
+        "pgd21": {
+            "title": "Opening Pharaonic Guardian Booster Box Pack 23",
+            "image": "pgd_background.webp",
+            "composes": ["pgd"],
+            "chain": "pack: pgd22"
+        },
+        "pgd22": {
+            "title": "Opening Pharaonic Guardian Booster Box Pack 23",
+            "image": "pgd_background.webp",
+            "composes": ["pgd"],
+            "chain": "pack: pgd23"
+        },
+        "pgd23": {
+            "title": "Opening Pharaonic Guardian Booster Box Pack 23",
+            "image": "pgd_background.webp",
+            "composes": ["pgd"],
+            "chain": "pack: pgd24"
+        },
+        "pgd24": {
+            "title": "Opening Pharaonic Guardian Booster Box Pack 24",
+            "image": "pgd_background.webp",
+            "composes": ["pgd"]
+        },
+
+        "mfc1": {
+            "title": "Opening Magician's Force Booster Box Pack 1",
+            "mdesc": "Open Magician's Force Booster Box",
+            "micon": "mfc.webp",
+            "image": "mfc_background.webp",
+            "composes": ["mfc"],
+            "chain": "pack: mfc2"
+        },
+        "mfc2": {
+            "title": "Opening Magician's Force Booster Box Pack 2",
+            "image": "mfc_background.webp",
+            "composes": ["mfc"],
+            "chain": "pack: mfc3"
+        },
+        "mfc3": {
+            "title": "Opening Magician's Force Booster Box Pack 3",
+            "image": "mfc_background.webp",
+            "composes": ["mfc"],
+            "chain": "pack: mfc4"
+        },
+        "mfc4": {
+            "title": "Opening Magician's Force Booster Box Pack 4",
+            "image": "mfc_background.webp",
+            "composes": ["mfc"],
+            "chain": "pack: mfc5"
+        },
+        "mfc5": {
+            "title": "Opening Magician's Force Booster Box Pack 5",
+            "image": "mfc_background.webp",
+            "composes": ["mfc"],
+            "chain": "pack: mfc6"
+        },
+        "mfc6": {
+            "title": "Opening Magician's Force Booster Box Pack 6",
+            "image": "mfc_background.webp",
+            "composes": ["mfc"],
+            "chain": "pack: mfc7"
+        },
+        "mfc7": {
+            "title": "Opening Magician's Force Booster Box Pack 7",
+            "image": "mfc_background.webp",
+            "composes": ["mfc"],
+            "chain": "pack: mfc8"
+        },
+        "mfc8": {
+            "title": "Opening Magician's Force Booster Box Pack 8",
+            "image": "mfc_background.webp",
+            "composes": ["mfc"],
+            "chain": "pack: mfc9"
+        },
+        "mfc9": {
+            "title": "Opening Magician's Force Booster Box Pack 9",
+            "image": "mfc_background.webp",
+            "composes": ["mfc"],
+            "chain": "pack: mfc10"
+        },
+        "mfc10": {
+            "title": "Opening Magician's Force Booster Box Pack 10",
+            "image": "mfc_background.webp",
+            "composes": ["mfc"],
+            "chain": "pack: mfc11"
+        },
+        "mfc11": {
+            "title": "Opening Magician's Force Booster Box Pack 11",
+            "image": "mfc_background.webp",
+            "composes": ["mfc"],
+            "chain": "pack: mfc12"
+        },
+        "mfc12": {
+            "title": "Opening Magician's Force Booster Box Pack 12",
+            "image": "mfc_background.webp",
+            "composes": ["mfc"],
+            "chain": "pack: mfc13"
+        },
+        "mfc13": {
+            "title": "Opening Magician's Force Booster Box Pack 13",
+            "image": "mfc_background.webp",
+            "composes": ["mfc"],
+            "chain": "pack: mfc14"
+        },
+        "mfc14": {
+            "title": "Opening Magician's Force Booster Box Pack 14",
+            "image": "mfc_background.webp",
+            "composes": ["mfc"],
+            "chain": "pack: mfc15"
+        },
+        "mfc15": {
+            "title": "Opening Magician's Force Booster Box Pack 15",
+            "image": "mfc_background.webp",
+            "composes": ["mfc"],
+            "chain": "pack: mfc16"
+        },
+        "mfc16": {
+            "title": "Opening Magician's Force Booster Box Pack 16",
+            "image": "mfc_background.webp",
+            "composes": ["mfc"],
+            "chain": "pack: mfc17"
+        },
+        "mfc17": {
+            "title": "Opening Magician's Force Booster Box Pack 17",
+            "image": "mfc_background.webp",
+            "composes": ["mfc"],
+            "chain": "pack: mfc18"
+        },
+        "mfc18": {
+            "title": "Opening Magician's Force Booster Box Pack 18",
+            "image": "mfc_background.webp",
+            "composes": ["mfc"],
+            "chain": "pack: mfc19"
+        },
+        "mfc19": {
+            "title": "Opening Magician's Force Booster Box Pack 19",
+            "image": "mfc_background.webp",
+            "composes": ["mfc"],
+            "chain": "pack: mfc20"
+        },
+        "mfc20": {
+            "title": "Opening Magician's Force Booster Box Pack 20",
+            "image": "mfc_background.webp",
+            "composes": ["mfc"],
+            "chain": "pack: mfc21"
+        },
+        "mfc21": {
+            "title": "Opening Magician's Force Booster Box Pack 21",
+            "image": "mfc_background.webp",
+            "composes": ["mfc"],
+            "chain": "pack: mfc22"
+        },
+        "mfc22": {
+            "title": "Opening Magician's Force Booster Box Pack 22",
+            "image": "mfc_background.webp",
+            "composes": ["mfc"],
+            "chain": "pack: mfc23"
+        },
+        "mfc23": {
+            "title": "Opening Magician's Force Booster Box Pack 23",
+            "image": "mfc_background.webp",
+            "composes": ["mfc"],
+            "chain": "pack: mfc24"
+        },
+        "mfc24": {
+            "title": "Opening Magician's Force Box Pack 24",
+            "image": "mfc_background.webp",
+            "composes": ["mfc"]
+        },
+
+        "dcr1": {
+            "title": "Opening Dark Crisis Booster Box Pack 1",
+            "mdesc": "Open Dark Crisis Booster Box",
+            "micon": "dcr.webp",
+            "image": "dcr_background.webp",
+            "composes": ["dcr"],
+            "chain": "pack: dcr2"
+        },
+        "dcr2": {
+            "title": "Opening Dark Crisis Booster Box Pack 2",
+            "image": "dcr_background.webp",
+            "composes": ["dcr"],
+            "chain": "pack: dcr3"
+        },
+        "dcr3": {
+            "title": "Opening Dark Crisis Booster Box Pack 3",
+            "image": "dcr_background.webp",
+            "composes": ["dcr"],
+            "chain": "pack: dcr4"
+        },
+        "dcr4": {
+            "title": "Opening Dark Crisis Booster Box Pack 4",
+            "image": "dcr_background.webp",
+            "composes": ["dcr"],
+            "chain": "pack: dcr5"
+        },
+        "dcr5": {
+            "title": "Opening Dark Crisis Booster Box Pack 5",
+            "image": "dcr_background.webp",
+            "composes": ["dcr"],
+            "chain": "pack: dcr6"
+        },
+        "dcr6": {
+            "title": "Opening Dark Crisis Booster Box Pack 6",
+            "image": "dcr_background.webp",
+            "composes": ["dcr"],
+            "chain": "pack: dcr7"
+        },
+        "dcr7": {
+            "title": "Opening Dark Crisis Booster Box Pack 7",
+            "image": "dcr_background.webp",
+            "composes": ["dcr"],
+            "chain": "pack: dcr8"
+        },
+        "dcr8": {
+            "title": "Opening Dark Crisis Booster Box Pack 8",
+            "image": "dcr_background.webp",
+            "composes": ["dcr"],
+            "chain": "pack: dcr9"
+        },
+        "dcr9": {
+            "title": "Opening Dark Crisis Booster Box Pack 9",
+            "image": "dcr_background.webp",
+            "composes": ["dcr"],
+            "chain": "pack: dcr10"
+        },
+        "dcr10": {
+            "title": "Opening Dark Crisis Booster Box Pack 10",
+            "image": "dcr_background.webp",
+            "composes": ["dcr"],
+            "chain": "pack: dcr11"
+        },
+        "dcr11": {
+            "title": "Opening Dark Crisis Booster Box Pack 11",
+            "image": "dcr_background.webp",
+            "composes": ["dcr"],
+            "chain": "pack: dcr12"
+        },
+        "dcr12": {
+            "title": "Opening Dark Crisis Booster Box Pack 12",
+            "image": "dcr_background.webp",
+            "composes": ["dcr"],
+            "chain": "pack: dcr13"
+        },
+        "dcr13": {
+            "title": "Opening Dark Crisis Booster Box Pack 13",
+            "image": "dcr_background.webp",
+            "composes": ["dcr"],
+            "chain": "pack: dcr14"
+        },
+        "dcr14": {
+            "title": "Opening Dark Crisis Booster Box Pack 14",
+            "image": "dcr_background.webp",
+            "composes": ["dcr"],
+            "chain": "pack: dcr15"
+        },
+        "dcr15": {
+            "title": "Opening Dark Crisis Booster Box Pack 15",
+            "image": "dcr_background.webp",
+            "composes": ["dcr"],
+            "chain": "pack: dcr16"
+        },
+        "dcr16": {
+            "title": "Opening Dark Crisis Booster Box Pack 16",
+            "image": "dcr_background.webp",
+            "composes": ["dcr"],
+            "chain": "pack: dcr17"
+        },
+        "dcr17": {
+            "title": "Opening Dark Crisis Booster Box Pack 17",
+            "image": "dcr_background.webp",
+            "composes": ["dcr"],
+            "chain": "pack: dcr18"
+        },
+        "dcr18": {
+            "title": "Opening Dark Crisis Booster Box Pack 18",
+            "image": "dcr_background.webp",
+            "composes": ["dcr"],
+            "chain": "pack: dcr19"
+        },
+        "dcr19": {
+            "title": "Opening Dark Crisis Booster Box Pack 19",
+            "image": "dcr_background.webp",
+            "composes": ["dcr"],
+            "chain": "pack: dcr20"
+        },
+        "dcr20": {
+            "title": "Opening Dark Crisis Booster Box Pack 20",
+            "image": "dcr_background.webp",
+            "composes": ["dcr"],
+            "chain": "pack: dcr21"
+        },
+        "dcr21": {
+            "title": "Opening Dark Crisis Booster Box Pack 21",
+            "image": "dcr_background.webp",
+            "composes": ["dcr"],
+            "chain": "pack: dcr22"
+        },
+        "dcr22": {
+            "title": "Opening Dark Crisis Booster Box Pack 22",
+            "image": "dcr_background.webp",
+            "composes": ["dcr"],
+            "chain": "pack: dcr23"
+        },
+        "dcr23": {
+            "title": "Opening Dark Crisis Booster Box Pack 23",
+            "image": "dcr_background.webp",
+            "composes": ["dcr"],
+            "chain": "pack: dcr24"
+        },
+        "dcr24": {
+            "title": "Opening Dark Crisis Booster Box Pack 24",
+            "image": "dcr_background.webp",
+            "composes": ["dcr"]
+        },
+
+        "ioc1": {
+            "title": "Opening Invasion of Chaos Booster Box Pack 1",
+            "mdesc": "Open Invasion of Chaos Booster Box",
+            "micon": "ioc.webp",
+            "image": "ioc_background.webp",
+            "composes": ["ioc"],
+            "chain": "pack: ioc2"
+        },
+        "ioc2": {
+            "title": "Opening Invasion of Chaos Booster Box Pack 2",
+            "image": "ioc_background.webp",
+            "composes": ["ioc"],
+            "chain": "pack: ioc3"
+        },
+        "ioc3": {
+            "title": "Opening Invasion of Chaos Booster Box Pack 3",
+            "image": "ioc_background.webp",
+            "composes": ["ioc"],
+            "chain": "pack: ioc4"
+        },
+        "ioc4": {
+            "title": "Opening Invasion of Chaos Booster Box Pack 4",
+            "image": "ioc_background.webp",
+            "composes": ["ioc"],
+            "chain": "pack: ioc5"
+        },
+        "ioc5": {
+            "title": "Opening Invasion of Chaos Booster Box Pack 5",
+            "image": "ioc_background.webp",
+            "composes": ["ioc"],
+            "chain": "pack: ioc6"
+        },
+        "ioc6": {
+            "title": "Opening Invasion of Chaos Booster Box Pack 6",
+            "image": "ioc_background.webp",
+            "composes": ["ioc"],
+            "chain": "pack: ioc7"
+        },
+        "ioc7": {
+            "title": "Opening Invasion of Chaos Booster Box Pack 7",
+            "image": "ioc_background.webp",
+            "composes": ["ioc"],
+            "chain": "pack: ioc8"
+        },
+        "ioc8": {
+            "title": "Opening Invasion of Chaos Booster Box Pack 8",
+            "image": "ioc_background.webp",
+            "composes": ["ioc"],
+            "chain": "pack: ioc9"
+        },
+        "ioc9": {
+            "title": "Opening Invasion of Chaos Booster Box Pack 9",
+            "image": "ioc_background.webp",
+            "composes": ["ioc"],
+            "chain": "pack: ioc10"
+        },
+        "ioc10": {
+            "title": "Opening Invasion of Chaos Booster Box Pack 10",
+            "image": "ioc_background.webp",
+            "composes": ["ioc"],
+            "chain": "pack: ioc11"
+        },
+        "ioc11": {
+            "title": "Opening Invasion of Chaos Booster Box Pack 11",
+            "image": "ioc_background.webp",
+            "composes": ["ioc"],
+            "chain": "pack: ioc12"
+        },
+        "ioc12": {
+            "title": "Opening Invasion of Chaos Booster Box Pack 12",
+            "image": "ioc_background.webp",
+            "composes": ["ioc"],
+            "chain": "pack: ioc13"
+        },
+        "ioc13": {
+            "title": "Opening Invasion of Chaos Booster Box Pack 13",
+            "image": "ioc_background.webp",
+            "composes": ["ioc"],
+            "chain": "pack: ioc14"
+        },
+        "ioc14": {
+            "title": "Opening Invasion of Chaos Booster Box Pack 14",
+            "image": "ioc_background.webp",
+            "composes": ["ioc"],
+            "chain": "pack: ioc15"
+        },
+        "ioc15": {
+            "title": "Opening Invasion of Chaos Booster Box Pack 15",
+            "image": "ioc_background.webp",
+            "composes": ["ioc"],
+            "chain": "pack: ioc16"
+        },
+        "ioc16": {
+            "title": "Opening Invasion of Chaos Booster Box Pack 16",
+            "image": "ioc_background.webp",
+            "composes": ["ioc"],
+            "chain": "pack: ioc17"
+        },
+        "ioc17": {
+            "title": "Opening Invasion of Chaos Booster Box Pack 17",
+            "image": "ioc_background.webp",
+            "composes": ["ioc"],
+            "chain": "pack: ioc18"
+        },
+        "ioc18": {
+            "title": "Opening Invasion of Chaos Booster Box Pack 18",
+            "image": "ioc_background.webp",
+            "composes": ["ioc"],
+            "chain": "pack: ioc19"
+        },
+        "ioc19": {
+            "title": "Opening Invasion of Chaos Booster Box Pack 19",
+            "image": "ioc_background.webp",
+            "composes": ["ioc"],
+            "chain": "pack: ioc20"
+        },
+        "ioc20": {
+            "title": "Opening Invasion of Chaos Booster Box Pack 20",
+            "image": "ioc_background.webp",
+            "composes": ["ioc"],
+            "chain": "pack: ioc21"
+        },
+        "ioc21": {
+            "title": "Opening Invasion of Chaos Booster Box Pack 21",
+            "image": "ioc_background.webp",
+            "composes": ["ioc"],
+            "chain": "pack: ioc22"
+        },
+        "ioc22": {
+            "title": "Opening Invasion of Chaos Booster Box Pack 22",
+            "image": "ioc_background.webp",
+            "composes": ["ioc"],
+            "chain": "pack: ioc23"
+        },
+        "ioc23": {
+            "title": "Opening Invasion of Chaos Booster Box Pack 23",
+            "image": "ioc_background.webp",
+            "composes": ["ioc"],
+            "chain": "pack: ioc24"
+        },
+        "ioc24": {
+            "title": "Opening Invasion of Chaos Booster Box Pack 24",
+            "image": "ioc_background.webp",
+            "composes": ["ioc"]
+        },
+
+        "ast1": {
+            "title": "Opening Ancient Sanctuary Booster Box Pack 1",
+            "mdesc": "Open Ancient Sanctuary Booster Box",
+            "micon": "ast.webp",
+            "image": "ast_background.webp",
+            "composes": ["ast"],
+            "chain": "pack: ast2"
+        },
+        "ast2": {
+            "title": "Opening Ancient Sanctuary Booster Box Pack 2",
+            "image": "ast_background.webp",
+            "composes": ["ast"],
+            "chain": "pack: ast3"
+        },
+        "ast3": {
+            "title": "Opening Ancient Sanctuary Booster Box Pack 3",
+            "image": "ast_background.webp",
+            "composes": ["ast"],
+            "chain": "pack: ast4"
+        },
+        "ast4": {
+            "title": "Opening Ancient Sanctuary Booster Box Pack 4",
+            "image": "ast_background.webp",
+            "composes": ["ast"],
+            "chain": "pack: ast5"
+        },
+        "ast5": {
+            "title": "Opening Ancient Sanctuary Booster Box Pack 5",
+            "image": "ast_background.webp",
+            "composes": ["ast"],
+            "chain": "pack: ast6"
+        },
+        "ast6": {
+            "title": "Opening Ancient Sanctuary Booster Box Pack 6",
+            "image": "ast_background.webp",
+            "composes": ["ast"],
+            "chain": "pack: ast7"
+        },
+        "ast7": {
+            "title": "Opening Ancient Sanctuary Booster Box Pack 7",
+            "image": "ast_background.webp",
+            "composes": ["ast"],
+            "chain": "pack: ast8"
+        },
+        "ast8": {
+            "title": "Opening Ancient Sanctuary Booster Box Pack 8",
+            "image": "ast_background.webp",
+            "composes": ["ast"],
+            "chain": "pack: ast9"
+        },
+        "ast9": {
+            "title": "Opening Ancient Sanctuary Booster Box Pack 9",
+            "image": "ast_background.webp",
+            "composes": ["ast"],
+            "chain": "pack: ast10"
+        },
+        "ast10": {
+            "title": "Opening Ancient Sanctuary Booster Box Pack 10",
+            "image": "ast_background.webp",
+            "composes": ["ast"],
+            "chain": "pack: ast11"
+        },
+        "ast11": {
+            "title": "Opening Ancient Sanctuary Booster Box Pack 11",
+            "image": "ast_background.webp",
+            "composes": ["ast"],
+            "chain": "pack: ast12"
+        },
+        "ast12": {
+            "title": "Opening Ancient Sanctuary Booster Box Pack 12",
+            "image": "ast_background.webp",
+            "composes": ["ast"],
+            "chain": "pack: ast13"
+        },
+        "ast13": {
+            "title": "Opening Ancient Sanctuary Booster Box Pack 13",
+            "image": "ast_background.webp",
+            "composes": ["ast"],
+            "chain": "pack: ast14"
+        },
+        "ast14": {
+            "title": "Opening Ancient Sanctuary Booster Box Pack 14",
+            "image": "ast_background.webp",
+            "composes": ["ast"],
+            "chain": "pack: ast15"
+        },
+        "ast15": {
+            "title": "Opening Ancient Sanctuary Booster Box Pack 15",
+            "image": "ast_background.webp",
+            "composes": ["ast"],
+            "chain": "pack: ast16"
+        },
+        "ast16": {
+            "title": "Opening Ancient Sanctuary Booster Box Pack 16",
+            "image": "ast_background.webp",
+            "composes": ["ast"],
+            "chain": "pack: ast17"
+        },
+        "ast17": {
+            "title": "Opening Ancient Sanctuary Booster Box Pack 17",
+            "image": "ast_background.webp",
+            "composes": ["ast"],
+            "chain": "pack: ast18"
+        },
+        "ast18": {
+            "title": "Opening Ancient Sanctuary Booster Box Pack 18",
+            "image": "ast_background.webp",
+            "composes": ["ast"],
+            "chain": "pack: ast19"
+        },
+        "ast19": {
+            "title": "Opening Ancient Sanctuary Booster Box Pack 19",
+            "image": "ast_background.webp",
+            "composes": ["ast"],
+            "chain": "pack: ast20"
+        },
+        "ast20": {
+            "title": "Opening Ancient Sanctuary Booster Box Pack 20",
+            "image": "ast_background.webp",
+            "composes": ["ast"],
+            "chain": "pack: ast21"
+        },
+        "ast21": {
+            "title": "Opening Ancient Sanctuary Booster Box Pack 21",
+            "image": "ast_background.webp",
+            "composes": ["ast"],
+            "chain": "pack: ast22"
+        },
+        "ast22": {
+            "title": "Opening Ancient Sanctuary Booster Box Pack 22",
+            "image": "ast_background.webp",
+            "composes": ["ast"],
+            "chain": "pack: ast23"
+        },
+        "ast23": {
+            "title": "Opening Ancient Sanctuary Booster Box Pack 23",
+            "image": "ast_background.webp",
+            "composes": ["ast"],
+            "chain": "pack: ast24"
+        },
+        "ast24": {
+            "title": "Opening Ancient Sanctuary Booster Box Pack 24",
+            "image": "ast_background.webp",
+            "composes": ["ast"]
+        }
+    },
+
+    "duel":{
+        "lob":{
+            "micon": "dueldisk.webp",
+            "chain": "area: mrd"
+        },
+        "mrd":{
+            "micon": "dueldisk.webp",
+            "chain": "area: srl"
+        },
+        "srl":{
+            "micon": "dueldisk.webp",
+            "chain": "area: psv"
+        },
+        "psv":{
+            "micon": "dueldisk.webp",
+            "chain": "area: lon"
+        },
+        "lon":{
+            "micon": "dueldisk.webp",
+            "chain": "area: lod"
+        },
+        "lod":{
+            "micon": "dueldisk.webp",
+            "chain": "area: pgd"
+        },
+        "pgd":{
+            "micon": "dueldisk.webp",
+            "chain": "area: mfc"
+        },
+        "mfc":{
+            "micon": "dueldisk.webp",
+            "chain": "area: dcr"
+        },
+        "dcr":{
+            "micon": "dueldisk.webp",
+            "chain": "area: ioc"
+        },
+        "ioc":{
+            "micon": "dueldisk.webp",
+            "chain": "area: ast"
+        },
+        "ast":{
+            "micon": "dueldisk.webp"
+        }
+    }
+}
