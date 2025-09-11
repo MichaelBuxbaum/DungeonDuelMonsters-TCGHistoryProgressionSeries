@@ -10,50 +10,64 @@
                 ["duel: lob"]
             ]  
         },
-        "mrd": {
-            "micon": "none",
-            "image": "Duelist_Kingdom.webp",
+        "yugiKaibaFormat":{
+            "image": "none",
+            "audio": "none",
+            "mdata": [
+                ["pack: lob1"],
+                ["duel: yugikaiba"]
+            ]
+        },
+        "critterFormat": {
+            "image": "none",
             "audio": "none",
             "mdata": [
                 ["pack: mrd1"],
                 ["duel: mrd"]
             ]
         },
-        "srl": {
-            "micon": "none",
-            "image": "Duelist_Kingdom_Finals.webp",
+        "androidFormat":{
+            "image": "none",
             "audio": "none",
-            "mdata": [
+            "mdata":[
                 ["pack: srl1"],
-                ["duel: srl"]
-            ]
-        },
-        "psv": {
-            "micon": "none",
-            "image": "Battle_City.webp",
-            "audio": "none",
-            "mdata": [
+                ["duel: srl"],
                 ["pack: psv1"],
-                ["duel: psv"]
-            ]
-        },
-        "lon": {
-            "micon": "none",
-            "image": "Battle_City.webp",
-            "audio": "none",
-            "mdata": [
+                ["duel: psv"],
                 ["pack: lon1"],
                 ["duel: lon"]
             ]
         },
-        "lod": {
-            "micon": "none",
-            "image": "Digital_World.webp",
+        "yataFormat":{
+            "image": "none",
             "audio": "none",
-            "mdata": [
+            "mdata":[
                 ["pack: lod1"],
                 ["duel: lod"]
             ]
+        },
+        "vampireFormat":{
+            "image": "none",
+            "audio": "none",
+            "mdata":[
+                ["pack: mfc1"],
+                ["duel: mfc"],
+                ["pack: dcr1"],
+                ["duel: dcr"]
+            ]
+        },
+        "chaosFormat":{
+            "image": "none",
+            "audio": "none",
+            "mdata":[
+                ["pack: ioc1"],
+                ["duel: ioc"]
+            ]
+        },
+        "warriorFormat":{
+            "image": "none",
+            "audio": "none",
+            "mdata":[]
         },
         "pgd": {
             "micon": "none",
@@ -62,33 +76,6 @@
             "mdata": [
                 ["pack: pgd1"],
                 ["duel: pgd"]
-            ]
-        },
-        "mfc": {
-            "micon": "none",
-            "image": "mfc.webp",
-            "audio": "none",
-            "mdata": [
-                ["pack: mfc1"],
-                ["duel: mfc"]
-            ]
-        },
-        "dcr": {
-            "micon": "none",
-            "image": "dcr.webp",
-            "audio": "none",
-            "mdata": [
-                ["pack: dcr1"],
-                ["duel: dcr"]
-            ]
-        },
-        "ioc": {
-            "micon": "none",
-            "image": "ioc.webp",
-            "audio": "none",
-            "mdata": [
-                ["pack: ioc1"],
-                ["duel: ioc"]
             ]
         },
         "ast": {
@@ -1748,7 +1735,7 @@
     },
 
     "duel":{
-        "lob":{
+        "yugikaiba":{
             "micon": "dueldisk.webp",
             "chain": "area: mrd"
         },
