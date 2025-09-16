@@ -13,8 +13,8 @@
                     {"Tri-Horned Dragon":10},
                     {"Gaia the Dragon Champion":10},
 
-                    {"Blue-Eyes White Dragon":8},
-                    {"Dark Magician":8},
+                    {"Blue-Eyes White Dragon (LOB)":8},
+                    {"Dark Magician (LOB)":8},
                     {"Gaia The Fierce Knight":8},
                     {"Red-Eyes Black Dragon":8},
                     {"Monster Reborn":8},
@@ -160,9 +160,9 @@
                     {"Gate Guardian":10},
                     {"Thousand Dragon":10},
 
-                    {"Summoned Skull":8},
+                    {"Summoned Skull (Ultra)":8},
                     {"Black Skull Dragon":8},
-                    {"Change of Heart":8},
+                    {"Change of Heart (Ultra)":8},
                     {"Time Wizard":8},
                     {"Barrel Dragon":8},
                     {"Solemn Judgment":8},
@@ -312,10 +312,10 @@
             {"Share the Pain":90}
         ]
     },
-    "srl": {
+    "mrl": {
         "type": "booster",
-        "name": "Spell Ruler",
-        "icon": "SRL.webp",
+        "name": "Magic Ruler",
+        "icon": "MRL.webp",
         "shows": 9,
         "rares": [
             {                       
@@ -1330,7 +1330,7 @@
             "DNA Transplant"
         ]
     },
-     "ast": {
+    "ast": {
         "type": "booster",
         "name": "Ancient Sanctuary",
         "icon": "AST.webp",
@@ -1464,136 +1464,6 @@
         ]
     },
 
-    "game-darkDuelStories": {
-        "type": "booster",
-        "name": "Video Game: Dark Duel Stories (promo card)",
-        "icon": "AST.webp",
-        "shows": 1,
-        "card":[
-            "Seiyaryu",
-            "Salamandra",
-            "Acid Trap Hole"
-        ]
-    },
-    "game-forbiddenMemories": {
-        "type": "booster",
-        "name": "Video Game: Forbidden Memories (promo card)",
-        "icon": "AST.webp",
-        "shows": 1,
-        "card":[
-            "Red-Eyes Black Metal Dragon",
-            "Harpie's Pet Dragon",
-            "Metalmorph"
-        ]
-    },
-    "game-eternalDuelistSoul": {
-        "type": "booster",
-        "name": "Video Game: Eternal Duelist Soul (promo card)",
-        "icon": "AST.webp",
-        "shows": 1,
-        "card":[
-            "Exchange",
-            "Graceful Dice",
-            "Skull Dice"
-        ]
-    },
-    "game-duelistOfTheRoses": {
-        "type": "booster",
-        "name": "Video Game: Duelist Of The Roses (promo card)",
-        "icon": "AST.webp",
-        "shows": 1,
-        "card":[
-            "Alpha The Magnet Warrior",
-            "Beta The Magnet Warrior",
-            "Gamma the Magnet Warrior"
-        ]
-    },
-    "game-stairwayToTheDestinedDuel": {
-        "type": "booster",
-        "name": "Video Game: Stairway to the Destined Duel (promo card)",
-        "icon": "AST.webp",
-        "shows": 1,
-        "card":[
-            "Valkyrion the Magna Warrior",
-            "Sinister Serpent",
-            "Harpie's Feather Duster"            
-        ]
-    },
-    "game-falseboundKingdom": {
-        "type": "booster",
-        "name": "Video Game: Falsebound Kingdom (promo card)",
-        "icon": "AST.webp",
-        "shows": 1,
-        "card":[
-            "Zoa",
-            "Metalzoa",
-            "Goblin Fan"
-        ]
-    },
-    "game-theSacredCards": {
-        "type": "booster",
-        "name": "Video Game: The Sacred Cards (promo card)",
-        "icon": "AST.webp",
-        "shows": 1,
-        "card":[
-            "Perfectly Ultimate Great Moth",
-            "Riryoku",
-            "Negate Attack"
-        ]
-    },
-    "game-powerOfChaosYugiTheDestiny": {
-        "type": "booster",
-        "name": "Video Game: Power of Chaos: Yugi the Destiny (promo card)",
-        "icon": "AST.webp",
-        "shows": 1,
-        "card":[
-            "Thousand Knives",
-            "Windstorm of Etaqua",
-            "Anti-Spell Fragrance"
-        ]
-    },
-    "game-worldChampionshipTournament2004": {
-        "type": "booster",
-        "name": "Video Game: World Championship Tournament 2004 (promo card)",
-        "icon": "AST.webp",
-        "shows": 1,
-        "card":[
-            "Fairy King Truesdale",
-            "Cipher Soldier",
-            "Slate Warrior"
-        ]
-    },
-    "game-theDawnOfDestiny": {
-        "type": "booster",
-        "name": "Video Game: The Dawn of Destiny (promo card)",
-        "icon": "AST.webp",
-        "shows": 1,
-        "card":[
-            "Dark Sage",
-            "Widespread Ruin"
-        ]
-    },
-    "game-powerOfChaosKaibaTheRevenge": {
-        "type": "booster",
-        "name": "Video Game: Power of Chaos: Kaiba the Revenge (promo card)",
-        "icon": "AST.webp",
-        "shows": 1,
-        "card":[
-            "Seal of the Ancients",
-            "Aqua Chorus"
-        ]
-    },
-    "game-powerOfChaosJoeyThePassion": {
-        "type": "booster",
-        "name": "Video Game: Power of Chaos: Joey the Passion (promo card)",
-        "icon": "AST.webp",
-        "shows": 1,
-        "card":[
-            "Sebek's Blessing",
-            "Sword of Dragon's Soul"
-        ]
-    },
-
     "mcD1": {
         "type": "booster",
         "name": "McDonald's Promo Cards 1",
@@ -1641,19 +1511,48 @@
         ]
     },
 
-    "tournamentPack-1": {
+    "tp1": {
         "type": "booster",
         "name": "Tournamet Pack: 1st Season",
-        "icon": "AST.webp",
-        "shows": 1,
+        "shows": 3,
+        
         "card":[
             "Mechanicalchaser",
+
+            "Axe Raider",
+            "Kwagar Hercules",
+            "Patrol Robo",
+            "White Hole",
+
+            "Elf's Light",
+            "Steel Shell",
+            "Blue Medicine",
+            "Raimei",
+            "Burning Spear",
+            "Gust Fan",
+            "Tiger Axe",
             "Goddess with the Third Eye",
             "Beastking of the Swamps",
-            "Versago the Destroyer"
+            "Versago the Destroyer",
+
+            "Oscillo Hero #2",
+            "Giant Flea",
+            "Bean Soldier",
+            "The Statue of Easter Island",
+            "Corroding Shark",
+            "Wow Warrior",
+            "Winged Dragon, Guardian of the Fortress #2",
+            "Oscillo Hero",
+            "Shining Friendship",
+            "Hercules Beetle",
+            "The Judgement Hand",
+            "Wodan the Resident of the Forest",
+            "Cyber Soldier of Darkworld",
+            "Cockroach Knight",
+            "Kuwagata α"
         ]
     },
-    "tournamentPack-2": {
+    "tournamentPack2": {
         "type": "booster",
         "name": "Tournament Pack: 2nd Season",
         "icon": "AST.webp",
@@ -1664,7 +1563,7 @@
             "Exile of the Wicked"
         ]
     },
-    "tournamentPack-3": {
+    "tournamentPack3": {
         "type": "booster",
         "name": "Ancient Sanctuary",
         "icon": "AST.webp",
@@ -1675,7 +1574,7 @@
             "Metalmorph"
         ]
     },
-    "tournamentPack-4": {
+    "tournamentPack4": {
         "type": "booster",
         "name": "Ancient Sanctuary",
         "icon": "AST.webp",
@@ -1687,26 +1586,122 @@
         ]
     },
 
-    "starterDeck-Yugi": {
+    "sdy": {
         "type": "booster",
-        "name": "Ancient Sanctuary",
-        "icon": "AST.webp",
-        "shows": 1,
+        "name": "Starter Deck Yugi",
+        "shows": 50,
         "card":[
-            "Red-Eyes Black Metal Dragon",
-            "Harpie's Pet Dragon",
-            "Metalmorph"
+            "Dark Magician (SDY)",
+
+            "Soul Exchange",
+            "Card Destruction",
+
+            "Mystical Elf (Common)",
+            "Feral Imp",
+            "Winged Dragon, Guardian of the Fortress #1",
+            "Summoned Skull",
+            "Beaver Warrior",
+            "Gaia The Fierce Knight (Common)",
+            "Curse of Dragon (Common)",
+            "Celtic Guardian (Common)",
+            "Mammoth Graveyard",
+            "Great White",
+            "Silver Fang",
+            "Giant Soldier of Stone (Common)",
+            "Dragon Zombie",
+            "Doma The Angel of Silence",
+            "Ansatsu",
+            "Witty Phantom",
+            "Claw Reacher",
+            "Mystic Clown",
+            "Sword of Dark Destruction",
+            "Book of Secret Arts",
+            "Dark Hole (Common)",
+            "Dian Keto the Cure Master",
+            "Ancient Elf",
+            "Magical Ghost",
+            "Fissure (Common)",
+            "Trap Hole (Common)",
+            "Two-Pronged Attack (Common)",
+            "De-Spell",
+            "Monster Reborn (Common)",
+            "Reinforcements",
+            "Change of Heart",
+            "The Stern Mystic",
+            "Wall of Illusion",
+            "Neo the Magic Swordsman",
+            "Baron of the Fiend Sword",
+            "Man-Eating Treasure Chest",
+            "Sorcerer of the Doomed",
+            "Last Will",
+            "Waboku",
+            "Trap Master",
+            "Dragon Capture Jar (Common)",
+            "Yami",
+            "Man-Eater Bug (Common)",
+            "Reverse Trap",
+            "Remove Trap",
+            "Castle Walls",
+            "Ultimate Offering"
         ]
     },
-    "starterDeck-Kaiba": {
+    "sdk": {
         "type": "booster",
-        "name": "Ancient Sanctuary",
-        "icon": "AST.webp",
-        "shows": 1,
+        "name": "Starter Deck Kaiba",
+        "shows": 50,
         "card":[
-            "Red-Eyes Black Metal Dragon",
-            "Harpie's Pet Dragon",
-            "Metalmorph"
+            "Blue-Eyes White Dragon (SDK)",
+
+            "Lord of D.",
+            "The Flute of Summoning Dragon",
+            
+            "Hitotsu-Me Giant",
+            "Ryu-Kishin",
+            "The Wicked Worm Beast",
+            "Battle Ox",
+            "Koumori Dragon",
+            "Judge Man",
+            "Rogue Doll",
+            "Kojikocy",
+            "Uraby",
+            "Gyakutenno Megami",
+            "Mystic Horseman",
+            "Terra the Terrible",
+            "Dark Titan of Terror",
+            "Dark Assailant",
+            "Master & Expert",
+            "Unknown Warrior of Fiend",
+            "Mystic Clown",
+            "Ogre of the Black Shadow",
+            "Dark Energy",
+            "Invigoration",
+            "Dark Hole (Common)",
+            "Ookazi",
+            "Ryu-Kishin Powered",
+            "Swordstalker",
+            "La Jinn the Mystical Genie of the Lamp",
+            "Rude Kaiser",
+            "Destroyer Golem",
+            "Skull Red Bird",
+            "D. Human",
+            "Pale Beast",
+            "Fissure (Common)",
+            "Trap Hole (Common)",
+            "Two-Pronged Attack (Common)",
+            "De-Spell",
+            "Monster Reborn (Common)",
+            "The Inexperienced Spy",
+            "Reinforcements",
+            "Ancient Telescope",
+            "Just Desserts",
+            "Mysterious Puppeteer",
+            "Trap Master",
+            "Sogen",
+            "Hane-Hane (Common)",
+            "Reverse Trap",
+            "Remove Trap",
+            "Castle Walls",
+            "Ultimate Offering"
         ]
     },
     "starterDeck-Joey": {
@@ -1731,71 +1726,160 @@
             "Metalmorph"
         ]
     },
-
-    "tin-2004TotalSefenseShogun": {
-        "type": "booster",
-        "name": "Ancient Sanctuary",
-        "icon": "AST.webp",
-        "shows": 1,
+    "winLOB-Secret": {
         "card":[
-            "Red-Eyes Black Metal Dragon",
-            "Harpie's Pet Dragon",
-            "Metalmorph"
+            "Tri-Horned Dragon",
+            "Gaia the Dragon Champion",
+            "Blue-Eyes White Dragon",
+            "Dark Magician",
+            "Gaia The Fierce Knight",
+            "Red-Eyes Black Dragon",
+            "Monster Reborn",
+            "Right Leg of the Forbidden One",
+            "Left Leg of the Forbidden One",
+            "Right Arm of the Forbidden One",
+            "Left Arm of the Forbidden One",
+            "Exodia the Forbidden One",
+            "Flame Swordsman",
+            "Celtic Guardian",
+            "Dark Hole",
+            "Raigeki",
+            "Trap Hole",
+            "Polymerization",
+            "Mystical Elf",
+            "Curse of Dragon",
+            "Swords of Revealing Light",
+            "Man-Eater Bug",
+            "Charubin the Fire Knight",
+            "Darkfire Dragon",
+            "Fusionist",
+            "Aqua Madoor",
+            "Flame Ghost",
+            "Dragon Capture Jar",
+            "Fissure",
+            "Two-Pronged Attack",
+            "Gravedigger Ghoul",
+            "Karbonala Warrior",
+            "Giant Soldier of Stone",
+            "Reaper of the Cards",
+            "Spirit of the Harp",
+            "Dragoness the Wicked Knight",
+            "Stop Defense",
+            "Goblin's Secret Remedy",
+            "Final Flame",
+            "Metal Dragon",
+            "Armed Ninja",
+            "Flower Wolf",
+            "Hane-Hane",
+            "Pot of Greed"
         ]
     },
-    "tin-2004BladeKnight": {
-        "type": "booster",
-        "name": "Ancient Sanctuary",
-        "icon": "AST.webp",
-        "shows": 1,
+    "winLOB-Ultra":{
         "card":[
-            "Red-Eyes Black Metal Dragon",
-            "Harpie's Pet Dragon",
-            "Metalmorph"
+            "Blue-Eyes White Dragon",
+            "Dark Magician",
+            "Gaia The Fierce Knight",
+            "Red-Eyes Black Dragon",
+            "Monster Reborn",
+            "Right Leg of the Forbidden One",
+            "Left Leg of the Forbidden One",
+            "Right Arm of the Forbidden One",
+            "Left Arm of the Forbidden One",
+            "Exodia the Forbidden One",
+            "Flame Swordsman",
+            "Celtic Guardian",
+            "Dark Hole",
+            "Raigeki",
+            "Trap Hole",
+            "Polymerization",
+            "Mystical Elf",
+            "Curse of Dragon",
+            "Swords of Revealing Light",
+            "Man-Eater Bug",
+            "Charubin the Fire Knight",
+            "Darkfire Dragon",
+            "Fusionist",
+            "Aqua Madoor",
+            "Flame Ghost",
+            "Dragon Capture Jar",
+            "Fissure",
+            "Two-Pronged Attack",
+            "Gravedigger Ghoul",
+            "Karbonala Warrior",
+            "Giant Soldier of Stone",
+            "Reaper of the Cards",
+            "Spirit of the Harp",
+            "Dragoness the Wicked Knight",
+            "Stop Defense",
+            "Goblin's Secret Remedy",
+            "Final Flame",
+            "Metal Dragon",
+            "Armed Ninja",
+            "Flower Wolf",
+            "Hane-Hane",
+            "Pot of Greed"
         ]
     },
-    "tin-2004CommandKnight": {
-        "type": "booster",
-        "name": "Ancient Sanctuary",
-        "icon": "AST.webp",
-        "shows": 1,
+    "winLOB-Super":{
         "card":[
-            "Red-Eyes Black Metal Dragon",
-            "Harpie's Pet Dragon",
-            "Metalmorph"
+            "Flame Swordsman",
+            "Celtic Guardian",
+            "Dark Hole",
+            "Raigeki",
+            "Trap Hole",
+            "Polymerization",
+            "Mystical Elf",
+            "Curse of Dragon",
+            "Swords of Revealing Light",
+            "Man-Eater Bug",
+            "Charubin the Fire Knight",
+            "Darkfire Dragon",
+            "Fusionist",
+            "Aqua Madoor",
+            "Flame Ghost",
+            "Dragon Capture Jar",
+            "Fissure",
+            "Two-Pronged Attack",
+            "Gravedigger Ghoul",
+            "Karbonala Warrior",
+            "Giant Soldier of Stone",
+            "Reaper of the Cards",
+            "Spirit of the Harp",
+            "Dragoness the Wicked Knight",
+            "Stop Defense",
+            "Goblin's Secret Remedy",
+            "Final Flame",
+            "Metal Dragon",
+            "Armed Ninja",
+            "Flower Wolf",
+            "Hane-Hane",
+            "Pot of Greed"
         ]
     },
-    "tin-2004SwiftGaiaTheFierceKnight": {
-        "type": "booster",
-        "name": "Ancient Sanctuary",
-        "icon": "AST.webp",
-        "shows": 1,
+    "winLOB-Rare":{
         "card":[
-            "Red-Eyes Black Metal Dragon",
-            "Harpie's Pet Dragon",
-            "Metalmorph"
-        ]
-    },
-    "tin-2004InsectQueen": {
-        "type": "booster",
-        "name": "Ancient Sanctuary",
-        "icon": "AST.webp",
-        "shows": 1,
-        "card":[
-            "Red-Eyes Black Metal Dragon",
-            "Harpie's Pet Dragon",
-            "Metalmorph"
-        ]
-    },
-    "tin-2004ObnoxiousCelticGuard": {
-        "type": "booster",
-        "name": "Ancient Sanctuary",
-        "icon": "AST.webp",
-        "shows": 1,
-        "card":[
-            "Red-Eyes Black Metal Dragon",
-            "Harpie's Pet Dragon",
-            "Metalmorph"
+            "Charubin the Fire Knight",
+            "Darkfire Dragon",
+            "Fusionist",
+            "Aqua Madoor",
+            "Flame Ghost",
+            "Dragon Capture Jar",
+            "Fissure",
+            "Two-Pronged Attack",
+            "Gravedigger Ghoul",
+            "Karbonala Warrior",
+            "Giant Soldier of Stone",
+            "Reaper of the Cards",
+            "Spirit of the Harp",
+            "Dragoness the Wicked Knight",
+            "Stop Defense",
+            "Goblin's Secret Remedy",
+            "Final Flame",
+            "Metal Dragon",
+            "Armed Ninja",
+            "Flower Wolf",
+            "Hane-Hane",
+            "Pot of Greed"
         ]
     }
 }

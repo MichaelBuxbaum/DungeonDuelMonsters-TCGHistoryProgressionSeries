@@ -3,6 +3,7 @@
     "Duelingbook_Avatar": "Dark_Magician.webp",
     "deckBuilderImage": "Early_Days_Collection.webp",
     "cardFrame": "series-3",
+    "custom": true,
     "rarity": {
         "Rare": [
             "Charubin the Fire Knight",
@@ -27,6 +28,17 @@
             "Flower Wolf",
             "Hane-Hane",
             "Pot of Greed",
+
+            "Elf's Light",
+            "Steel Shell",
+            "Blue Medicine",
+            "Raimei",
+            "Burning Spear",
+            "Gust Fan",
+            "Tiger Axe",
+            "Goddess with the Third Eye",
+            "Beastking of the Swamps",
+            "Versago the Destroyer",
 
             "Mask of Darkness",
             "White Magical Hat",
@@ -225,6 +237,16 @@
             "Swords of Revealing Light",
             "Man-Eater Bug",
 
+            "Soul Exchange",
+            "Card Destruction",
+            "Lord of D.",
+            "The Flute of Summoning Dragon",
+
+            "Axe Raider",
+            "Kwagar Hercules",
+            "Patrol Robo",
+            "White Hole",
+
             "Harpie Lady Sisters",
             "Sanga of the Thunder",
             "Kazejin",
@@ -336,8 +358,8 @@
             "Des Counterblow"
         ],
         "Ultra": [
-            "Blue-Eyes White Dragon",
-            "Dark Magician",
+            "Blue-Eyes White Dragon (LOB)",
+            "Dark Magician (LOB)",
             "Gaia The Fierce Knight",
             "Red-Eyes Black Dragon",
             "Monster Reborn",
@@ -347,9 +369,14 @@
             "Left Arm of the Forbidden One",
             "Exodia the Forbidden One",
 
-            "Summoned Skull",
+            "Blue-Eyes White Dragon (SDK)",
+            "Dark Magician (SDY)",
+
+            "Mechanicalchaser",
+
+            "Summoned Skull (Ultra)",
             "Black Skull Dragon",
-            "Change of Heart",
+            "Change of Heart (Ultra)",
             "Time Wizard",
             "Barrel Dragon",
             "Solemn Judgment",
@@ -490,6 +517,19 @@
 
             "The End of Anubis",
             "Mazera DeVille"
+        ],
+        "Prismatic": [
+            "Blue-Eyes White Dragon",
+            "Dark Magician",
+            "Exodia the Forbidden One (DDS)",
+            
+            "Seiyaryu",
+            "Acid Trap Hole",
+            "Salamandra",
+
+            "Red-Eyes Black Metal Dragon",
+            "Harpie's Pet Dragon",
+            "Metalmorph"
         ]
     }
 }

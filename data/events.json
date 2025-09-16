@@ -3,1777 +3,1553 @@
         "START": { 
             "micon": "none",
             "image": "Domino_City.webp",
+            "mdata": [
+                ["text: firstEpisode"]
+            ]  ,
+            "vars": {
+                "money": 0,
+                "count": 0
+            }
+        },
+        "03-2002_Week-2":{
+            "micon": "cityscape.webp",
+            "image": "town-background_03-2002_2.webp",
+            "mdata": [ 
+                ["text: cardstoreIntro"]
+            ]
+        },
+        "cardStore_03-2002_Week-2": {
+            "micon": "gamestore.webp",
+            "mdesc": "Local Game Store",
+            "image": "cardstore-background_03-2002_2.webp",
             "audio": "none",
             "mdata": [
-                ["text: intro"],
-                ["pack: lob1"],
-                ["duel: lob"]
-            ]  
-        },
-        "yugiKaibaFormat":{
-            "image": "none",
-            "audio": "none",
-            "mdata": [
-                ["pack: lob1"],
-                ["duel: yugikaiba"]
-            ]
-        },
-        "critterFormat": {
-            "image": "none",
-            "audio": "none",
-            "mdata": [
-                ["pack: mrd1"],
-                ["duel: mrd"]
-            ]
-        },
-        "androidFormat":{
-            "image": "none",
-            "audio": "none",
-            "mdata":[
-                ["pack: srl1"],
-                ["duel: srl"],
-                ["pack: psv1"],
-                ["duel: psv"],
-                ["pack: lon1"],
-                ["duel: lon"]
-            ]
-        },
-        "yataFormat":{
-            "image": "none",
-            "audio": "none",
-            "mdata":[
-                ["pack: lod1"],
-                ["duel: lod"]
-            ]
-        },
-        "vampireFormat":{
-            "image": "none",
-            "audio": "none",
-            "mdata":[
-                ["pack: mfc1"],
-                ["duel: mfc"],
-                ["pack: dcr1"],
-                ["duel: dcr"]
-            ]
-        },
-        "chaosFormat":{
-            "image": "none",
-            "audio": "none",
-            "mdata":[
-                ["pack: ioc1"],
-                ["duel: ioc"]
-            ]
-        },
-        "warriorFormat":{
-            "image": "none",
-            "audio": "none",
-            "mdata":[]
-        },
-        "pgd": {
-            "micon": "none",
-            "image": "pgd.webp",
-            "audio": "none",
-            "mdata": [
-                ["pack: pgd1"],
-                ["duel: pgd"]
-            ]
-        },
-        "ast": {
-            "micon": "none",
-            "image": "ast.webp",
-            "audio": "none",
-            "mdata": [
-                ["pack: ast1"],
-                ["duel: ast"]
+                ["gate: buyLOBBox", "void: atm"],
+                ["text: firstDuel", "void: resetCardStore_03-2002-2"],
+                ["text: 02-2002-2_end"]
             ]
         }
     },
     "text": {
-        "intro": {
-            "micon": "Yusei.webp",
-            "mdesc": "???",
-            "image": "Synchro_Summon.webp",
+        "firstEpisode": {
+            "micon": "tv.webp",
+            "mdesc": "Watch the first episode of Yu-Gi-Oh!",
+            "image": "MillenniumPuzzleHeiroglyphs.webp",
+            "audio": "I'mBack(Instrumental).mp3",
             "parts": [
-                    {"type": "bust", "content": "Yusei.webp"},
+                    {"type": "bust", "content": "Mickey-Laugh.webp"},
                     {"type": "text", "content": "Woah..."},
-                    {"type": "text", "content": "Who are you? How did you get here?"},
-                    {"type": "text", "content": "I guess it doesn't matter now."},
-                    {"type": "text", "content": "Sorry for the late introduction, I am Yusei Fudo."},
-                    {"type": "name", "content": "Yusei Fudo"},
-                    {"type": "text", "content": "I'm a Time Runner. Our job is to patrol all of Duel Monsters history and investigate anomolous spikes in Duel Energy."},
-                    {"type": "text", "content": "I was investigating such a spike when I found you."},
-                    {"type": "text", "content": "I don't know how you are related to all of this, but I can tell you aren't the enemy."},
-                    {"type": "text", "content": "Look at this."},
-                    {"type": "text", "content": "This is a Time Runner."},
-                    {"type": "text", "content": "You can think of it as a time machine fueled by Duel Energy."},
-                    {"type": "text", "content": "Normally, there would be enough ambient Duel Energy to maneuver history freely. However since you appeared, the Duel Energy seems to have dispersed."},
-                    {"type": "text", "content": "If we want to return to the future, we will have to generate some Duel Energy by dueling."},
-                    {"type": "text", "content": "Oh yeah, I forgot to mention, we are currently in the distant past."},
-                    {"type": "text", "content": "The year is currently 1996, when Duel Monsters first launched as a modern card game."},
-                    {"type": "text", "content": "In fact, I believe this Old Dominoe City, meaning we should be able to meet some friendly faces."},
-                    {"type": "text", "content": "Follow me. The first thing we need to do is build you a deck so that you can help generate Duel Energy."}
-            ]
+                    {"type": "text", "content": "That was awesome!!!"},
+                    {"type": "text", "content": "The intro theme, the Blue-Eyes White Dragon, all of it! It was so awesome!"},
+                    {"type": "text", "content": "YU-GI-OH!!!"},
+                    {"type": "bust", "content": "Mickey-Smile.webp"},
+                    {"type": "text", "content": "..."},
+                    {"type": "text", "content": "Haha! Sorry! But wasn't Yugi's transformation so cool?!?!?!"},
+                    {"type": "text", "content": "Kaiba totally got what he deserved!"},
+                    {"type": "text", "content": "And did you see that Pegasus guy's eye at the end? It was the same as what shows up on transformed Yugi's forehead!"},
+                    {"type": "text", "content": "Oh man I can't wait for the next episode!"},
+                    {"type": "text", "content": "..."},
+                    {"type": "text", "content": "Man I wish Yu-Gi-Oh! was real! Those monsters are sick!"},
+                    {"type": "text", "content": "..."},
+                    {"type": "text", "content": "Oh, get this. So my dad said a friend of his works for a company in Japan called Konami, and he heard that Yu-Gi-Oh actually has a real Yu-Gi-Oh! card game!"},
+                    {"type": "text", "content": "And get this, he said its going to be coming to the U.S. as well!"},
+                    {"type": "bust", "content": "Mickey-Grimmace.webp"},
+                    {"type": "text", "content": "I have an idea! Let's become the best duelists in the world once we get actual cards to play with!"},
+                    {"type": "text", "content": "If we start saving up our allowances now, we will be able to get as many Yu-Gi-Oh! cards as we want!"},
+                    {"type": "text", "content": "What do you say? You wanna be rivals?"},
+                    {"type": "text", "content": "..."},
+                    {"type": "bust", "content": "Mickey-Blush.webp"},
+                    {"type": "text", "content": "You will!? Awesome! I can't wait. In the meantime, let's make sure we don't miss a single episode so we know all the best strategies when the cards come out!"},
+                    {"type": "bust", "content": "YuGiOh_Vol1_DVD.webp"},
+                    {"type": "text", "content": "The \"Yu-Gi-Oh! Duel Monsters\" anime first aired in the United States on September 29, 2001 on the Kids' WB Television network, translated to English by 4Kids Entertainment. The animated series would see massive success with a young American audience and air weekly until its conclusion on June 10, 2006."}
+            ],
+            "chain":"text: yugiKaibaFormat"
+        },
+        "yugiKaibaFormat": {
+            "image": "MillenniumPuzzleHeiroglyphs.webp",
+            "parts": [
+                    {"type": "bust", "content": "LOB.webp"},
+                    {"type": "text", "content": "The success of the animated series would lead to a number of sequel animated series and merchandise releases, including the Yu-Gi-Oh! Trading Card Game."},
+                    {"type": "text", "content": "The Yu-Gi-oh! Trading Card Game (TCG) first released to the United States with the Legend of Blue Eyes White Dragon booster pack product on March 8, 2002."},
+                    {"type": "bust", "content": "SDYK.webp"},
+                    {"type": "text", "content": "The Legend of Blue Eyes White Dragon would be supplemented by the Yugi and Kaiba starter decks only a few weeks later on March 29, 2002."},
+                    {"type": "bust", "content": "gameDDSFM.webp"},
+                    {"type": "text", "content": "Additionally, between these two foundational products, two video games would release including promotional cards."},
+                    {"type": "bust", "content": "YugiKaibaFormat.webp"},
+                    {"type": "text", "content": "Collectively, the cardpool produced by these product releases established the first commonly recognized era of competitive Yu-G-Oh! TCG play - appropriately named the Yugi-Kaiba Format."}
+            ],
+            "chain":"text: preStore"
+        },
+        "preStore": {
+            "image": "town-background.webp",
+            "parts": [
+                    {"type": "bust", "content": "Mickey-Laugh.webp"},
+                    {"type": "text", "content": "C'mon, c'mon! The game shop is supposed to have the Yu-Gi-Oh! cards today!"}
+            ],
+            "chain":"area: 03-2002_Week-2"
+        },
+        "cardstoreIntro": {
+            "micon": "gamestore.webp",
+            "mdesc": "Visit the Local Game Store (LGS)",
+            "image": "CardStore.webp",
+            "parts": [
+                    {"type": "bust", "content": "SolomonMuto.webp"},
+                    {"type": "text", "content": "Ho-oh!"},
+                    {"type": "text", "content": "Welcome to the Local Game Store!"},
+                    {"type": "text", "content": "I'm the owner, Solomon. But you can just call me Gramps."},
+                    {"type": "name", "content": "Solomon Muto (Gramps)"},
+                    {"type": "text", "content": "Here we supply different tabletop game products, including board games, role playing games, and trading card games."},
+                    {"type": "text", "content": "So, what brings you in today?"},
+                    {"type": "bust", "content": "Mickey-Laugh.webp"},
+                    {"type": "text", "content": "We want to buy some Yu-Gi-Oh! cards!"},
+                    {"type": "bust", "content": "SolomonMuto.webp"},
+                    {"type": "text", "content": "Ho-oh! Yu-Gi-Oh! cards eh? Well, you're in luck, we just started carrying them."},
+                    {"type": "text", "content": "(Man, these things have been flying off the shelves.)"},
+                    {"type": "text", "content": "Well, if you want to be Yu-Gi-Oh! players, then I should let you know..."},
+                    {"type": "text", "content": "We just started hosting local game nights for Yu-Gi-Oh! Once a week, you can duel against your fellow local duelists. Participating will earn you an exclusive Tournament Pack, but play well and you may even earn greater prizes!"},
+                    {"type": "text", "content": "I'd be happy to waive your entry fee as its our first night. It won't be free next time though. We have to pay for the prizes somehow."},
+                    {"type": "text", "content": "Ho-oh!"},
+                    {"type": "text", "content": "You're in no rush, so go ahead and pick out the packs you want to buy and build your decks for tonight!"}
+            ],
+            "chain":"text: allowance"
+        },
+        "allowance": {
+            "image": "CardStore.webp",
+            "parts": [
+                    {"type": "bust", "content": "wallet.webp"},
+                    {"type": "text", "content": "To simulate growing up with Yu-Gi-Oh! and game-ify the experience, you will be given an allowance each month. You can exchange money acquired through your allowance to purchase Yu-Gi-Oh! TCG products each month."},
+                    {"type": "text", "content": "To start you off, here is $120 (USD). You can exchange this for a whole booster box. Use that to build your first deck!"}
+            ],
+            "chain":"pool: allowance-1"
+        },
+        "firstDuel":{
+            "micon": "dueldisk.webp",
+            "mdesc": "It's time to duel!",
+            "image": "MillenniumPuzzleHeiroglyphs.webp", 
+            "parts":[
+                {"type": "bust", "content": "BanditKeith-Smile.webp"},
+                {"type": "text", "content": "Hey, it looks like our first game will be against eachother!"},
+                {"type": "text", "content": "Don't think I'm taking it easy on you! I'm gonna win this!"}
+            ],
+            "chain": "duel: lob"
+        },   
+        "02-2002-2_end":{
+            "mdesc": "End the week",
+            "micon": "moon.webp",
+            "parts":[
+                {"type": "text", "content":"After your first night at the LGS, you and your friend retire and conclude your first week as duelists."},
+                {"type": "text", "content":"Be on the look out for new products each week."},
+                {"type": "text", "content":"Also, don't neglect to visit other locations around town. Each location will have a combination of random and static events to engage with!"},
+                {"type": "text", "content":"Going forward, you will receive an allowance of $30 each week. Spend it immediately to bolster your collection or save it up for future opportunities - the choice is yours."},
+                {"type": "text", "content":"Keep in mind the hearts at the bottom right of the screen - those are your \"lives.\""},
+                {"type": "text", "content":"You will lose a life every time you lose to your rival."},
+                {"type": "text", "content":"If you run out of lives - it's Game Over; you retire as a duelist."},
+                {"type": "text", "content":"With that said, Good Luck and Have Fun as you progress through the history of the Yu-Gi-Oh! TCG!"}
+            ],
+            "chain":"area: 03-2002_Week-3"
+        },
+        "tournamentPack1":{
+            "parts": [
+                {"type": "bust", "content": "TP1-2.webp"},
+                {"type": "text", "content": "You get to open 3 tournament packs!"}
+            ],
+            "chain": "pack: tp1-1"
         },
         "credits":{
             "parts": [
                 {"text": "Images"},
-                {"text": "Icon - Starter Deck Yugi (Product Image): tcgplayer.com https://tcgplayer-cdn.tcgplayer.com/product/153326_in_1000x1000.jpg"},
-                {"text": "Icon - Starter Deck Kaiba (Product Image): tcgplayer.com https://tcgplayer-cdn.tcgplayer.com/product/153329_in_1000x1000.jpg"},
-                {"text": "Icon - Legend of Blue Eyes Pack (Product Image): yugioh.fandom.com https://static.wikia.nocookie.net/yugioh/images/b/bc/LOB-BoosterEN.png/revision/latest?cb=20120723012728"},
-                {"text": "Icon - Magic Ruler Pack (Product Image): yugipedia.com https://ms.yugipedia.com//thumb/e/e4/MRL-BoosterNA.png/257px-MRL-BoosterNA.png"}
+                {"text": "Background - Town: artstation.com https://cdna.artstation.com/p/assets/images/images/036/040/926/large/anastasia-ermakova-map-daylight.jpg?1616580459"},
+                {"text": "Background - Yugioh Duel Monsters Season 1 (Yugi Kaiba Format area background): primevideo.com https://m.media-amazon.com/images/S/pv-target-images/9e8106bd486437958406bebbb5dcb97a8ee576e2f51934a45b3322e218b4a6b8._SX1080_FMjpg_.jpg"},
+                {"text": "Icon/Bust - Wallet flaticon.com https://www.flaticon.com/free-icon/wallet_6020687"},
+                {"text": "Icon - School flaticon.com https://www.flaticon.com/free-icons/school School icons created by Rasama studio - Flaticon"},
+                {"text": "Icon - TV flaticon.com https://www.flaticon.com/free-icons/retro Retro icons created by Freepik - Flaticon"},
+                {"text": "Icon/Bust - Legend of Blue Eyes Pack (Product Image): yugioh.fandom.com https://static.wikia.nocookie.net/yugioh/images/b/bc/LOB-BoosterEN.png/revision/latest?cb=20120723012728"},
+                {"text": "Icon - Video Game: freepik.com https://www.freepik.com/icon/video-games_5790421"},
+                {"text": "Icon/Bust - Starter Deck Yugi (Product Image): tcgplayer.com https://tcgplayer-cdn.tcgplayer.com/product/153326_in_1000x1000.jpg"},
+                {"text": "Icon/Bust - Starter Deck Kaiba (Product Image): tcgplayer.com https://tcgplayer-cdn.tcgplayer.com/product/153329_in_1000x1000.jpg"},
+                {"text": "Icon - Banlist: \"BanList\" mod by \"hiccup\" for Mage Arena on thunderstore.io https://gcdn.thunderstore.io/live/repository/icons/hiccup-BanList-1.0.5.png.128x128_q95.jpg"},
+                {"text": "Icon - Duel Disk: reddit.com r/yugioh u/Movie_Advance_101 https://preview.redd.it/ed3c166yk0691.png?width=640&crop=smart&auto=webp&s=e468a753149fd5c7d78cf57e571a8f65891bd0ef"},
+                {"text": "Icon - Checkmark: https://commons.wikimedia.org https://commons.wikimedia.org/wiki/File:Eo_circle_green_checkmark.svg"},
+
+                {"text": "Background - Millennium Puzzle Heiroglyphs: x.com @yugioh https://pbs.twimg.com/media/EWITy1SWAAAJCKF?format=jpg&name=medium"},
+                {"text": "Bust - Yu-Gi-Oh! - Vol. 1: the Heart of the Cards (Product Image): amazon.com https://m.media-amazon.com/images/I/51uoWNnbTqL.jpg"},              
+                {"text": "Bust - Dark Duel Stories Game (Product Imaage): yugioh.fandom.com https://static.wikia.nocookie.net/yugioh/images/3/3f/DDS-VideoGameEN.jpg/revision/latest?cb=20090702044338"},
+                {"text": "Bust - Forbidden Memories Game (Product Image): yugipedia.com https://ms.yugipedia.com//8/88/FMR-VideoGame-NA.jpg"},
+
+                {"text": "Card Art - $1 Bill: pbs.org https://d3i6fh83elv35t.cloudfront.net/static/2025/04/2025-03-19T172553Z_1122792431_RC2HGDAE1H1O_RTRMADP_3_GLOBAL-MARKETS-1200x800.jpg"},
+
+                {"text": "Background - Legend of Blue-Eyes White Dragon: reddit.com r/yugioh u/Crimson_Dragon01 https://preview.redd.it/legend-of-blue-eyes-white-dragon-booster-box-inspired-pc-v0-zuhy2e6qfgia1.jpg?width=1080&crop=smart&auto=webp&s=59921aaa24af51c9bf98dc6df809c2de396d00c3"},
+
+                {"text": "Bust - Blue-Eyes White Dragon (Card Image) - https://ygoprodeck.com https://images.ygoprodeck.com/images/cards/89631139.jpg"},
+                {"text": "Bust - Dark Magician (Card Image) - https://ygoprodeck.com https://images.ygoprodeck.com/images/cards/46986414.jpg"},
+                {"text": "Bust - Exodia the Forbidden One (Card Image) - https://ygoprodeck.com https://images.ygoprodeck.com/images/cards/33396948.jpg"},
+                {"text": "Bust - Seiyaryu (Card Image) - https://ygoprodeck.com https://images.ygoprodeck.com/images/cards/6740720.jpg"},
+                {"text": "Bust - Acid Trap Hole (Card Image) - https://ygoprodeck.com https://images.ygoprodeck.com/images/cards/33396948.jpg"},
+                {"text": "Bust - Salamandra (Card Image) - https://ygoprodeck.com https://images.ygoprodeck.com/images/cards/32268901.jpg"},
+                
+                {"text": "Bust - Red-Eyes Black Metal Dragon (Card Image) - https://ygoprodeck.com https://images.ygoprodeck.com/images/cards/64335804.jpg"},
+                {"text": "Bust - Harpie's Pet Dragon (Card Image) - https://ygoprodeck.com https://images.ygoprodeck.com/images/cards/52040216.jpg"},
+                {"text": "Bust - Metalmorph (Card Image) - https://ygoprodeck.com https://images.ygoprodeck.com/images/cards/68540058.jpg"},
+
+                {"text": "Bust - Soul Exchange (Card Image) - https://ygoprodeck.com https://images.ygoprodeck.com/images/cards/68005187.jpg"},
+                {"text": "Bust - Card Destruction (Card Image) - https://ygoprodeck.com https://images.ygoprodeck.com/images/cards/72892473.jpg"},
+                {"text": "Bust - Change of Heart (Card Image) - https://ygoprodeck.com https://images.ygoprodeck.com/images/cards/4031928.jpg"},
+                {"text": "Bust - Summoned Skull (Card Image) - https://ygoprodeck.com https://images.ygoprodeck.com/images/cards/70781052.jpg"},
+
+                {"text": "Bust - Lord of D. (Card Image) - https://ygoprodeck.com https://images.ygoprodeck.com/images/cards/17985575.jpg"},
+                {"text": "Bust - The Flute of Summoning Dragon (Card Image) - https://ygoprodeck.com https://images.ygoprodeck.com/images/cards/43973174.jpg"},
+                {"text": "Bust - La Jinn the Mystical Genie of the Lamp (Card Image) - https://ygoprodeck.com https://images.ygoprodeck.com/images/cards/97590747.jpg"},
+                {"text": "Bust - Battle Ox (Card Image) - https://ygoprodeck.com https://images.ygoprodeck.com/images/cards/5053103.jpg"},
+                
+                {"text": "Icon - Sangan (Card Art): ygoprodeck.com https://images.ygoprodeck.com/images/cards_cropped/26202165.jpg"},
+                {"text": "Icon - Metal Raiders Pack (Product Image): mtgmexico.com https://www.mtgmexico.com/cdn/shop/products/943178008ab7b41f28f039a158c623a2f30e5c62_0c29f94b-fafd-4903-ad2e-db1759452c77_800x.jpg?v=1693964252"},
+                {"text": "Icon - Magic Ruler Pack (Product Image): yugipedia.com https://ms.yugipedia.com//thumb/e/e4/MRL-BoosterNA.png/257px-MRL-BoosterNA.png"},
+                
+                {"text": "Videos"},
+                {"text": "Kids' WB Big Premiere promo (2001): youtube.com @gooberloll https://www.youtube.com/watch?v=WQs_OUCexnk"},
+                {"text": "Yu-Gi-Oh! Duel Monsters Season 1, Version 1 Opening Theme: youtube.com @yugioh https://www.youtube.com/watch?v=Cb3ggoyqXmU"},
+
+                {"text": "Audio"},
+                {"text": "I'm Back (Instrumental) - Yu-Gi-Oh! Music To Duel By (CD)"},
+                {"text": "Duel Madness (Instrumental) - Yu-Gi-Oh!: The Unreleased Score by 4Kids: youtube.com @maxramos7309 https://www.youtube.com/watch?v=w8lqgPOEIgE&list=RDw8lqgPOEIgE&start_radio=1"},
+                {"text": "Dark Duel Stories OST - Title Screen: youtube.com @Tobbeh99 https://www.youtube.com/watch?v=Bn6rqO0_uA4&list=PLOfDMgajkNnrL2019j2GgPucbPGnJJKIs"},
+                {"text": "Forbidden Memories OST - Main Menu: youtube.com @KabutoZombie https://youtu.be/yio20rSIZKo?list=PLWYRo9U3jx23CNRuXHGp_zsUh6SBNHyQW"}
+            ]
+        }
+    },
+    "pack": {
+        "lobPack": {
+            "title": "Opening Legend of Blue Eyes White Dragon Booster Pack",
+            "image": "lob_background.webp",
+            "composes": ["lob"]
+        },
+        "lobBox": {
+            "title": "Opening Legend of Blue Eyes White Dragon Booster Pack <<count>>",
+            "image": "lob_background.webp",
+            "composes": ["lob"],
+            "vars": { "count": "<<count>>.add(1)" },
+            "split": {
+                "<<count>> < 24": "pack: lobBox",
+                "<<count>> == 24": "void: resetCount"
+            }
+        },
+
+        "mrdPack": {
+            "title": "Opening Metal Raiders Pack",
+            "image": "mrd_background.webp",
+            "composes": ["mrd"]
+        },
+        "mrdBox": {
+            "title": "Opening Metal Raiders Booster Pack <<count>>",
+            "image": "mrd_background.webp",
+            "composes": ["mrd"],
+            "vars": { "count": "<<count>>.add(1)" },
+            "split": {
+                "<<count>> < 24": "pack: mrdBox",
+                "<<count>> == 24": "void: resetCount"
+            }
+        },
+
+        "mrlPack": {
+            "title": "Opening Magic Ruler Booster Pack",
+            "image": "mrl_background.webp",
+            "composes": ["mrl"]
+        },
+        "mrlBox": {
+            "title": "Opening Magic Ruler Booster Pack <<count>>",
+            "image": "mrl_background.webp",
+            "composes": ["mrl"],
+            "vars": { "count": "<<count>>.add(1)" },
+            "split": {
+                "<<count>> < 24": "pack: mrlBox",
+                "<<count>> == 24": "void: resetCount"
+            }
+        },
+
+        "psvPack": {
+            "title": "Opening Pharaoh's Servant Booster Pack",
+            "image": "psv_background.webp",
+            "composes": ["psv"]
+        },
+        "psvBox": {
+            "title": "Opening Pharaoh's Servant Booster Pack <<count>>",
+            "image": "psv_background.webp",
+            "composes": ["psv"],
+            "vars": { "count": "<<count>>.add(1)" },
+            "split": {
+                "<<count>> < 24": "pack: psvBox",
+                "<<count>> == 24": "void: resetCount"
+            }
+        },
+
+        "lonPack": {
+            "title": "Opening Labyrinth of Nightmare Booster Pack",
+            "image": "lob_background.webp",
+            "composes": ["lob"]
+        },
+        "lonBox": {
+            "title": "Opening Labyrinth of Nightmare Booster Pack <<count>>",
+            "image": "lob_background.webp",
+            "composes": ["lob"],
+            "vars": { "count": "<<count>>.add(1)" },
+            "split": {
+                "<<count>> < 24": "pack: lobBox",
+                "<<count>> == 24": "void: resetCount"
+            }
+        },
+
+        "lodPack": {
+            "title": "Opening Legacy of Darkness Booster Pack",
+            "image": "lod_background.webp",
+            "composes": ["lod"]
+        },
+        "lodBox": {
+            "title": "Opening Legacy of Darkness Booster Pack <<count>>",
+            "image": "lod_background.webp",
+            "composes": ["lod"],
+            "vars": { "count": "<<count>>.add(1)" },
+            "split": {
+                "<<count>> < 24": "pack: lodBox",
+                "<<count>> == 24": "void: resetCount"
+            }
+        },
+
+        "pgdPack": {
+            "title": "Opening Pharaonic Guardian Booster Pack",
+            "image": "pgd_background.webp",
+            "composes": ["pgd"]
+        },
+        "pgdBox": {
+            "title": "Opening Pharaonic Guardian Booster Pack <<count>>",
+            "image": "pgd_background.webp",
+            "composes": ["pgd"],
+            "vars": { "count": "<<count>>.add(1)" },
+            "split": {
+                "<<count>> < 24": "pack: pgdBox",
+                "<<count>> == 24": "void: resetCount"
+            }
+        },
+
+        "mfcPack": {
+            "title": "Opening Magician's Force Booster Pack",
+            "image": "mfc_background.webp",
+            "composes": ["mfc"]
+        },
+        "mfcBox": {
+            "title": "Opening Magician's Force Booster Pack <<count>>",
+            "image": "mfc_background.webp",
+            "composes": ["mfc"],
+            "vars": { "count": "<<count>>.add(1)" },
+            "split": {
+                "<<count>> < 24": "pack: mfcBox",
+                "<<count>> == 24": "void: resetCount"
+            }
+        },
+
+        "dcrPack": {
+            "title": "Opening Dark Crisis Booster Pack",
+            "image": "dcr_background.webp",
+            "composes": ["dcr"]
+        },
+        "dcrBox": {
+            "title": "Opening Dark Crisis Booster Pack <<count>>",
+            "image": "dcr_background.webp",
+            "composes": ["dcr"],
+            "vars": { "count": "<<count>>.add(1)" },
+            "split": {
+                "<<count>> < 24": "pack: dcrBox",
+                "<<count>> == 24": "void: resetCount"
+            }
+        },
+
+        "iocPack": {
+            "title": "Opening Invasion of Chaos Booster Pack",
+            "image": "ioc_background.webp",
+            "composes": ["ioc"]
+        },
+        "iocBox": {
+            "title": "Opening Invasion of Chaos Booster Pack <<count>>",
+            "image": "ioc_background.webp",
+            "composes": ["ioc"],
+            "vars": { "count": "<<count>>.add(1)" },
+            "split": {
+                "<<count>> < 24": "pack: iocBox",
+                "<<count>> == 24": "void: resetCount"
+            }
+        },
+
+        "astPack": {
+            "title": "Opening Ancient Sanctuary Booster Pack",
+            "image": "ast_background.webp",
+            "composes": ["ast"]
+        },
+        "astBox": {
+            "title": "Opening Ancient Sanctuary Booster Pack <<count>>",
+            "image": "ast_background.webp",
+            "composes": ["ast"],
+            "vars": { "count": "<<count>>.add(1)" },
+            "split": {
+                "<<count>> < 24": "pack: astBox",
+                "<<count>> == 24": "void: resetCount"
+            }
+        },
+
+        "sdy": {
+            "title": "Opening Starter Deck Yugi",
+            "image": "lob_background.webp",
+            "composes": ["sdy"]
+        },
+        "sdk": {
+            "title": "Opening Starter Deck Kaiba",
+            "image": "lob_background.webp",
+            "composes": ["sdk"]
+        },
+       
+        "tp1-1": {
+            "title": "Opening Tournament Pack: 1st Season (Pack 1)",
+            "image": "ast_background.webp",
+            "composes": ["tp1"],
+            "chain": "pack: tp1-2"
+        },
+        "tp1-2": {
+            "title": "Opening Tournament Pack: 1st Season (Pack 2)",
+            "image": "ast_background.webp",
+            "composes": ["tp1"],
+            "chain": "pack: tp1-3"
+        },
+        "tp1-3": {
+            "title": "Opening Tournament Pack: 1st Season (Pack 3)",
+            "image": "ast_background.webp",
+            "composes": ["tp1"]
+        }
+    },
+
+    "pool": {
+        "allowance-1": {
+            "mdesc": "Allowance",
+            "micon": "wallet.webp",
+            "list":[
+                "$$$"
+            ],
+            "vars":{
+                "money":120
+            },
+            "chain":"area: cardStore_03-2002_Week-2"
+        },
+        "starterDeckYugi": {
+            "mdesc": "Starter Deck Yugi",
+            "micon": "SDY.webp",
+            "list":[
+                "Dark Magician (SDY)",
+
+                "Soul Exchange",
+                "Card Destruction",
+
+                "Mystical Elf (Common)",
+                "Feral Imp",
+                "Winged Dragon, Guardian of the Fortress #1",
+                "Summoned Skull",
+                "Beaver Warrior",
+                "Gaia The Fierce Knight (Common)",
+                "Curse of Dragon (Common)",
+                "Celtic Guardian (Common)",
+                "Mammoth Graveyard",
+                "Great White",
+                "Silver Fang",
+                "Giant Soldier of Stone (Common)",
+                "Dragon Zombie",
+                "Doma The Angel of Silence",
+                "Ansatsu",
+                "Witty Phantom",
+                "Claw Reacher",
+                "Mystic Clown",
+                "Sword of Dark Destruction",
+                "Book of Secret Arts",
+                "Dark Hole (Common)",
+                "Dian Keto the Cure Master",
+                "Ancient Elf",
+                "Magical Ghost",
+                "Fissure (Common)",
+                "Trap Hole (Common)",
+                "Two-Pronged Attack (Common)",
+                "De-Spell",
+                "Monster Reborn (Common)",
+                "Reinforcements",
+                "Change of Heart",
+                "The Stern Mystic",
+                "Wall of Illusion",
+                "Neo the Magic Swordsman",
+                "Baron of the Fiend Sword",
+                "Man-Eating Treasure Chest",
+                "Sorcerer of the Doomed",
+                "Last Will",
+                "Waboku",
+                "Trap Master",
+                "Dragon Capture Jar (Common)",
+                "Yami",
+                "Man-Eater Bug (Common)",
+                "Reverse Trap",
+                "Remove Trap",
+                "Castle Walls",
+                "Ultimate Offering"
+            ]
+        },
+        "starterDeckKaiba": {
+            "mdesc": "Starter Deck Kaiba",
+            "micon": "SDK.webp",
+            "list": [
+                "Blue-Eyes White Dragon (SDK)",
+
+                "Lord of D.",
+                "The Flute of Summoning Dragon",
+                
+                "Hitotsu-Me Giant",
+                "Ryu-Kishin",
+                "The Wicked Worm Beast",
+                "Battle Ox",
+                "Koumori Dragon",
+                "Judge Man",
+                "Rogue Doll",
+                "Kojikocy",
+                "Uraby",
+                "Gyakutenno Megami",
+                "Mystic Horseman",
+                "Terra the Terrible",
+                "Dark Titan of Terror",
+                "Dark Assailant",
+                "Master & Expert",
+                "Unknown Warrior of Fiend",
+                "Mystic Clown",
+                "Ogre of the Black Shadow",
+                "Dark Energy",
+                "Invigoration",
+                "Dark Hole (Common)",
+                "Ookazi",
+                "Ryu-Kishin Powered",
+                "Swordstalker",
+                "La Jinn the Mystical Genie of the Lamp",
+                "Rude Kaiser",
+                "Destroyer Golem",
+                "Skull Red Bird",
+                "D. Human",
+                "Pale Beast",
+                "Fissure (Common)",
+                "Trap Hole (Common)",
+                "Two-Pronged Attack (Common)",
+                "De-Spell",
+                "Monster Reborn (Common)",
+                "The Inexperienced Spy",
+                "Reinforcements",
+                "Ancient Telescope",
+                "Just Desserts",
+                "Mysterious Puppeteer",
+                "Trap Master",
+                "Sogen",
+                "Hane-Hane (Common)",
+                "Reverse Trap",
+                "Remove Trap",
+                "Castle Walls",
+                "Ultimate Offering"
+            ]
+        },
+        "gameDarkDuelStories1": {
+            "mdesc": "Video Game Promos: Dark Duel Stories (First Set)",
+            "micon": "DarkDuelStories.webp",
+            "list": [
+                "Blue-Eyes White Dragon",
+                "Dark Magician",
+                "Exodia the Forbidden One (DDS)"
+            ]
+        },
+        "gameDarkDuelStories2": {
+            "mdesc": "Video Game Promos: Dark Duel Stories (Second Set)",
+            "micon": "DarkDuelStories.webp",
+            "list": [
+                "Seiyaryu",
+                "Acid Trap Hole",
+                "Salamandra"
+            ]
+        },
+        "gameForbiddenMemories": {
+            "mdesc": "Video Game Promos: Forbidden Memories",
+            "micon": "ForbiddenMemories.webp",
+            "list": [
+                "Red-Eyes Black Metal Dragon",
+                "Harpie's Pet Dragon",
+                "Metalmorph"
+            ]
+        },
+
+        "balanceCheck5":{
+            "list":["$$$"],
+            "split":{ 
+                "<<money>> >= 5": "void: money-5", 
+                "<<money>> < 5":  "void: proceed"
+            }
+        },
+        "balanceCheck10":{
+            "list":["$$$"],
+            "split":{
+                "<<money>> >= 10": "void: money-10",
+                "<<money>> < 10":  "void: proceed"
+            }
+        },
+        "balanceCheck25":{
+            "list":["$$$"],
+            "split":{
+                "<<money>> >= 25": "void: money-25",
+                "<<money>> < 25":  "void: proceed"
+            }
+        },
+        "balanceCheck120":{
+            "list":["$$$"],
+            "split":{
+                "<<money>> >= 120": "void: money-120",
+                "<<money>> < 120":  "void: proceed"
+            }
+        }
+    },
+
+    "gate":{
+        "buyLOBBox":{
+            "mdesc": "Legend of Blue-Eyes White Dragon Booster Box (24 packs): $120",
+            "micon": "LOB-Box.webp",
+            "skippable": true,
+            "tolls":[
+                {
+                    "cost": "$$$",
+                    "copiesNeeded": 1,
+                    "vars":{"purchase": "lobBox"},
+                    "chain": "void: balanceCheck120"
+                }
+            ]
+        },
+        "buyLOBPack":{
+            "mdesc": "Legend of Blue-Eyes White Dragon Booster Pack (9 cards): $5",
+            "micon": "LOB.webp",
+            "skippable": true,
+            "tolls":[
+                {
+                    "cost": "$$$",
+                    "copiesNeeded": 1,
+                    "vars":{"purchase": "lobPack"},
+                    "chain": "void: balanceCheck5"
+                }
+            ]
+        },
+        "buySDY":{
+            "mdesc": "Starter Deck Yugi (50 Cards): $10",
+            "micon": "SDY.webp",
+            "skippable": true,
+            "tolls":[
+                {
+                    "cost": "$$$",
+                    "copiesNeeded": 1,
+                    "vars":{"purchase": "sdy"},
+                    "chain": "void: balanceCheck10"
+                }
+            ]
+        },
+        "buySDK":{
+            "mdesc": "Starter Deck Kaiba (50 cards): $10",
+            "micon": "SDK.webp",
+            "skippable": true,
+            "tolls":[
+                {
+                    "cost": "$$$",
+                    "copiesNeeded": 1,
+                    "vars":{"purchase": "sdk"},
+                    "chain": "void: balanceCheck10"
+                }
+            ]
+        },
+        "buyVGDarkDuelStories1":{
+            "mdesc":"Video Game: Dark Duel Stories (1st Edition) (3 Promo Cards): $25",
+            "micon": "DarkDuelStories.webp",
+            "skippable": true,
+            "tolls":[
+                {
+                    "cost": "$$$",
+                    "copiesNeeded": 1,
+                    "vars":{"purchase": "DarkDuelStories1"},
+                    "chain": "void: balanceCheck25"
+                }
+            ]
+        },
+        "buyVGDarkDuelStories2":{
+            "mdesc": "Video Game: Dark Duel Stories (Unlimited) (3 Promo Cards): $25",
+            "micon": "DarkDuelStories.webp",
+            "skippable": true,
+            "tolls":[
+                {
+                    "cost": "$$$",
+                    "copiesNeeded": 1,
+                    "vars":{"purchase": "DarkDuelStories2"},
+                    "chain": "void: balanceCheck25"
+                }
+            ]
+        },
+        "buyVGForbiddenMemories":{
+            "mdesc": "Video Game: Forbidden Memories (3 Promo Cards): $25",
+            "micon": "ForbiddenMemories.webp",
+            "skippable": true,
+            "tolls":[
+                {
+                    "cost": "$$$",
+                    "copiesNeeded": 1,
+                    "vars":{"purchase": "ForbiddenMemories"},
+                    "chain": "void: balanceCheck25"
+                }
             ]
         }
     },
 
-    "pack": {
-        "lob1": {
-            "title": "Opening Legend of Blue Eyes White Dragon Booster Box Pack 1",
-            "micon": "lob.webp",
-            "iconSize": 200,
-            "mdesc": "Open Legend of Blue Eyes White Dragon Booster Box",
-            "image": "lob_background.webp",
-            "composes": ["lob"],
-            "chain": "pack: lob2"
+    "rand":{
+        "winLOB":["pick: winLOB-Secret","pick: winLOB-Ultra","pick: winLOB-Super","pick: winLOB-Rare"]
+    },
+
+    "void":{
+        "firstBox":{
+            "vars":{"count":0},
+            "chain":"pack: lobBox"
         },
-        "lob2": {
-            "title": "Opening Legend of Blue Eyes White Dragon Booster Box Pack 2",
-            "image": "lob_background.webp",
-            "composes": ["lob"],
-            "chain": "pack: lob3"
-        },
-        "lob3": {
-            "title": "Opening Legend of Blue Eyes White Dragon Booster Box Pack 3",
-            "image": "lob_background.webp",
-            "composes": ["lob"],
-            "chain": "pack: lob4"
-        },
-        "lob4": {
-            "title": "Opening Legend of Blue Eyes White Dragon Booster Box Pack 4",
-            "image": "lob_background.webp",
-            "composes": ["lob"],
-            "chain": "pack: lob5"
-        },
-        "lob5": {
-            "title": "Opening Legend of Blue Eyes White Dragon Booster Box Pack 5",
-            "image": "lob_background.webp",
-            "composes": ["lob"],
-            "chain": "pack: lob6"
-        },
-        "lob6": {
-            "title": "Opening Legend of Blue Eyes White Dragon Booster Box Pack 6",
-            "image": "lob_background.webp",
-            "composes": ["lob"],
-            "chain": "pack: lob7"
-        },
-        "lob7": {
-            "title": "Opening Legend of Blue Eyes White Dragon Booster Box Pack 7",
-            "image": "lob_background.webp",
-            "composes": ["lob"],
-            "chain": "pack: lob8"
-        },
-        "lob8": {
-            "title": "Opening Legend of Blue Eyes White Dragon Booster Box Pack 8",
-            "image": "lob_background.webp",
-            "composes": ["lob"],
-            "chain": "pack: lob9"
-        },
-        "lob9": {
-            "title": "Opening Legend of Blue Eyes White Dragon Booster Box Pack 9",
-            "image": "lob_background.webp",
-            "composes": ["lob"],
-            "chain": "pack: lob10"
-        },
-        "lob10": {
-            "title": "Opening Legend of Blue Eyes White Dragon Booster Box Pack 10",
-            "image": "lob_background.webp",
-            "composes": ["lob"],
-            "chain": "pack: lob11"
-        },
-        "lob11": {
-            "title": "Opening Legend of Blue Eyes White Dragon Booster Box Pack 11",
-            "image": "lob_background.webp",
-            "composes": ["lob"],
-            "chain": "pack: lob12"
-        },
-        "lob12": {
-            "title": "Opening Legend of Blue Eyes White Dragon Booster Box Pack 12",
-            "image": "lob_background.webp",
-            "composes": ["lob"],
-            "chain": "pack: lob13"
-        },
-        "lob13": {
-            "title": "Opening Legend of Blue Eyes White Dragon Booster Box Pack 13",
-            "image": "lob_background.webp",
-            "composes": ["lob"],
-            "chain": "pack: lob14"
-        },
-        "lob14": {
-            "title": "Opening Legend of Blue Eyes White Dragon Booster Box Pack 14",
-            "image": "lob_background.webp",
-            "composes": ["lob"],
-            "chain": "pack: lob15"
-        },
-        "lob15": {
-            "title": "Opening Legend of Blue Eyes White Dragon Booster Box Pack 15",
-            "image": "lob_background.webp",
-            "composes": ["lob"],
-            "chain": "pack: lob16"
-        },
-        "lob16": {
-            "title": "Opening Legend of Blue Eyes White Dragon Booster Box Pack 16",
-            "image": "lob_background.webp",
-            "composes": ["lob"],
-            "chain": "pack: lob17"
-        },
-        "lob17": {
-            "title": "Opening Legend of Blue Eyes White Dragon Booster Box Pack 17",
-            "image": "lob_background.webp",
-            "composes": ["lob"],
-            "chain": "pack: lob18"
-        },
-        "lob18": {
-            "title": "Opening Legend of Blue Eyes White Dragon Booster Box Pack 18",
-            "image": "lob_background.webp",
-            "composes": ["lob"],
-            "chain": "pack: lob19"
-        },
-        "lob19": {
-            "title": "Opening Legend of Blue Eyes White Dragon Booster Box Pack 19",
-            "image": "lob_background.webp",
-            "composes": ["lob"],
-            "chain": "pack: lob20"
-        },
-        "lob20": {
-            "title": "Opening Legend of Blue Eyes White Dragon Booster Box Pack 20",
-            "image": "lob_background.webp",
-            "composes": ["lob"],
-            "chain": "pack: lob21"
-        },
-        "lob21": {
-            "title": "Opening Legend of Blue Eyes White Dragon Booster Box Pack 21",
-            "image": "lob_background.webp",
-            "composes": ["lob"],
-            "chain": "pack: lob22"
-        },
-        "lob22": {
-            "title": "Opening Legend of Blue Eyes White Dragon Booster Box Pack 22",
-            "image": "lob_background.webp",
-            "composes": ["lob"],
-            "chain": "pack: lob23"
-        },
-        "lob23": {
-            "title": "Opening Legend of Blue Eyes White Dragon Booster Box Pack 23",
-            "image": "lob_background.webp",
-            "composes": ["lob"],
-            "chain": "pack: lob24"
-        },
-        "lob24": {
-            "title": "Opening Legend of Blue Eyes White Dragon Booster Box Pack 24",
-            "image": "lob_background.webp",
-            "composes": ["lob"]
+        "resetCount":{
+            "vars":{"count":0}
         },
 
-        "mrd1": {
-            "title": "Opening Metal Raiders Booster Box Pack 1",
-            "mdesc": "Open Metal Raiders Booster Box",
-            "micon": "MRD.webp",
-            "image": "mrd_background.webp",
-            "composes": ["mrd"],
-            "chain": "pack: mrd2"
+        "proceed":{
+            "mdesc": "Proceed",
+            "micon": "checkmark.webp"
         },
-        "mrd2": {
-            "title": "Opening Metal Raiders Booster Box Pack 2",
-            "image": "mrd_background.webp",
-            "composes": ["mrd"],
-            "chain": "pack: mrd3"
-        },
-        "mrd3": {
-            "title": "Opening Metal Raiders Booster Box Pack 3",
-            "image": "mrd_background.webp",
-            "composes": ["mrd"],
-            "chain": "pack: mrd4"
-        },
-        "mrd4": {
-            "title": "Opening Metal Raiders Booster Box Pack 4",
-            "image": "mrd_background.webp",
-            "composes": ["mrd"],
-            "chain": "pack: mrd5"
-        },
-        "mrd5": {
-            "title": "Opening Metal Raiders Booster Box Pack 5",
-            "image": "mrd_background.webp",
-            "composes": ["mrd"],
-            "chain": "pack: mrd6"
-        },
-        "mrd6": {
-            "title": "Opening Metal Raiders Booster Box Pack 6",
-            "image": "mrd_background.webp",
-            "composes": ["mrd"],
-            "chain": "pack: mrd7"
-        },
-        "mrd7": {
-            "title": "Opening Metal Raiders Booster Box Pack 7",
-            "image": "mrd_background.webp",
-            "composes": ["mrd"],
-            "chain": "pack: mrd8"
-        },
-        "mrd8": {
-            "title": "Opening Metal Raiders Booster Box Pack 8",
-            "image": "mrd_background.webp",
-            "composes": ["mrd"],
-            "chain": "pack: mrd9"
-        },
-        "mrd9": {
-            "title": "Opening Metal Raiders Booster Box Pack 9",
-            "image": "mrd_background.webp",
-            "composes": ["mrd"],
-            "chain": "pack: mrd10"
-        },
-        "mrd10": {
-            "title": "Opening Metal Raiders Booster Box Pack 10",
-            "image": "mrd_background.webp",
-            "composes": ["mrd"],
-            "chain": "pack: mrd11"
-        },
-        "mrd11": {
-            "title": "Opening Metal Raiders Booster Box Pack 11",
-            "image": "mrd_background.webp",
-            "composes": ["mrd"],
-            "chain": "pack: mrd12"
-        },
-        "mrd12": {
-            "title": "Opening Metal Raiders Booster Box Pack 12",
-            "image": "mrd_background.webp",
-            "composes": ["mrd"],
-            "chain": "pack: mrd13"
-        },
-        "mrd13": {
-            "title": "Opening Metal Raiders Booster Box Pack 13",
-            "image": "mrd_background.webp",
-            "composes": ["mrd"],
-            "chain": "pack: mrd14"
-        },
-        "mrd14": {
-            "title": "Opening Metal Raiders Booster Box Pack 14",
-            "image": "mrd_background.webp",
-            "composes": ["mrd"],
-            "chain": "pack: mrd15"
-        },
-        "mrd15": {
-            "title": "Opening Metal Raiders Booster Box Pack 15",
-            "image": "mrd_background.webp",
-            "composes": ["mrd"],
-            "chain": "pack: mrd16"
-        },
-        "mrd16": {
-            "title": "Opening Metal Raiders Booster Box Pack 16",
-            "image": "mrd_background.webp",
-            "composes": ["mrd"],
-            "chain": "pack: mrd17"
-        },
-        "mrd17": {
-            "title": "Opening Metal Raiders Booster Box Pack 17",
-            "image": "mrd_background.webp",
-            "composes": ["mrd"],
-            "chain": "pack: mrd18"
-        },
-        "mrd18": {
-            "title": "Opening Metal Raiders Booster Box Pack 18",
-            "image": "mrd_background.webp",
-            "composes": ["mrd"],
-            "chain": "pack: mrd19"
-        },
-        "mrd19": {
-            "title": "Opening Metal Raiders Booster Box Pack 19",
-            "image": "mrd_background.webp",
-            "composes": ["mrd"],
-            "chain": "pack: mrd20"
-        },
-        "mrd20": {
-            "title": "Opening Metal Raiders Booster Box Pack 20",
-            "image": "mrd_background.webp",
-            "composes": ["mrd"],
-            "chain": "pack: mrd21"
-        },
-        "mrd21": {
-            "title": "Opening Metal Raiders Booster Box Pack 21",
-            "image": "mrd_background.webp",
-            "composes": ["mrd"],
-            "chain": "pack: mrd22"
-        },
-        "mrd22": {
-            "title": "Opening Metal Raiders Booster Box Pack 22",
-            "image": "mrd_background.webp",
-            "composes": ["mrd"],
-            "chain": "pack: mrd23"
-        },
-        "mrd23": {
-            "title": "Opening Metal Raiders Booster Box Pack 23",
-            "image": "mrd_background.webp",
-            "composes": ["mrd"],
-            "chain": "pack: mrd24"
-        },
-        "mrd24": {
-            "title": "Opening Metal Raiders Booster Box Pack 24",
-            "image": "mrd_background.webp",
-            "composes": ["mrd"]
+        "atm":{
+            "mdesc": "Balance: $<<money>>",
+            "micon": "bank.webp"
         },
 
-        "srl1": {
-            "title": "Opening Spell Ruler Booster Box Pack 1",
-            "mdesc": "Open Spell Ruler Booster Box",
-            "micon": "srl.webp",
-            "image": "srl_background.webp",
-            "composes": ["srl"],
-            "chain": "pack: srl2"
+        "resetCardStore_03-2002-2":{
+            "mdesc": "Reset Store",
+            "micon": "refresh.webp",
+            "chain": "area cardStore_03-2002_Week-2"
         },
-         "srl2": {
-            "title": "Opening Spell Ruler Booster Box Pack 2",
-            "image": "srl_background.webp",
-            "composes": ["srl"],
-            "chain": "pack: srl3"
-        },
-        "srl3": {
-            "title": "Opening Spell Ruler Booster Box Pack 3",
-            "image": "srl_background.webp",
-            "composes": ["srl"],
-            "chain": "pack: srl4"
-        },
-        "srl4": {
-            "title": "Opening Spell Ruler Booster Box Pack 4",
-            "image": "srl_background.webp",
-            "composes": ["srl"],
-            "chain": "pack: srl5"
-        },
-        "srl5": {
-            "title": "Opening Spell Ruler Booster Box Pack 5",
-            "image": "srl_background.webp",
-            "composes": ["srl"],
-            "chain": "pack: srl6"
-        },
-        "srl6": {
-            "title": "Opening Spell Ruler Booster Box Pack 6",
-            "image": "srl_background.webp",
-            "composes": ["srl"],
-            "chain": "pack: srl7"
-        },
-        "srl7": {
-            "title": "Opening Spell Ruler Booster Box Pack 7",
-            "image": "srl_background.webp",
-            "composes": ["srl"],
-            "chain": "pack: srl8"
-        },
-        "srl8": {
-            "title": "Opening Spell Ruler Booster Box Pack 8",
-            "image": "srl_background.webp",
-            "composes": ["srl"],
-            "chain": "pack: srl9"
-        },
-        "srl9": {
-            "title": "Opening Spell Ruler Booster Box Pack 9",
-            "image": "srl_background.webp",
-            "composes": ["srl"],
-            "chain": "pack: srl10"
-        },
-        "srl10": {
-            "title": "Opening Spell Ruler Booster Box Pack 10",
-            "image": "srl_background.webp",
-            "composes": ["srl"],
-            "chain": "pack: srl11"
-        },
-        "srl11": {
-            "title": "Opening Spell Ruler Booster Box Pack 11",
-            "image": "srl_background.webp",
-            "composes": ["srl"],
-            "chain": "pack: srl12"
-        },
-        "srl12": {
-            "title": "Opening Spell Ruler Booster Box Pack 12",
-            "image": "srl_background.webp",
-            "composes": ["srl"],
-            "chain": "pack: srl13"
-        },
-        "srl13": {
-            "title": "Opening Spell Ruler Booster Box Pack 13",
-            "image": "srl_background.webp",
-            "composes": ["srl"],
-            "chain": "pack: srl14"
-        },
-        "srl14": {
-            "title": "Opening Spell Ruler Booster Box Pack 14",
-            "image": "srl_background.webp",
-            "composes": ["srl"],
-            "chain": "pack: srl15"
-        },
-        "srl15": {
-            "title": "Opening Spell Ruler Booster Box Pack 15",
-            "image": "srl_background.webp",
-            "composes": ["srl"],
-            "chain": "pack: srl16"
-        },
-        "srl16": {
-            "title": "Opening Spell Ruler Booster Box Pack 16",
-            "image": "srl_background.webp",
-            "composes": ["srl"],
-            "chain": "pack: srl17"
-        },
-        "srl17": {
-            "title": "Opening Spell Ruler Booster Box Pack 17",
-            "image": "srl_background.webp",
-            "composes": ["srl"],
-            "chain": "pack: srl18"
-        },
-        "srl18": {
-            "title": "Opening Spell Ruler Booster Box Pack 18",
-            "image": "srl_background.webp",
-            "composes": ["srl"],
-            "chain": "pack: srl19"
-        },
-        "srl19": {
-            "title": "Opening Spell Ruler Booster Box Pack 19",
-            "image": "srl_background.webp",
-            "composes": ["srl"],
-            "chain": "pack: srl20"
-        },
-        "srl20": {
-            "title": "Opening Spell Ruler Booster Box Pack 20",
-            "image": "srl_background.webp",
-            "composes": ["srl"],
-            "chain": "pack: srl21"
-        },
-        "srl21": {
-            "title": "Opening Spell Ruler Booster Box Pack 21",
-            "image": "srl_background.webp",
-            "composes": ["srl"],
-            "chain": "pack: srl22"
-        },
-        "srl22": {
-            "title": "Opening Spell Ruler Booster Box Pack 22",
-            "image": "srl_background.webp",
-            "composes": ["srl"],
-            "chain": "pack: srl23"
-        },
-        "srl23": {
-            "title": "Opening Spell Ruler Booster Box Pack 23",
-            "image": "srl_background.webp",
-            "composes": ["srl"],
-            "chain": "pack: srl24"
-        },
-        "srl24": {
-            "title": "Opening Spell Ruler Booster Box Pack 24",
-            "image": "srl_background.webp",
-            "composes": ["srl"]
+        "resetCardStore_03-2002-3":{
+            "mdesc": "Reset Store",
+            "micon": "refresh.webp",
+            "chain": "area cardStore_03-2002_Week-3"
         },
 
-        "psv1": {
-            "title": "Opening Pharaoh's Servant Booster Box Pack 1",
-            "mdesc": "Open Pharaoh's Servant Booster Box",
-            "micon": "psv.webp",
-            "image": "psv_background.webp",
-            "composes": ["psv"],
-            "chain": "pack: psv2"
+        "money-5":{
+            "vars":{
+                "money": "<<money>>.sub(5)"
+            },
+            "chain":"productIdentify"
         },
-        "psv2": {
-            "title": "Opening Pharaoh's Servant Booster Box Pack 2",
-            "image": "psv_background.webp",
-            "composes": ["psv"],
-            "chain": "pack: psv3"
+        "money-10":{
+            "vars":{
+                "money": "<<money>>.sub(10)"
+            },
+            "chain":"productIdentify"
         },
-        "psv3": {
-            "title": "Opening Pharaoh's Servant Booster Box Pack 3",
-            "image": "psv_background.webp",
-            "composes": ["psv"],
-            "chain": "pack: psv4"
+        "money-25":{
+            "vars":{
+                "money": "<<money>>.sub(25)"
+            },
+            "chain":"productIdentify"
         },
-        "psv4": {
-            "title": "Opening Pharaoh's Servant Booster Box Pack 4",
-            "image": "psv_background.webp",
-            "composes": ["psv"],
-            "chain": "pack: psv5"
-        },
-        "psv5": {
-            "title": "Opening Pharaoh's Servant Booster Box Pack 5",
-            "image": "psv_background.webp",
-            "composes": ["psv"],
-            "chain": "pack: psv6"
-        },
-        "psv6": {
-            "title": "Opening Pharaoh's Servant Booster Box Pack 6",
-            "image": "psv_background.webp",
-            "composes": ["psv"],
-            "chain": "pack: psv7"
-        },
-        "psv7": {
-            "title": "Opening Pharaoh's Servant Booster Box Pack 7",
-            "image": "psv_background.webp",
-            "composes": ["psv"],
-            "chain": "pack: psv8"
-        },
-        "psv8": {
-            "title": "Opening Pharaoh's Servant Booster Box Pack 8",
-            "image": "psv_background.webp",
-            "composes": ["psv"],
-            "chain": "pack: psv9"
-        },
-        "psv9": {
-            "title": "Opening Pharaoh's Servant Booster Box Pack 9",
-            "image": "psv_background.webp",
-            "composes": ["psv"],
-            "chain": "pack: psv10"
-        },
-        "psv10": {
-            "title": "Opening Pharaoh's Servant Booster Box Pack 10",
-            "image": "psv_background.webp",
-            "composes": ["psv"],
-            "chain": "pack: psv11"
-        },
-        "psv11": {
-            "title": "Opening Pharaoh's Servant Booster Box Pack 11",
-            "image": "psv_background.webp",
-            "composes": ["psv"],
-            "chain": "pack: psv12"
-        },
-        "psv12": {
-            "title": "Opening Pharaoh's Servant Booster Box Pack 12",
-            "image": "psv_background.webp",
-            "composes": ["psv"],
-            "chain": "pack: psv13"
-        },
-        "psv13": {
-            "title": "Opening Pharaoh's Servant Booster Box Pack 13",
-            "image": "psv_background.webp",
-            "composes": ["psv"],
-            "chain": "pack: psv14"
-        },
-        "psv14": {
-            "title": "Opening Pharaoh's Servant Booster Box Pack 14",
-            "image": "psv_background.webp",
-            "composes": ["psv"],
-            "chain": "pack: psv15"
-        },
-        "psv15": {
-            "title": "Opening Pharaoh's Servant Booster Box Pack 15",
-            "image": "psv_background.webp",
-            "composes": ["psv"],
-            "chain": "pack: psv16"
-        },
-        "psv16": {
-            "title": "Opening Pharaoh's Servant Booster Box Pack 16",
-            "image": "psv_background.webp",
-            "composes": ["psv"],
-            "chain": "pack: psv17"
-        },
-        "psv17": {
-            "title": "Opening Pharaoh's Servant Booster Box Pack 17",
-            "image": "psv_background.webp",
-            "composes": ["psv"],
-            "chain": "pack: psv18"
-        },
-        "psv18": {
-            "title": "Opening Pharaoh's Servant Booster Box Pack 18",
-            "image": "psv_background.webp",
-            "composes": ["psv"],
-            "chain": "pack: psv19"
-        },
-        "psv19": {
-            "title": "Opening Pharaoh's Servant Booster Box Pack 19",
-            "image": "psv_background.webp",
-            "composes": ["psv"],
-            "chain": "pack: psv20"
-        },
-        "psv20": {
-            "title": "Opening Pharaoh's Servant Booster Box Pack 20",
-            "image": "psv_background.webp",
-            "composes": ["psv"],
-            "chain": "pack: psv21"
-        },
-        "psv21": {
-            "title": "Opening Pharaoh's Servant Booster Box Pack 21",
-            "image": "psv_background.webp",
-            "composes": ["psv"],
-            "chain": "pack: psv22"
-        },
-        "psv22": {
-            "title": "Opening Pharaoh's Servant Booster Box Pack 22",
-            "image": "psv_background.webp",
-            "composes": ["psv"],
-            "chain": "pack: psv23"
-        },
-        "psv23": {
-            "title": "Opening Pharaoh's Servant Booster Box Pack 23",
-            "image": "psv_background.webp",
-            "composes": ["psv"],
-            "chain": "pack: psv24"
-        },
-        "psv24": {
-            "title": "Opening Pharaoh's Servant Booster Box Pack 24",
-            "image": "psv_background.webp",
-            "composes": ["psv"]
+        "money-120":{
+            "vars":{
+                "money": "<<money>>.sub(120)"
+            },
+            "chain":"productIdentify"
         },
 
-        "lon1": {
-            "title": "Opening Labyrinth of Nightmare Booster Box Pack 1",
-            "mdesc": "Open Labyrinth of Nightmare Booster Box",
-            "micon": "lon.webp",
-            "image": "lon_background.webp",
-            "composes": ["lon"],
-            "chain": "pack: lon2"
-        },
-        "lon2": {
-            "title": "Opening Labyrinth of Nightmare Booster Box Pack 2",
-            "image": "lon_background.webp",
-            "composes": ["lon"],
-            "chain": "pack: lon3"
-        },
-        "lon3": {
-            "title": "Opening Labyrinth of Nightmare Booster Box Pack 3",
-            "image": "lon_background.webp",
-            "composes": ["lon"],
-            "chain": "pack: lon4"
-        },
-        "lon4": {
-            "title": "Opening Labyrinth of Nightmare Booster Box Pack 4",
-            "image": "lon_background.webp",
-            "composes": ["lon"],
-            "chain": "pack: lon5"
-        },
-        "lon5": {
-            "title": "Opening Labyrinth of Nightmare Booster Box Pack 5",
-            "image": "lon_background.webp",
-            "composes": ["lon"],
-            "chain": "pack: lon6"
-        },
-        "lon6": {
-            "title": "Opening Labyrinth of Nightmare Booster Box Pack 6",
-            "image": "lon_background.webp",
-            "composes": ["lon"],
-            "chain": "pack: lon7"
-        },
-        "lon7": {
-            "title": "Opening Labyrinth of Nightmare Booster Box Pack 7",
-            "image": "lon_background.webp",
-            "composes": ["lon"],
-            "chain": "pack: lon8"
-        },
-        "lon8": {
-            "title": "Opening Labyrinth of Nightmare Booster Box Pack 8",
-            "image": "lon_background.webp",
-            "composes": ["lon"],
-            "chain": "pack: lon9"
-        },
-        "lon9": {
-            "title": "Opening Labyrinth of Nightmare Booster Box Pack 9",
-            "image": "lon_background.webp",
-            "composes": ["lon"],
-            "chain": "pack: lon10"
-        },
-        "lon10": {
-            "title": "Opening Labyrinth of Nightmare Booster Box Pack 10",
-            "image": "lon_background.webp",
-            "composes": ["lon"],
-            "chain": "pack: lon11"
-        },
-        "lon11": {
-            "title": "Opening Labyrinth of Nightmare Booster Box Pack 11",
-            "image": "lon_background.webp",
-            "composes": ["lon"],
-            "chain": "pack: lon12"
-        },
-        "lon12": {
-            "title": "Opening Labyrinth of Nightmare Booster Box Pack 12",
-            "image": "lon_background.webp",
-            "composes": ["lon"],
-            "chain": "pack: lon13"
-        },
-        "lon13": {
-            "title": "Opening Labyrinth of Nightmare Booster Box Pack 13",
-            "image": "lon_background.webp",
-            "composes": ["lon"],
-            "chain": "pack: lon14"
-        },
-        "lon14": {
-            "title": "Opening Labyrinth of Nightmare Booster Box Pack 14",
-            "image": "lon_background.webp",
-            "composes": ["lon"],
-            "chain": "pack: lon15"
-        },
-        "lon15": {
-            "title": "Opening Labyrinth of Nightmare Booster Box Pack 15",
-            "image": "lon_background.webp",
-            "composes": ["lon"],
-            "chain": "pack: lon16"
-        },
-        "lon16": {
-            "title": "Opening Labyrinth of Nightmare Booster Box Pack 16",
-            "image": "lon_background.webp",
-            "composes": ["lon"],
-            "chain": "pack: lon17"
-        },
-        "lon17": {
-            "title": "Opening Labyrinth of Nightmare Booster Box Pack 17",
-            "image": "lon_background.webp",
-            "composes": ["lon"],
-            "chain": "pack: lon18"
-        },
-        "lon18": {
-            "title": "Opening Labyrinth of Nightmare Booster Box Pack 18",
-            "image": "lon_background.webp",
-            "composes": ["lon"],
-            "chain": "pack: lon19"
-        },
-        "lon19": {
-            "title": "Opening Labyrinth of Nightmare Booster Box Pack 19",
-            "image": "lon_background.webp",
-            "composes": ["lon"],
-            "chain": "pack: lon20"
-        },
-        "lon20": {
-            "title": "Opening Labyrinth of Nightmare Booster Box Pack 20",
-            "image": "lon_background.webp",
-            "composes": ["lon"],
-            "chain": "pack: lon21"
-        },
-        "lon21": {
-            "title": "Opening Labyrinth of Nightmare Booster Box Pack 21",
-            "image": "lon_background.webp",
-            "composes": ["lon"],
-            "chain": "pack: lon22"
-        },
-        "lon22": {
-            "title": "Opening Labyrinth of Nightmare Booster Box Pack 22",
-            "image": "lon_background.webp",
-            "composes": ["lon"],
-            "chain": "pack: lon23"
-        },
-        "lon23": {
-            "title": "Opening Labyrinth of Nightmare Booster Box Pack 23",
-            "image": "lon_background.webp",
-            "composes": ["lon"],
-            "chain": "pack: lon24"
-        },
-         "lon24": {
-            "title": "Opening Labyrinth of Nightmare Booster Box Pack 24",
-            "image": "lon_background.webp",
-            "composes": ["lon"]
-        },
+        "productIdentify":{
+            "split":{
+                "<<purchase>> == lobPack":"pack: lobPack",
+                "<<purchase>> == lobBox":"pack: lobBox"
+            }
+        }
+    },
 
-        "lod1": {
-            "title": "Opening Legacy of Darkness Booster Box Pack 1",
-            "mdesc": "Open Legacy of Darkness Booster Box",
-            "micon": "lod.webp",
-            "image": "lod_background.webp",
-            "composes": ["lod"],
-            "chain": "pack: lod2"
+    "choice":{
+        "vgFirstGames":{
+            "image":"MillenniumPuzzleHeiroglyphs.webp",
+            "title":"Choose a video game",
+            "list":[
+                {"desc":"Do you want Dark Duel Stories (First Wave)?", "name": "Dark Duel Stories (First Wave)", "img": "gameDDS.webp", "chain": "pool: gameDarkDuelStories1"},
+                {"desc": "Do you want Dark Duel Stories (Second Wave)?", "name": "Dark Duel Stories (Second Wave)", "img": "gameDDS.webp", "chain": "pool: gameDarkDuelStories2"},
+                {"desc": "Do you want Forbidden Memories?", "name": "Forbidden Memories", "img": "ForbiddenMemories.webp", "chain": "pool: gameForbiddenMemories"}
+            ]
         },
-        "lod2": {
-            "title": "Opening Legacy of Darkness Booster Box Pack 2",
-            "image": "lod_background.webp",
-            "composes": ["lod"],
-            "chain": "pack: lod3"
+        "SDYK":{
+            "image":"MillenniumPuzzleHeiroglyphs.webp",
+            "title":"Choose a Starter Deck",
+            "list":[
+                {"desc":"Do you want Starter Deck Yugi?", "name": "Starter Deck Yugi", "img": "SDY.webp", "chain": "pool: starterDeckYugi"},
+                {"desc":"Do you want Starter Deck Kaiba?", "name": "Starter Deck Kaiba", "img": "SDK.webp", "chain": "pool: starterDeckKaiba"}
+            ]
+        }
+    },
+    
+    "pick":{
+        "winLOB-Secret":{
+            "shows": 44,
+            "limit": 1
         },
-        "lod3": {
-            "title": "Opening Legacy of Darkness Booster Box Pack 3",
-            "image": "lod_background.webp",
-            "composes": ["lod"],
-            "chain": "pack: lod4"
+        "winLOB-Ultra":{
+            "shows": 42,
+            "limit": 1
         },
-        "lod4": {
-            "title": "Opening Legacy of Darkness Booster Box Pack 4",
-            "image": "lod_background.webp",
-            "composes": ["lod"],
-            "chain": "pack: lod5"
+        "winLOB-Super":{
+            "shows": 32,
+            "limit": 1
         },
-        "lod5": {
-            "title": "Opening Legacy of Darkness Booster Box Pack 5",
-            "image": "lod_background.webp",
-            "composes": ["lod"],
-            "chain": "pack: lod6"
-        },
-        "lod6": {
-            "title": "Opening Legacy of Darkness Booster Box Pack 6",
-            "image": "lod_background.webp",
-            "composes": ["lod"],
-            "chain": "pack: lod7"
-        },
-        "lod7": {
-            "title": "Opening Legacy of Darkness Booster Box Pack 7",
-            "image": "lod_background.webp",
-            "composes": ["lod"],
-            "chain": "pack: lod8"
-        },
-        "lod8": {
-            "title": "Opening Legacy of Darkness Booster Box Pack 8",
-            "image": "lod_background.webp",
-            "composes": ["lod"],
-            "chain": "pack: lod9"
-        },
-        "lod9": {
-            "title": "Opening Legacy of Darkness Booster Box Pack 9",
-            "image": "lod_background.webp",
-            "composes": ["lod"],
-            "chain": "pack: lod10"
-        },
-        "lod10": {
-            "title": "Opening Legacy of Darkness Booster Box Pack 10",
-            "image": "lod_background.webp",
-            "composes": ["lod"],
-            "chain": "pack: lod11"
-        },
-        "lod11": {
-            "title": "Opening Legacy of Darkness Booster Box Pack 11",
-            "image": "lod_background.webp",
-            "composes": ["lod"],
-            "chain": "pack: lod12"
-        },
-        "lod12": {
-            "title": "Opening Legacy of Darkness Booster Box Pack 12",
-            "image": "lod_background.webp",
-            "composes": ["lod"],
-            "chain": "pack: lod13"
-        },
-        "lod13": {
-            "title": "Opening Legacy of Darkness Booster Box Pack 13",
-            "image": "lod_background.webp",
-            "composes": ["lod"],
-            "chain": "pack: lod14"
-        },
-        "lod14": {
-            "title": "Opening Legacy of Darkness Booster Box Pack 14",
-            "image": "lod_background.webp",
-            "composes": ["lod"],
-            "chain": "pack: lod15"
-        },
-        "lod15": {
-            "title": "Opening Legacy of Darkness Booster Box Pack 15",
-            "image": "lod_background.webp",
-            "composes": ["lod"],
-            "chain": "pack: lod16"
-        },
-        "lod16": {
-            "title": "Opening Legacy of Darkness Booster Box Pack 16",
-            "image": "lod_background.webp",
-            "composes": ["lod"],
-            "chain": "pack: lod17"
-        },
-        "lod17": {
-            "title": "Opening Legacy of Darkness Booster Box Pack 17",
-            "image": "lod_background.webp",
-            "composes": ["lod"],
-            "chain": "pack: lod18"
-        },
-        "lod18": {
-            "title": "Opening Legacy of Darkness Booster Box Pack 18",
-            "image": "lod_background.webp",
-            "composes": ["lod"],
-            "chain": "pack: lod19"
-        },
-        "lod19": {
-            "title": "Opening Legacy of Darkness Booster Box Pack 19",
-            "image": "lod_background.webp",
-            "composes": ["lod"],
-            "chain": "pack: lod20"
-        },
-        "lod20": {
-            "title": "Opening Legacy of Darkness Booster Box Pack 20",
-            "image": "lod_background.webp",
-            "composes": ["lod"],
-            "chain": "pack: lod21"
-        },
-        "lod21": {
-            "title": "Opening Legacy of Darkness Booster Box Pack 21",
-            "image": "lod_background.webp",
-            "composes": ["lod"],
-            "chain": "pack: lod22"
-        },
-        "lod22": {
-            "title": "Opening Legacy of Darkness Booster Box Pack 22",
-            "image": "lod_background.webp",
-            "composes": ["lod"],
-            "chain": "pack: lod23"
-        },
-        "lod23": {
-            "title": "Opening Legacy of Darkness Booster Box Pack 23",
-            "image": "lod_background.webp",
-            "composes": ["lod"],
-            "chain": "pack: lod24"
-        },
-        "lod24": {
-            "title": "Opening Legacy of Darkness Booster Box Pack 24",
-            "image": "lod_background.webp",
-            "composes": ["lod"]
-        },
+        "winLOB-Rare":{
+            "shows": 22,
+            "limit": 1
+        }
+    },
 
-        "pgd1": {
-            "title": "Opening Pharaonic Guardian Booster Box Pack 1",
-            "mdesc": "Open Pharaonic Guardian Booster Box",
-            "micon": "pgd.webp",
-            "image": "pgd_background.webp",
-            "composes": ["pgd"],
-            "chain": "pack: pgd2"
-        },
-        "pgd2": {
-            "title": "Opening Pharaonic Guardian Booster Box Pack 23",
-            "image": "pgd_background.webp",
-            "composes": ["pgd"],
-            "chain": "pack: pgd3"
-        },
-        "pgd3": {
-            "title": "Opening Pharaonic Guardian Booster Box Pack 23",
-            "image": "pgd_background.webp",
-            "composes": ["pgd"],
-            "chain": "pack: pgd4"
-        },
-        "pgd4": {
-            "title": "Opening Pharaonic Guardian Booster Box Pack 23",
-            "image": "pgd_background.webp",
-            "composes": ["pgd"],
-            "chain": "pack: pgd5"
-        },
-        "pgd5": {
-            "title": "Opening Pharaonic Guardian Booster Box Pack 23",
-            "image": "pgd_background.webp",
-            "composes": ["pgd"],
-            "chain": "pack: pgd6"
-        },
-        "pgd6": {
-            "title": "Opening Pharaonic Guardian Booster Box Pack 23",
-            "image": "pgd_background.webp",
-            "composes": ["pgd"],
-            "chain": "pack: pgd7"
-        },
-        "pgd7": {
-            "title": "Opening Pharaonic Guardian Booster Box Pack 23",
-            "image": "pgd_background.webp",
-            "composes": ["pgd"],
-            "chain": "pack: pgd8"
-        },
-        "pgd8": {
-            "title": "Opening Pharaonic Guardian Booster Box Pack 23",
-            "image": "pgd_background.webp",
-            "composes": ["pgd"],
-            "chain": "pack: pgd9"
-        },
-        "pgd9": {
-            "title": "Opening Pharaonic Guardian Booster Box Pack 23",
-            "image": "pgd_background.webp",
-            "composes": ["pgd"],
-            "chain": "pack: pgd10"
-        },
-        "pgd10": {
-            "title": "Opening Pharaonic Guardian Booster Box Pack 23",
-            "image": "pgd_background.webp",
-            "composes": ["pgd"],
-            "chain": "pack: pgd11"
-        },
-        "pgd11": {
-            "title": "Opening Pharaonic Guardian Booster Box Pack 23",
-            "image": "pgd_background.webp",
-            "composes": ["pgd"],
-            "chain": "pack: pgd12"
-        },
-        "pgd12": {
-            "title": "Opening Pharaonic Guardian Booster Box Pack 23",
-            "image": "pgd_background.webp",
-            "composes": ["pgd"],
-            "chain": "pack: pgd13"
-        },
-        "pgd13": {
-            "title": "Opening Pharaonic Guardian Booster Box Pack 23",
-            "image": "pgd_background.webp",
-            "composes": ["pgd"],
-            "chain": "pack: pgd14"
-        },
-        "pgd14": {
-            "title": "Opening Pharaonic Guardian Booster Box Pack 23",
-            "image": "pgd_background.webp",
-            "composes": ["pgd"],
-            "chain": "pack: pgd15"
-        },
-        "pgd15": {
-            "title": "Opening Pharaonic Guardian Booster Box Pack 23",
-            "image": "pgd_background.webp",
-            "composes": ["pgd"],
-            "chain": "pack: pgd16"
-        },
-        "pgd16": {
-            "title": "Opening Pharaonic Guardian Booster Box Pack 23",
-            "image": "pgd_background.webp",
-            "composes": ["pgd"],
-            "chain": "pack: pgd17"
-        },
-        "pgd17": {
-            "title": "Opening Pharaonic Guardian Booster Box Pack 23",
-            "image": "pgd_background.webp",
-            "composes": ["pgd"],
-            "chain": "pack: pgd18"
-        },
-        "pgd18": {
-            "title": "Opening Pharaonic Guardian Booster Box Pack 23",
-            "image": "pgd_background.webp",
-            "composes": ["pgd"],
-            "chain": "pack: pgd19"
-        },
-        "pgd19": {
-            "title": "Opening Pharaonic Guardian Booster Box Pack 23",
-            "image": "pgd_background.webp",
-            "composes": ["pgd"],
-            "chain": "pack: pgd20"
-        },
-        "pgd20": {
-            "title": "Opening Pharaonic Guardian Booster Box Pack 23",
-            "image": "pgd_background.webp",
-            "composes": ["pgd"],
-            "chain": "pack: pgd21"
-        },
-        "pgd21": {
-            "title": "Opening Pharaonic Guardian Booster Box Pack 23",
-            "image": "pgd_background.webp",
-            "composes": ["pgd"],
-            "chain": "pack: pgd22"
-        },
-        "pgd22": {
-            "title": "Opening Pharaonic Guardian Booster Box Pack 23",
-            "image": "pgd_background.webp",
-            "composes": ["pgd"],
-            "chain": "pack: pgd23"
-        },
-        "pgd23": {
-            "title": "Opening Pharaonic Guardian Booster Box Pack 23",
-            "image": "pgd_background.webp",
-            "composes": ["pgd"],
-            "chain": "pack: pgd24"
-        },
-        "pgd24": {
-            "title": "Opening Pharaonic Guardian Booster Box Pack 24",
-            "image": "pgd_background.webp",
-            "composes": ["pgd"]
-        },
+    "bans":{
+        "05-01-2002":{
+            "micon": "banlist.webp",
+            "mdesc": "Banlist Update 05-01-2002",
+            "list": [
+                {"Left Arm of the Forbidden One":1},
+                {"Left Leg of the Forbidden One":1},
+                {"Right Arm of the Forbidden One":1},
+                {"Right Leg of the Forbidden One":1},
 
-        "mfc1": {
-            "title": "Opening Magician's Force Booster Box Pack 1",
-            "mdesc": "Open Magician's Force Booster Box",
-            "micon": "mfc.webp",
-            "image": "mfc_background.webp",
-            "composes": ["mfc"],
-            "chain": "pack: mfc2"
-        },
-        "mfc2": {
-            "title": "Opening Magician's Force Booster Box Pack 2",
-            "image": "mfc_background.webp",
-            "composes": ["mfc"],
-            "chain": "pack: mfc3"
-        },
-        "mfc3": {
-            "title": "Opening Magician's Force Booster Box Pack 3",
-            "image": "mfc_background.webp",
-            "composes": ["mfc"],
-            "chain": "pack: mfc4"
-        },
-        "mfc4": {
-            "title": "Opening Magician's Force Booster Box Pack 4",
-            "image": "mfc_background.webp",
-            "composes": ["mfc"],
-            "chain": "pack: mfc5"
-        },
-        "mfc5": {
-            "title": "Opening Magician's Force Booster Box Pack 5",
-            "image": "mfc_background.webp",
-            "composes": ["mfc"],
-            "chain": "pack: mfc6"
-        },
-        "mfc6": {
-            "title": "Opening Magician's Force Booster Box Pack 6",
-            "image": "mfc_background.webp",
-            "composes": ["mfc"],
-            "chain": "pack: mfc7"
-        },
-        "mfc7": {
-            "title": "Opening Magician's Force Booster Box Pack 7",
-            "image": "mfc_background.webp",
-            "composes": ["mfc"],
-            "chain": "pack: mfc8"
-        },
-        "mfc8": {
-            "title": "Opening Magician's Force Booster Box Pack 8",
-            "image": "mfc_background.webp",
-            "composes": ["mfc"],
-            "chain": "pack: mfc9"
-        },
-        "mfc9": {
-            "title": "Opening Magician's Force Booster Box Pack 9",
-            "image": "mfc_background.webp",
-            "composes": ["mfc"],
-            "chain": "pack: mfc10"
-        },
-        "mfc10": {
-            "title": "Opening Magician's Force Booster Box Pack 10",
-            "image": "mfc_background.webp",
-            "composes": ["mfc"],
-            "chain": "pack: mfc11"
-        },
-        "mfc11": {
-            "title": "Opening Magician's Force Booster Box Pack 11",
-            "image": "mfc_background.webp",
-            "composes": ["mfc"],
-            "chain": "pack: mfc12"
-        },
-        "mfc12": {
-            "title": "Opening Magician's Force Booster Box Pack 12",
-            "image": "mfc_background.webp",
-            "composes": ["mfc"],
-            "chain": "pack: mfc13"
-        },
-        "mfc13": {
-            "title": "Opening Magician's Force Booster Box Pack 13",
-            "image": "mfc_background.webp",
-            "composes": ["mfc"],
-            "chain": "pack: mfc14"
-        },
-        "mfc14": {
-            "title": "Opening Magician's Force Booster Box Pack 14",
-            "image": "mfc_background.webp",
-            "composes": ["mfc"],
-            "chain": "pack: mfc15"
-        },
-        "mfc15": {
-            "title": "Opening Magician's Force Booster Box Pack 15",
-            "image": "mfc_background.webp",
-            "composes": ["mfc"],
-            "chain": "pack: mfc16"
-        },
-        "mfc16": {
-            "title": "Opening Magician's Force Booster Box Pack 16",
-            "image": "mfc_background.webp",
-            "composes": ["mfc"],
-            "chain": "pack: mfc17"
-        },
-        "mfc17": {
-            "title": "Opening Magician's Force Booster Box Pack 17",
-            "image": "mfc_background.webp",
-            "composes": ["mfc"],
-            "chain": "pack: mfc18"
-        },
-        "mfc18": {
-            "title": "Opening Magician's Force Booster Box Pack 18",
-            "image": "mfc_background.webp",
-            "composes": ["mfc"],
-            "chain": "pack: mfc19"
-        },
-        "mfc19": {
-            "title": "Opening Magician's Force Booster Box Pack 19",
-            "image": "mfc_background.webp",
-            "composes": ["mfc"],
-            "chain": "pack: mfc20"
-        },
-        "mfc20": {
-            "title": "Opening Magician's Force Booster Box Pack 20",
-            "image": "mfc_background.webp",
-            "composes": ["mfc"],
-            "chain": "pack: mfc21"
-        },
-        "mfc21": {
-            "title": "Opening Magician's Force Booster Box Pack 21",
-            "image": "mfc_background.webp",
-            "composes": ["mfc"],
-            "chain": "pack: mfc22"
-        },
-        "mfc22": {
-            "title": "Opening Magician's Force Booster Box Pack 22",
-            "image": "mfc_background.webp",
-            "composes": ["mfc"],
-            "chain": "pack: mfc23"
-        },
-        "mfc23": {
-            "title": "Opening Magician's Force Booster Box Pack 23",
-            "image": "mfc_background.webp",
-            "composes": ["mfc"],
-            "chain": "pack: mfc24"
-        },
-        "mfc24": {
-            "title": "Opening Magician's Force Box Pack 24",
-            "image": "mfc_background.webp",
-            "composes": ["mfc"]
-        },
+                {"Exodia the Forbidden One":1},
 
-        "dcr1": {
-            "title": "Opening Dark Crisis Booster Box Pack 1",
-            "mdesc": "Open Dark Crisis Booster Box",
-            "micon": "dcr.webp",
-            "image": "dcr_background.webp",
-            "composes": ["dcr"],
-            "chain": "pack: dcr2"
-        },
-        "dcr2": {
-            "title": "Opening Dark Crisis Booster Box Pack 2",
-            "image": "dcr_background.webp",
-            "composes": ["dcr"],
-            "chain": "pack: dcr3"
-        },
-        "dcr3": {
-            "title": "Opening Dark Crisis Booster Box Pack 3",
-            "image": "dcr_background.webp",
-            "composes": ["dcr"],
-            "chain": "pack: dcr4"
-        },
-        "dcr4": {
-            "title": "Opening Dark Crisis Booster Box Pack 4",
-            "image": "dcr_background.webp",
-            "composes": ["dcr"],
-            "chain": "pack: dcr5"
-        },
-        "dcr5": {
-            "title": "Opening Dark Crisis Booster Box Pack 5",
-            "image": "dcr_background.webp",
-            "composes": ["dcr"],
-            "chain": "pack: dcr6"
-        },
-        "dcr6": {
-            "title": "Opening Dark Crisis Booster Box Pack 6",
-            "image": "dcr_background.webp",
-            "composes": ["dcr"],
-            "chain": "pack: dcr7"
-        },
-        "dcr7": {
-            "title": "Opening Dark Crisis Booster Box Pack 7",
-            "image": "dcr_background.webp",
-            "composes": ["dcr"],
-            "chain": "pack: dcr8"
-        },
-        "dcr8": {
-            "title": "Opening Dark Crisis Booster Box Pack 8",
-            "image": "dcr_background.webp",
-            "composes": ["dcr"],
-            "chain": "pack: dcr9"
-        },
-        "dcr9": {
-            "title": "Opening Dark Crisis Booster Box Pack 9",
-            "image": "dcr_background.webp",
-            "composes": ["dcr"],
-            "chain": "pack: dcr10"
-        },
-        "dcr10": {
-            "title": "Opening Dark Crisis Booster Box Pack 10",
-            "image": "dcr_background.webp",
-            "composes": ["dcr"],
-            "chain": "pack: dcr11"
-        },
-        "dcr11": {
-            "title": "Opening Dark Crisis Booster Box Pack 11",
-            "image": "dcr_background.webp",
-            "composes": ["dcr"],
-            "chain": "pack: dcr12"
-        },
-        "dcr12": {
-            "title": "Opening Dark Crisis Booster Box Pack 12",
-            "image": "dcr_background.webp",
-            "composes": ["dcr"],
-            "chain": "pack: dcr13"
-        },
-        "dcr13": {
-            "title": "Opening Dark Crisis Booster Box Pack 13",
-            "image": "dcr_background.webp",
-            "composes": ["dcr"],
-            "chain": "pack: dcr14"
-        },
-        "dcr14": {
-            "title": "Opening Dark Crisis Booster Box Pack 14",
-            "image": "dcr_background.webp",
-            "composes": ["dcr"],
-            "chain": "pack: dcr15"
-        },
-        "dcr15": {
-            "title": "Opening Dark Crisis Booster Box Pack 15",
-            "image": "dcr_background.webp",
-            "composes": ["dcr"],
-            "chain": "pack: dcr16"
-        },
-        "dcr16": {
-            "title": "Opening Dark Crisis Booster Box Pack 16",
-            "image": "dcr_background.webp",
-            "composes": ["dcr"],
-            "chain": "pack: dcr17"
-        },
-        "dcr17": {
-            "title": "Opening Dark Crisis Booster Box Pack 17",
-            "image": "dcr_background.webp",
-            "composes": ["dcr"],
-            "chain": "pack: dcr18"
-        },
-        "dcr18": {
-            "title": "Opening Dark Crisis Booster Box Pack 18",
-            "image": "dcr_background.webp",
-            "composes": ["dcr"],
-            "chain": "pack: dcr19"
-        },
-        "dcr19": {
-            "title": "Opening Dark Crisis Booster Box Pack 19",
-            "image": "dcr_background.webp",
-            "composes": ["dcr"],
-            "chain": "pack: dcr20"
-        },
-        "dcr20": {
-            "title": "Opening Dark Crisis Booster Box Pack 20",
-            "image": "dcr_background.webp",
-            "composes": ["dcr"],
-            "chain": "pack: dcr21"
-        },
-        "dcr21": {
-            "title": "Opening Dark Crisis Booster Box Pack 21",
-            "image": "dcr_background.webp",
-            "composes": ["dcr"],
-            "chain": "pack: dcr22"
-        },
-        "dcr22": {
-            "title": "Opening Dark Crisis Booster Box Pack 22",
-            "image": "dcr_background.webp",
-            "composes": ["dcr"],
-            "chain": "pack: dcr23"
-        },
-        "dcr23": {
-            "title": "Opening Dark Crisis Booster Box Pack 23",
-            "image": "dcr_background.webp",
-            "composes": ["dcr"],
-            "chain": "pack: dcr24"
-        },
-        "dcr24": {
-            "title": "Opening Dark Crisis Booster Box Pack 24",
-            "image": "dcr_background.webp",
-            "composes": ["dcr"]
-        },
+                {"Change of Heart":1},
+                {"Dark Hole":1},
+                {"Monster Reborn":1},
+                {"Pot of Greed":1},
+                {"Raigeki":1},
 
-        "ioc1": {
-            "title": "Opening Invasion of Chaos Booster Box Pack 1",
-            "mdesc": "Open Invasion of Chaos Booster Box",
-            "micon": "ioc.webp",
-            "image": "ioc_background.webp",
-            "composes": ["ioc"],
-            "chain": "pack: ioc2"
+                {"Card Destruction":2},
+                {"Swords of Revealing Light":2}
+            ]
         },
-        "ioc2": {
-            "title": "Opening Invasion of Chaos Booster Box Pack 2",
-            "image": "ioc_background.webp",
-            "composes": ["ioc"],
-            "chain": "pack: ioc3"
-        },
-        "ioc3": {
-            "title": "Opening Invasion of Chaos Booster Box Pack 3",
-            "image": "ioc_background.webp",
-            "composes": ["ioc"],
-            "chain": "pack: ioc4"
-        },
-        "ioc4": {
-            "title": "Opening Invasion of Chaos Booster Box Pack 4",
-            "image": "ioc_background.webp",
-            "composes": ["ioc"],
-            "chain": "pack: ioc5"
-        },
-        "ioc5": {
-            "title": "Opening Invasion of Chaos Booster Box Pack 5",
-            "image": "ioc_background.webp",
-            "composes": ["ioc"],
-            "chain": "pack: ioc6"
-        },
-        "ioc6": {
-            "title": "Opening Invasion of Chaos Booster Box Pack 6",
-            "image": "ioc_background.webp",
-            "composes": ["ioc"],
-            "chain": "pack: ioc7"
-        },
-        "ioc7": {
-            "title": "Opening Invasion of Chaos Booster Box Pack 7",
-            "image": "ioc_background.webp",
-            "composes": ["ioc"],
-            "chain": "pack: ioc8"
-        },
-        "ioc8": {
-            "title": "Opening Invasion of Chaos Booster Box Pack 8",
-            "image": "ioc_background.webp",
-            "composes": ["ioc"],
-            "chain": "pack: ioc9"
-        },
-        "ioc9": {
-            "title": "Opening Invasion of Chaos Booster Box Pack 9",
-            "image": "ioc_background.webp",
-            "composes": ["ioc"],
-            "chain": "pack: ioc10"
-        },
-        "ioc10": {
-            "title": "Opening Invasion of Chaos Booster Box Pack 10",
-            "image": "ioc_background.webp",
-            "composes": ["ioc"],
-            "chain": "pack: ioc11"
-        },
-        "ioc11": {
-            "title": "Opening Invasion of Chaos Booster Box Pack 11",
-            "image": "ioc_background.webp",
-            "composes": ["ioc"],
-            "chain": "pack: ioc12"
-        },
-        "ioc12": {
-            "title": "Opening Invasion of Chaos Booster Box Pack 12",
-            "image": "ioc_background.webp",
-            "composes": ["ioc"],
-            "chain": "pack: ioc13"
-        },
-        "ioc13": {
-            "title": "Opening Invasion of Chaos Booster Box Pack 13",
-            "image": "ioc_background.webp",
-            "composes": ["ioc"],
-            "chain": "pack: ioc14"
-        },
-        "ioc14": {
-            "title": "Opening Invasion of Chaos Booster Box Pack 14",
-            "image": "ioc_background.webp",
-            "composes": ["ioc"],
-            "chain": "pack: ioc15"
-        },
-        "ioc15": {
-            "title": "Opening Invasion of Chaos Booster Box Pack 15",
-            "image": "ioc_background.webp",
-            "composes": ["ioc"],
-            "chain": "pack: ioc16"
-        },
-        "ioc16": {
-            "title": "Opening Invasion of Chaos Booster Box Pack 16",
-            "image": "ioc_background.webp",
-            "composes": ["ioc"],
-            "chain": "pack: ioc17"
-        },
-        "ioc17": {
-            "title": "Opening Invasion of Chaos Booster Box Pack 17",
-            "image": "ioc_background.webp",
-            "composes": ["ioc"],
-            "chain": "pack: ioc18"
-        },
-        "ioc18": {
-            "title": "Opening Invasion of Chaos Booster Box Pack 18",
-            "image": "ioc_background.webp",
-            "composes": ["ioc"],
-            "chain": "pack: ioc19"
-        },
-        "ioc19": {
-            "title": "Opening Invasion of Chaos Booster Box Pack 19",
-            "image": "ioc_background.webp",
-            "composes": ["ioc"],
-            "chain": "pack: ioc20"
-        },
-        "ioc20": {
-            "title": "Opening Invasion of Chaos Booster Box Pack 20",
-            "image": "ioc_background.webp",
-            "composes": ["ioc"],
-            "chain": "pack: ioc21"
-        },
-        "ioc21": {
-            "title": "Opening Invasion of Chaos Booster Box Pack 21",
-            "image": "ioc_background.webp",
-            "composes": ["ioc"],
-            "chain": "pack: ioc22"
-        },
-        "ioc22": {
-            "title": "Opening Invasion of Chaos Booster Box Pack 22",
-            "image": "ioc_background.webp",
-            "composes": ["ioc"],
-            "chain": "pack: ioc23"
-        },
-        "ioc23": {
-            "title": "Opening Invasion of Chaos Booster Box Pack 23",
-            "image": "ioc_background.webp",
-            "composes": ["ioc"],
-            "chain": "pack: ioc24"
-        },
-        "ioc24": {
-            "title": "Opening Invasion of Chaos Booster Box Pack 24",
-            "image": "ioc_background.webp",
-            "composes": ["ioc"]
-        },
+        "07-01-2002":{
+            "micon": "banlist.webp",
+            "mdesc": "Banlist Update 05-01-2002",
+            "list": [
+                {"Left Arm of the Forbidden One":1},
+                {"Left Leg of the Forbidden One":1},
+                {"Right Arm of the Forbidden One":1},
+                {"Right Leg of the Forbidden One":1},
 
-        "ast1": {
-            "title": "Opening Ancient Sanctuary Booster Box Pack 1",
-            "mdesc": "Open Ancient Sanctuary Booster Box",
-            "micon": "ast.webp",
-            "image": "ast_background.webp",
-            "composes": ["ast"],
-            "chain": "pack: ast2"
+                {"Exodia the Forbidden One":1},
+
+                {"Change of Heart":1},
+                {"Dark Hole":1},
+                {"Monster Reborn":1},
+                {"Pot of Greed":1},
+                {"Raigeki":1},
+                {"Mirror Force": 1},
+
+                {"Sangan": 2},
+                {"Witch of the Black Forest": 2},
+
+                {"Card Destruction":2},
+                {"Heavy Storm": 2},
+                {"Swords of Revealing Light":2}
+            ]
         },
-        "ast2": {
-            "title": "Opening Ancient Sanctuary Booster Box Pack 2",
-            "image": "ast_background.webp",
-            "composes": ["ast"],
-            "chain": "pack: ast3"
+        "10-01-2002":{
+            "micon": "banlist.webp",
+            "mdesc": "Banlist Update 10-01-2002",
+            "list": [
+                {"Left Arm of the Forbidden One":1},
+                {"Left Leg of the Forbidden One":1},
+                {"Right Arm of the Forbidden One":1},
+                {"Right Leg of the Forbidden One":1},
+
+                {"Cyber Jar": 1},
+                {"Exodia the Forbidden One":1},
+                {"Jinzo": 1},
+                {"Morphing Jar": 1},
+                
+
+                
+                {"Change of Heart":1},
+                {"Confiscation":1},
+                {"Dark Hole":1},
+                {"Delinquent Duo":1},
+                {"Monster Reborn":1},
+                {"Painful Choice":1},
+                {"Pot of Greed":1},
+                {"Premature Burial":1},
+                {"Raigeki":1},
+                {"Snatch Steal":1},
+                {"The Forceful Sentury":1},
+                {"Upstart Goblin": 1},
+
+                {"Mirror Force": 1},
+
+                {"Sangan": 2},
+                {"Witch of the Black Forest": 2},
+
+                {"Card Destruction":2},
+                {"Heavy Storm": 2},
+                {"Swords of Revealing Light":2}
+            ]
         },
-        "ast3": {
-            "title": "Opening Ancient Sanctuary Booster Box Pack 3",
-            "image": "ast_background.webp",
-            "composes": ["ast"],
-            "chain": "pack: ast4"
+        "12-01-2002":{
+            "micon": "banlist.webp",
+            "mdesc": "Banlist Update 12-01-2002",
+            "list": [
+                {"Left Arm of the Forbidden One":1},
+                {"Left Leg of the Forbidden One":1},
+                {"Right Arm of the Forbidden One":1},
+                {"Right Leg of the Forbidden One":1},
+
+                {"Cyber Jar": 1},
+                {"Exodia the Forbidden One":1},
+                {"Jinzo": 1},
+                {"Morphing Jar": 1},
+                {"Witch of the Black Forest": 1},
+
+                {"Card Destruction":1},
+                {"Change of Heart":1},
+                {"Confiscation":1},
+                {"Dark Hole":1},
+                {"Delinquent Duo":1},
+                {"Limiter Removal":1},
+                {"Monster Reborn":1},
+                {"Painful Choice":1},
+                {"Pot of Greed":1},
+                {"Premature Burial":1},
+                {"Raigeki":1},
+                {"Snatch Steal":1},
+                {"Swords of Revealing Light":1},
+                {"The Forceful Sentury":1},
+                {"Upstart Goblin": 1},
+
+                {"Call of the Haunted": 1},
+                {"Ceasefire": 1},
+                {"Imperial Order": 1},
+                {"Mirror Force": 1},
+
+                {"Morphing Jar #2": 2},
+                {"Sangan": 2},
+
+                {"Heavy Storm": 2},
+                {"Nobleman of Crossout": 2},
+                
+                {"Backup Soldier": 2}
+            ]
         },
-        "ast4": {
-            "title": "Opening Ancient Sanctuary Booster Box Pack 4",
-            "image": "ast_background.webp",
-            "composes": ["ast"],
-            "chain": "pack: ast5"
+        "04-01-2003":{
+            "micon": "banlist.webp",
+            "mdesc": "Banlist Update 04-01-2003",
+            "list": [
+                {"Left Arm of the Forbidden One":1},
+                {"Left Leg of the Forbidden One":1},
+                {"Right Arm of the Forbidden One":1},
+                {"Right Leg of the Forbidden One":1},
+
+                {"Cyber Jar": 1},
+                {"Exodia the Forbidden One":1},
+                {"Jinzo": 1},
+                {"Morphing Jar": 1},
+                {"Sangan": 1},
+                {"Witch of the Black Forest": 1},
+
+                {"Card Destruction":1},
+                {"Change of Heart":1},
+                {"Confiscation":1},
+                {"Dark Hole":1},
+                {"Delinquent Duo":1},
+                {"Limiter Removal":1},
+                {"Mage Power":1},
+                {"Monster Reborn":1},
+                {"Painful Choice":1},
+                {"Pot of Greed":1},
+                {"Premature Burial":1},
+                {"Raigeki":1},
+                {"Snatch Steal":1},
+                {"Swords of Revealing Light":1},
+                {"The Forceful Sentury":1},
+                {"United We Stand": 1},
+                {"Upstart Goblin": 1},
+
+                {"Call of the Haunted": 1},
+                {"Ceasefire": 1},
+                {"Imperial Order": 1},
+                {"Magic Cylinder": 1},
+                {"Mirror Force": 1},
+
+                {"Morphing Jar #2": 2},
+                
+                {"Heavy Storm": 2},
+                {"Nobleman of Crossout": 2},
+                
+                {"Backup Soldier": 2}
+            ]
         },
-        "ast5": {
-            "title": "Opening Ancient Sanctuary Booster Box Pack 5",
-            "image": "ast_background.webp",
-            "composes": ["ast"],
-            "chain": "pack: ast6"
+        "05-08-2003":{
+            "micon": "banlist.webp",
+            "mdesc": "Banlist Update 05-08-2003",
+            "list": [
+                {"Left Arm of the Forbidden One":1},
+                {"Left Leg of the Forbidden One":1},
+                {"Right Arm of the Forbidden One":1},
+                {"Right Leg of the Forbidden One":1},
+
+                {"Cyber Jar": 1},
+                {"Exodia the Forbidden One":1},
+                {"Jinzo": 1},
+                {"Morphing Jar": 1},
+                {"Sangan": 1},
+                {"Sinister Serpent": 1},
+                {"Witch of the Black Forest": 1},
+
+                {"Card Destruction":1},
+                {"Change of Heart":1},
+                {"Confiscation":1},
+                {"Dark Hole":1},
+                {"Delinquent Duo":1},
+                {"Heavy Storm": 1},
+                {"Limiter Removal":1},
+                {"Mage Power":1},
+                {"Monster Reborn":1},
+                {"Painful Choice":1},
+                {"Pot of Greed":1},
+                {"Premature Burial":1},
+                {"Raigeki":1},
+                {"Snatch Steal":1},
+                {"Swords of Revealing Light":1},
+                {"The Forceful Sentury":1},
+                {"United We Stand": 1},
+                {"Upstart Goblin": 1},
+                {"Harpie's Feather Duster": 1},
+
+                {"Call of the Haunted": 1},
+                {"Ceasefire": 1},
+                {"Imperial Order": 1},
+                {"Magic Cylinder": 1},
+                {"Mirror Force": 1},
+
+                {"Morphing Jar #2": 2},
+                
+                {"Nobleman of Crossout": 2},
+                
+                {"Backup Soldier": 2}
+            ]
         },
-        "ast6": {
-            "title": "Opening Ancient Sanctuary Booster Box Pack 6",
-            "image": "ast_background.webp",
-            "composes": ["ast"],
-            "chain": "pack: ast7"
+        "07-08-2003":{
+            "micon": "banlist.webp",
+            "mdesc": "Banlist Update 07-08-2003",
+            "list": [
+                {"Left Arm of the Forbidden One":1},
+                {"Left Leg of the Forbidden One":1},
+                {"Right Arm of the Forbidden One":1},
+                {"Right Leg of the Forbidden One":1},
+
+                {"Cyber Jar": 1},
+                {"Exiled Force": 1},
+                {"Exodia the Forbidden One":1},
+                {"Fiber Jar": 1},
+                {"Injection Fairy Lily": 1},
+                {"Jinzo": 1},
+                {"Morphing Jar": 1},
+                {"Sangan": 1},
+                {"Sinister Serpent": 1},
+                {"Witch of the Black Forest": 1},
+                {"Twin-Headed Behemoth": 1},
+                {"Yata-Garasu": 1},
+
+                {"Card Destruction":1},
+                {"Change of Heart":1},
+                {"Confiscation":1},
+                {"Dark Hole":1},
+                {"Delinquent Duo":1},
+                {"Heavy Storm": 1},
+                {"Limiter Removal":1},
+                {"Mage Power":1},
+                {"Monster Reborn":1},
+                {"Painful Choice":1},
+                {"Pot of Greed":1},
+                {"Premature Burial":1},
+                {"Raigeki":1},
+                {"Snatch Steal":1},
+                {"Swords of Revealing Light":1},
+                {"The Forceful Sentury":1},
+                {"United We Stand": 1},
+                {"Upstart Goblin": 1},
+                {"Harpie's Feather Duster": 1},
+
+                {"Call of the Haunted": 1},
+                {"Ceasefire": 1},
+                {"Imperial Order": 1},
+                {"Magic Cylinder": 1},
+                {"Mirror Force": 1},
+
+                {"Marauding Captain": 1},
+                {"Morphing Jar #2": 2},
+                
+                {"Creature Swap": 2},
+                {"Graceful Charity": 2},
+                {"Nobleman of Crossout": 2},
+                {"Reinforcement of the Army": 2},
+
+                {"Backup Soldier": 2},
+                {"Last Turn": 2}
+            ]
         },
-        "ast7": {
-            "title": "Opening Ancient Sanctuary Booster Box Pack 7",
-            "image": "ast_background.webp",
-            "composes": ["ast"],
-            "chain": "pack: ast8"
+        "08-25-2003":{
+            "micon": "banlist.webp",
+            "mdesc": "Banlist Update 08-25-2003",
+            "list": [
+                {"Left Arm of the Forbidden One":1},
+                {"Left Leg of the Forbidden One":1},
+                {"Right Arm of the Forbidden One":1},
+                {"Right Leg of the Forbidden One":1},
+
+                {"Cyber Jar": 1},
+                {"Exiled Force": 1},
+                {"Exodia the Forbidden One":1},
+                {"Fiber Jar": 1},
+                {"Injection Fairy Lily": 1},
+                {"Jinzo": 1},
+                {"Morphing Jar": 1},
+                {"Sangan": 1},
+                {"Sinister Serpent": 1},
+                {"Witch of the Black Forest": 1},
+                {"Twin-Headed Behemoth": 1},
+                {"Yata-Garasu": 1},
+
+                {"Card Destruction":1},
+                {"Change of Heart":1},
+                {"Confiscation":1},
+                {"Dark Hole":1},
+                {"Delinquent Duo":1},
+                {"Graceful Charity": 1},
+                {"Heavy Storm": 1},
+                {"Mage Power":1},
+                {"Mirage of Nightmare": 1},
+                {"Monster Reborn":1},
+                {"Painful Choice":1},
+                {"Pot of Greed":1},
+                {"Premature Burial":1},
+                {"Raigeki":1},
+                {"Snatch Steal":1},
+                {"Swords of Revealing Light":1},
+                {"The Forceful Sentury":1},
+                {"United We Stand": 1},
+                {"Upstart Goblin": 1},
+                {"Harpie's Feather Duster": 1},
+
+                {"Call of the Haunted": 1},
+                {"Ceasefire": 1},
+                {"Imperial Order": 1},
+                {"Magic Cylinder": 1},
+                {"Mirror Force": 1},
+                {"Reckless Greed": 1},
+                {"Ring of Destruction": 1},
+
+                {"Marauding Captain": 1},
+                {"Morphing Jar #2": 2},
+                
+                {"Creature Swap": 2},
+                {"Nobleman of Crossout": 2},
+                {"Reinforcement of the Army": 2},
+
+                {"Last Turn": 2}
+            ]
         },
-        "ast8": {
-            "title": "Opening Ancient Sanctuary Booster Box Pack 8",
-            "image": "ast_background.webp",
-            "composes": ["ast"],
-            "chain": "pack: ast9"
+        "11-17-2003":{
+            "micon": "banlist.webp",
+            "mdesc": "Banlist Update 11-17-2003",
+            "list": [
+                {"Left Arm of the Forbidden One":1},
+                {"Left Leg of the Forbidden One":1},
+                {"Right Arm of the Forbidden One":1},
+                {"Right Leg of the Forbidden One":1},
+
+                {"Breaker the Magical Warrior": 1},
+                {"Cyber Jar": 1},
+                {"Exiled Force": 1},
+                {"Exodia the Forbidden One":1},
+                {"Fiber Jar": 1},
+                {"Injection Fairy Lily": 1},
+                {"Jinzo": 1},
+                {"Morphing Jar": 1},
+                {"Sangan": 1},
+                {"Sinister Serpent": 1},
+                {"Witch of the Black Forest": 1},
+                {"Tribe-Infecting Virus": 1},
+                {"Twin-Headed Behemoth": 1},
+                {"Yata-Garasu": 1},
+
+                {"Card Destruction":1},
+                {"Change of Heart":1},
+                {"Confiscation":1},
+                {"Dark Hole":1},
+                {"Delinquent Duo":1},
+                {"Graceful Charity": 1},
+                {"Heavy Storm": 1},
+                {"Mage Power":1},
+                {"Mirage of Nightmare": 1},
+                {"Monster Reborn":1},
+                {"Painful Choice":1},
+                {"Pot of Greed":1},
+                {"Premature Burial":1},
+                {"Raigeki":1},
+                {"Snatch Steal":1},
+                {"Swords of Revealing Light":1},
+                {"The Forceful Sentury":1},
+                {"United We Stand": 1},
+                {"Upstart Goblin": 1},
+                {"Harpie's Feather Duster": 1},
+
+                {"Call of the Haunted": 1},
+                {"Ceasefire": 1},
+                {"Imperial Order": 1},
+                {"Magic Cylinder": 1},
+                {"Mirror Force": 1},
+                {"Reckless Greed": 1},
+                {"Ring of Destruction": 1},
+
+                {"Marauding Captain": 1},
+                {"Morphing Jar #2": 2},
+                
+                {"Creature Swap": 2},
+                {"Nobleman of Crossout": 2},
+                {"Reinforcement of the Army": 2},
+
+                {"Last Turn": 2}
+            ]
         },
-        "ast9": {
-            "title": "Opening Ancient Sanctuary Booster Box Pack 9",
-            "image": "ast_background.webp",
-            "composes": ["ast"],
-            "chain": "pack: ast10"
+        "02-02-2004":{
+            "micon": "banlist.webp",
+            "mdesc": "Banlist Update 02-02-2004",
+            "list": [
+                {"Left Arm of the Forbidden One":1},
+                {"Left Leg of the Forbidden One":1},
+                {"Right Arm of the Forbidden One":1},
+                {"Right Leg of the Forbidden One":1},
+
+                {"Breaker the Magical Warrior": 1},
+                {"Cyber Jar": 1},
+                {"Exiled Force": 1},
+                {"Exodia the Forbidden One":1},
+                {"Fiber Jar": 1},
+                {"Injection Fairy Lily": 1},
+                {"Jinzo": 1},
+                {"Magical Scientist": 1},
+                {"Morphing Jar": 1},
+                {"Reflect Bounder": 1},
+                {"Sangan": 1},
+                {"Sinister Serpent": 1},
+                {"Vampire Lord": 1},
+                {"Witch of the Black Forest": 1},
+                {"Tribe-Infecting Virus": 1},
+                {"Twin-Headed Behemoth": 1},
+                {"Yata-Garasu": 1},
+
+                {"Card Destruction":1},
+                {"Change of Heart":1},
+                {"Confiscation":1},
+                {"Dark Hole":1},
+                {"Delinquent Duo":1},
+                {"Graceful Charity": 1},
+                {"Heavy Storm": 1},
+                {"Mage Power":1},
+                {"Mirage of Nightmare": 1},
+                {"Monster Reborn":1},
+                {"Painful Choice":1},
+                {"Pot of Greed":1},
+                {"Premature Burial":1},
+                {"Raigeki":1},
+                {"Snatch Steal":1},
+                {"Swords of Revealing Light":1},
+                {"The Forceful Sentury":1},
+                {"United We Stand": 1},
+                {"Upstart Goblin": 1},
+                {"Butterfly Dagger Elma": 1},
+                {"Harpie's Feather Duster": 1},
+
+                {"Call of the Haunted": 1},
+                {"Ceasefire": 1},
+                {"Imperial Order": 1},
+                {"Magic Cylinder": 1},
+                {"Mirror Force": 1},
+                {"Reckless Greed": 1},
+                {"Ring of Destruction": 1},
+
+                {"Marauding Captain": 1},
+                {"Morphing Jar #2": 2},
+                
+                {"Creature Swap": 2},
+                {"Nobleman of Crossout": 2},
+                {"Reinforcement of the Army": 2},
+
+                {"Last Turn": 2}
+            ]
         },
-        "ast10": {
-            "title": "Opening Ancient Sanctuary Booster Box Pack 10",
-            "image": "ast_background.webp",
-            "composes": ["ast"],
-            "chain": "pack: ast11"
+        "04-19-2004":{
+            "micon": "banlist.webp",
+            "mdesc": "Banlist Update 04-19-2004",
+            "list": [
+                {"Left Arm of the Forbidden One":1},
+                {"Left Leg of the Forbidden One":1},
+                {"Right Arm of the Forbidden One":1},
+                {"Right Leg of the Forbidden One":1},
+
+                {"Black Luster Soldier Envoy of the Beginning": 1},
+                {"Breaker the Magical Warrior": 1},
+                {"Cyber Jar": 1},
+                {"Exiled Force": 1},
+                {"Exodia the Forbidden One":1},
+                {"Fiber Jar": 1},
+                {"Injection Fairy Lily": 1},
+                {"Jinzo": 1},
+                {"Magical Scientist": 1},
+                {"Morphing Jar": 1},
+                {"Reflect Bounder": 1},
+                {"Sangan": 1},
+                {"Sinister Serpent": 1},
+                {"Vampire Lord": 1},
+                {"Witch of the Black Forest": 1},
+                {"Tribe-Infecting Virus": 1},
+                {"Twin-Headed Behemoth": 1},
+                {"Yata-Garasu": 1},
+                {"Chaos Emperor Dragon - Envoy of the End": 1},
+
+                {"Card Destruction":1},
+                {"Change of Heart":1},
+                {"Confiscation":1},
+                {"Dark Hole":1},
+                {"Delinquent Duo":1},
+                {"Graceful Charity": 1},
+                {"Heavy Storm": 1},
+                {"Mage Power":1},
+                {"Mirage of Nightmare": 1},
+                {"Monster Reborn":1},
+                {"Painful Choice":1},
+                {"Pot of Greed":1},
+                {"Premature Burial":1},
+                {"Raigeki":1},
+                {"Snatch Steal":1},
+                {"Swords of Revealing Light":1},
+                {"The Forceful Sentury":1},
+                {"United We Stand": 1},
+                {"Upstart Goblin": 1},
+                {"Butterfly Dagger Elma": 1},
+                {"Harpie's Feather Duster": 1},
+
+                {"Call of the Haunted": 1},
+                {"Ceasefire": 1},
+                {"Imperial Order": 1},
+                {"Magic Cylinder": 1},
+                {"Mirror Force": 1},
+                {"Reckless Greed": 1},
+                {"Ring of Destruction": 1},
+
+                {"Manticore of Darkness": 2},
+                {"Marauding Captain": 1},
+                {"Morphing Jar #2": 2},
+                
+                {"Creature Swap": 2},
+                {"Nobleman of Crossout": 2},
+                {"Reinforcement of the Army": 2},
+
+                {"Last Turn": 2}
+            ]
         },
-        "ast11": {
-            "title": "Opening Ancient Sanctuary Booster Box Pack 11",
-            "image": "ast_background.webp",
-            "composes": ["ast"],
-            "chain": "pack: ast12"
+        "08-25-2004":{
+            "micon": "banlist.webp",
+            "mdesc": "Banlist Update 08-25-2004",
+            "list": [
+                {"Sangan": 0},
+                {"Witch of the Black Forest": 0},
+                {"Yata-Garasu": 0},
+                {"Chaos Emperor Dragon - Envoy of the End": 0},
+
+                {"Dark Hole":0},
+                {"Delinquent Duo":0},
+                {"Graceful Charity": 0},
+                {"Monster Reborn":0},
+                {"Raigeki":0},
+                {"United We Stand": 0},
+                {"Harpie's Feather Duster": 0},
+
+                {"Mirror Force": 0},
+
+                {"Left Arm of the Forbidden One":1},
+                {"Left Leg of the Forbidden One":1},
+                {"Right Arm of the Forbidden One":1},
+                {"Right Leg of the Forbidden One":1},
+
+                {"Black Luster Soldier Envoy of the Beginning": 1},
+                {"Breaker the Magical Warrior": 1},
+                {"Cyber Jar": 1},
+                {"Exiled Force": 1},
+                {"Exodia the Forbidden One":1},
+                {"Fiber Jar": 1},
+                {"Injection Fairy Lily": 1},
+                {"Jinzo": 1},
+                {"Magical Scientist": 1},
+                {"Morphing Jar": 1},
+                {"Reflect Bounder": 1},
+                {"Sinister Serpent": 1},
+                {"Vampire Lord": 1},
+                {"Tribe-Infecting Virus": 1},
+                {"Twin-Headed Behemoth": 1},
+                
+                {"Card Destruction":1},
+                {"Change of Heart":1},
+                {"Confiscation":1},
+                {"Heavy Storm": 1},
+                {"Mage Power":1},
+                {"Mirage of Nightmare": 1},
+                {"Painful Choice":1},
+                {"Pot of Greed":1},
+                {"Premature Burial":1},
+                {"Snatch Steal":1},
+                {"Swords of Revealing Light":1},
+                {"The Forceful Sentury":1},
+                {"Upstart Goblin": 1},
+                {"Butterfly Dagger Elma": 1},
+                
+                {"Call of the Haunted": 1},
+                {"Ceasefire": 1},
+                
+                {"Imperial Order": 1},
+                {"Magic Cylinder": 1},
+                {"Reckless Greed": 1},
+                {"Ring of Destruction": 1},
+
+                {"Manticore of Darkness": 2},
+                {"Marauding Captain": 1},
+                {"Morphing Jar #2": 2},
+                
+                {"Creature Swap": 2},
+                {"Nobleman of Crossout": 2},
+                {"Reinforcement of the Army": 2},
+
+                {"Last Turn": 2}
+            ]
         },
-        "ast12": {
-            "title": "Opening Ancient Sanctuary Booster Box Pack 12",
-            "image": "ast_background.webp",
-            "composes": ["ast"],
-            "chain": "pack: ast13"
-        },
-        "ast13": {
-            "title": "Opening Ancient Sanctuary Booster Box Pack 13",
-            "image": "ast_background.webp",
-            "composes": ["ast"],
-            "chain": "pack: ast14"
-        },
-        "ast14": {
-            "title": "Opening Ancient Sanctuary Booster Box Pack 14",
-            "image": "ast_background.webp",
-            "composes": ["ast"],
-            "chain": "pack: ast15"
-        },
-        "ast15": {
-            "title": "Opening Ancient Sanctuary Booster Box Pack 15",
-            "image": "ast_background.webp",
-            "composes": ["ast"],
-            "chain": "pack: ast16"
-        },
-        "ast16": {
-            "title": "Opening Ancient Sanctuary Booster Box Pack 16",
-            "image": "ast_background.webp",
-            "composes": ["ast"],
-            "chain": "pack: ast17"
-        },
-        "ast17": {
-            "title": "Opening Ancient Sanctuary Booster Box Pack 17",
-            "image": "ast_background.webp",
-            "composes": ["ast"],
-            "chain": "pack: ast18"
-        },
-        "ast18": {
-            "title": "Opening Ancient Sanctuary Booster Box Pack 18",
-            "image": "ast_background.webp",
-            "composes": ["ast"],
-            "chain": "pack: ast19"
-        },
-        "ast19": {
-            "title": "Opening Ancient Sanctuary Booster Box Pack 19",
-            "image": "ast_background.webp",
-            "composes": ["ast"],
-            "chain": "pack: ast20"
-        },
-        "ast20": {
-            "title": "Opening Ancient Sanctuary Booster Box Pack 20",
-            "image": "ast_background.webp",
-            "composes": ["ast"],
-            "chain": "pack: ast21"
-        },
-        "ast21": {
-            "title": "Opening Ancient Sanctuary Booster Box Pack 21",
-            "image": "ast_background.webp",
-            "composes": ["ast"],
-            "chain": "pack: ast22"
-        },
-        "ast22": {
-            "title": "Opening Ancient Sanctuary Booster Box Pack 22",
-            "image": "ast_background.webp",
-            "composes": ["ast"],
-            "chain": "pack: ast23"
-        },
-        "ast23": {
-            "title": "Opening Ancient Sanctuary Booster Box Pack 23",
-            "image": "ast_background.webp",
-            "composes": ["ast"],
-            "chain": "pack: ast24"
-        },
-        "ast24": {
-            "title": "Opening Ancient Sanctuary Booster Box Pack 24",
-            "image": "ast_background.webp",
-            "composes": ["ast"]
+        "10-01-2004":{
+            "micon": "banlist.webp",
+            "mdesc": "Banlist Update 10-01-2004",
+            "list": [
+                {"Sangan": 0},
+                {"Witch of the Black Forest": 0},
+                {"Yata-Garasu": 0},
+                {"Chaos Emperor Dragon - Envoy of the End": 0},
+
+                {"Dark Hole":0},
+                {"Delinquent Duo":0},
+                {"Graceful Charity": 0},
+                {"Monster Reborn":0},
+                {"Raigeki":0},
+                {"United We Stand": 0},
+                {"Harpie's Feather Duster": 0},
+
+                {"Imperial Order": 0},
+                {"Mirror Force": 0},
+
+                {"Left Arm of the Forbidden One":1},
+                {"Left Leg of the Forbidden One":1},
+                {"Right Arm of the Forbidden One":1},
+                {"Right Leg of the Forbidden One":1},
+
+                {"Black Luster Soldier Envoy of the Beginning": 1},
+                {"Breaker the Magical Warrior": 1},
+                {"Cyber Jar": 1},
+                {"Exiled Force": 1},
+                {"Exodia the Forbidden One":1},
+                {"Fiber Jar": 1},
+                {"Injection Fairy Lily": 1},
+                {"Jinzo": 1},
+                {"Magical Scientist": 1},
+                {"Morphing Jar": 1},
+                {"Protector of the Sanctuary": 1},
+                {"Reflect Bounder": 1},
+                {"Sinister Serpent": 1},
+                {"Vampire Lord": 1},
+                {"Tribe-Infecting Virus": 1},
+                {"Twin-Headed Behemoth": 1},
+                {"Dark Magician of Chaos": 1},
+                
+                {"Card Destruction":1},
+                {"Change of Heart":1},
+                {"Confiscation":1},
+                {"Heavy Storm": 1},
+                {"Mage Power":1},
+                {"Mirage of Nightmare": 1},
+                {"Mystical Space Typhoon": 1},
+                {"Painful Choice":1},
+                {"Pot of Greed":1},
+                {"Premature Burial":1},
+                {"Snatch Steal":1},
+                {"Swords of Revealing Light":1},
+                {"The Forceful Sentury":1},
+                {"Upstart Goblin": 1},
+                {"Butterfly Dagger Elma": 1},
+                
+                {"Call of the Haunted": 1},
+                {"Ceasefire": 1},
+                
+                {"Magic Cylinder": 1},
+                {"Reckless Greed": 1},
+                {"Ring of Destruction": 1},
+                {"Torrential Tribute": 1},
+
+                {"Manticore of Darkness": 2},
+                {"Marauding Captain": 1},
+                {"Morphing Jar #2": 2},
+                
+                {"Creature Swap": 2},
+                {"Nobleman of Crossout": 2},
+                {"Reinforcement of the Army": 2},
+
+                {"Last Turn": 2}
+            ]
         }
     },
 
     "duel":{
-        "yugikaiba":{
+        "lob":{
             "micon": "dueldisk.webp",
-            "chain": "area: mrd"
+            "wins": "rand: winLOB",
+            "lose": "text: tournamentPack1"
         },
         "mrd":{
             "micon": "dueldisk.webp",
-            "chain": "area: srl"
+            "chain": "area: androidJPFormat"
         },
         "srl":{
-            "micon": "dueldisk.webp",
-            "chain": "area: psv"
+            "micon": "dueldisk.webp"
         },
         "psv":{
-            "micon": "dueldisk.webp",
-            "chain": "area: lon"
+            "micon": "dueldisk.webp"
         },
         "lon":{
             "micon": "dueldisk.webp",
-            "chain": "area: lod"
+            "chain": "area: yataFormat"
         },
         "lod":{
             "micon": "dueldisk.webp",
-            "chain": "area: pgd"
+            "chain": "area: vampireFormat"
         },
         "pgd":{
-            "micon": "dueldisk.webp",
-            "chain": "area: mfc"
+            "micon": "dueldisk.webp"
         },
         "mfc":{
-            "micon": "dueldisk.webp",
-            "chain": "area: dcr"
+            "micon": "dueldisk.webp"
         },
         "dcr":{
             "micon": "dueldisk.webp",
-            "chain": "area: ioc"
+            "chain": "area: chaosFormat"
         },
         "ioc":{
-            "micon": "dueldisk.webp",
-            "chain": "area: ast"
+            "micon": "dueldisk.webp"
         },
         "ast":{
             "micon": "dueldisk.webp"
