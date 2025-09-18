@@ -18,6 +18,13 @@
                 ["text: cardstoreIntro"]
             ]
         },
+        "03-2002_Week-3":{
+            "micon": "cityscape.webp",
+            "image": "town-background_03-2002_2.webp",
+            "mdata": [ 
+                ["text: cardstoreIntro"]
+            ]
+        },
         "cardStore_03-2002_Week-2": {
             "micon": "gamestore.webp",
             "mdesc": "Local Game Store",
@@ -26,7 +33,18 @@
             "mdata": [
                 ["gate: buyLOBBox", "void: atm"],
                 ["text: firstDuel", "void: resetCardStore_03-2002-2"],
-                ["text: 02-2002-2_end"]
+                ["text: 03-2002-2_end"]
+            ]
+        },
+         "cardStore_03-2002_Week-3": {
+            "micon": "gamestore.webp",
+            "mdesc": "Local Game Store",
+            "image": "cardstore-background_03-2002_2.webp",
+            "audio": "none",
+            "mdata": [
+                ["gate: buyLOBBox", "void: atm"],
+                ["text: firstDuel", "void: resetCardStore_03-2002-2"],
+                ["text: 03-2002-2_end"]
             ]
         }
     },
@@ -36,6 +54,7 @@
             "mdesc": "Watch the first episode of Yu-Gi-Oh!",
             "image": "MillenniumPuzzleHeiroglyphs.webp",
             "audio": "I'mBack(Instrumental).mp3",
+            "video": "Yu-Gi-Oh_Duel Monsters_Season_1_Version_1_Opening_Theme - Official_Yu-Gi-Oh(Trimmed).mp4",
             "parts": [
                     {"type": "bust", "content": "Mickey-Laugh.webp"},
                     {"type": "text", "content": "Woah..."},
@@ -133,7 +152,7 @@
             ],
             "chain": "duel: lob"
         },   
-        "02-2002-2_end":{
+        "03-2002-2_end":{
             "mdesc": "End the week",
             "micon": "moon.webp",
             "parts":[
@@ -284,16 +303,16 @@
 
         "lonPack": {
             "title": "Opening Labyrinth of Nightmare Booster Pack",
-            "image": "lob_background.webp",
-            "composes": ["lob"]
+            "image": "lon_background.webp",
+            "composes": ["lon"]
         },
         "lonBox": {
             "title": "Opening Labyrinth of Nightmare Booster Pack <<count>>",
-            "image": "lob_background.webp",
-            "composes": ["lob"],
+            "image": "lon_background.webp",
+            "composes": ["lon"],
             "vars": { "count": "<<count>>.add(1)" },
             "split": {
-                "<<count>> < 24": "pack: lobBox",
+                "<<count>> < 24": "pack: lonBox",
                 "<<count>> == 24": "void: resetCount"
             }
         },
@@ -428,12 +447,8 @@
         "allowance-1": {
             "mdesc": "Allowance",
             "micon": "wallet.webp",
-            "list":[
-                "$$$"
-            ],
-            "vars":{
-                "money":120
-            },
+            "list":["$$$"],
+            "vars":{"money":120},
             "chain":"area: cardStore_03-2002_Week-2"
         },
         "starterDeckYugi": {
@@ -620,7 +635,7 @@
                     "cost": "$$$",
                     "copiesNeeded": 1,
                     "vars":{"purchase": "lobBox"},
-                    "chain": "void: balanceCheck120"
+                    "chain": "pool: balanceCheck120"
                 }
             ]
         },
@@ -729,37 +744,37 @@
         "resetCardStore_03-2002-2":{
             "mdesc": "Reset Store",
             "micon": "refresh.webp",
-            "chain": "area cardStore_03-2002_Week-2"
+            "chain": "area: cardStore_03-2002_Week-2"
         },
         "resetCardStore_03-2002-3":{
             "mdesc": "Reset Store",
             "micon": "refresh.webp",
-            "chain": "area cardStore_03-2002_Week-3"
+            "chain": "area: cardStore_03-2002_Week-3"
         },
 
         "money-5":{
             "vars":{
                 "money": "<<money>>.sub(5)"
             },
-            "chain":"productIdentify"
+            "chain":"void: productIdentify"
         },
         "money-10":{
             "vars":{
                 "money": "<<money>>.sub(10)"
             },
-            "chain":"productIdentify"
+            "chain":"void: productIdentify"
         },
         "money-25":{
             "vars":{
                 "money": "<<money>>.sub(25)"
             },
-            "chain":"productIdentify"
+            "chain":"void: productIdentify"
         },
         "money-120":{
             "vars":{
                 "money": "<<money>>.sub(120)"
             },
-            "chain":"productIdentify"
+            "chain":"void: productIdentify"
         },
 
         "productIdentify":{
@@ -1521,8 +1536,7 @@
             "lose": "text: tournamentPack1"
         },
         "mrd":{
-            "micon": "dueldisk.webp",
-            "chain": "area: androidJPFormat"
+            "micon": "dueldisk.webp"
         },
         "srl":{
             "micon": "dueldisk.webp"
@@ -1531,12 +1545,10 @@
             "micon": "dueldisk.webp"
         },
         "lon":{
-            "micon": "dueldisk.webp",
-            "chain": "area: yataFormat"
+            "micon": "dueldisk.webp"
         },
         "lod":{
-            "micon": "dueldisk.webp",
-            "chain": "area: vampireFormat"
+            "micon": "dueldisk.webp"
         },
         "pgd":{
             "micon": "dueldisk.webp"
@@ -1545,8 +1557,7 @@
             "micon": "dueldisk.webp"
         },
         "dcr":{
-            "micon": "dueldisk.webp",
-            "chain": "area: chaosFormat"
+            "micon": "dueldisk.webp"
         },
         "ioc":{
             "micon": "dueldisk.webp"
