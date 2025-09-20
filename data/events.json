@@ -4,12 +4,8 @@
             "micon": "none",
             "image": "Domino_City.webp",
             "mdata": [
-                ["text: firstEpisode"]
-            ]  ,
-            "vars": {
-                "money": 0,
-                "count": 0
-            }
+                ["void: setVariables"]
+            ]
         },
         "03-2002_Week-2":{
             "micon": "cityscape.webp",
@@ -20,9 +16,10 @@
         },
         "03-2002_Week-3":{
             "micon": "cityscape.webp",
+            "mdesc": "Leave",
             "image": "town-background_03-2002_2.webp",
             "mdata": [ 
-                ["text: cardstoreIntro"]
+                ["area: cardStore_03-2002_Week-3", "area: gameStore_03-2002_Week-3", "area: school_03-2002_Week-3"]
             ]
         },
         "cardStore_03-2002_Week-2": {
@@ -32,19 +29,50 @@
             "audio": "none",
             "mdata": [
                 ["gate: buyLOBBox", "void: atm"],
-                ["text: firstDuel", "void: resetCardStore_03-2002-2"],
+                ["text: firstDuel"],
                 ["text: 03-2002-2_end"]
             ]
         },
-         "cardStore_03-2002_Week-3": {
+        "cardStore_03-2002_Week-3": {
             "micon": "gamestore.webp",
             "mdesc": "Local Game Store",
             "image": "cardstore-background_03-2002_2.webp",
             "audio": "none",
+            "vars":{
+                "currentArea":"cardStore_03-2002_Week-3"
+            },
             "mdata": [
-                ["gate: buyLOBBox", "void: atm"],
-                ["text: firstDuel", "void: resetCardStore_03-2002-2"],
+                ["gate: buyLOBPack", "gate: buyLOBBox", "void: atm", "void: proceed", "area: 03-2002_Week-3"],
+                ["void: resetArea"],
                 ["text: 03-2002-2_end"]
+            ]
+        },
+        "school_03-2002_Week-3": {
+            "micon": "school.webp",
+            "mdesc": "School",
+            "image": "school-background_03-2002_3.webp",
+            "audio": "none",
+            "vars":{
+                "currentEvent": "school_03-2002_Week-3"
+            },
+            "mdata": [
+                ["area: 03-2002_Week-3", "void: RareHunter-Seeker"],
+                ["void: resetArea"]
+
+            ]
+        },
+        "gameStore_03-2002_Week-3": {
+            "micon": "vgstore.webp",
+            "mdesc": "Video Game Store",
+            "image": "gamestore-background_04-2002_3.webp",
+            "audio": "none",
+            "vars":{
+                "currentEvent": "gameStore_03-2002_Week-3"
+            },
+            "mdata": [
+                ["area: 03-2002_Week-3", "void: setoKaiba"],
+                ["void: resetArea"]
+
             ]
         }
     },
@@ -167,6 +195,41 @@
             ],
             "chain":"area: 03-2002_Week-3"
         },
+        "rareHunterIntro":{
+            "mdesc": "Seeker (Rare Hunter)",
+            "micon": "",
+            "parts":[
+                {"type": "bust", "content":"RareHunter-Frown.webp"},
+                {"type": "text", "content":"Hello there fellow student. I am Seeker. My mission is to collect rare and powerful Yu-Gi-oh! cards to become a legendary, undefeatable duelist!"},
+                {"type": "text", "content":"Unfortunately I am having some difficulty achieving my goals after being grounded for using Dad's credit card to buy more Yu-Gi-Oh! packs without asking..."},
+                {"type": "text", "content":"They just don't understand how valuable my collection is going to be!"},
+                {"type": "text", "content":"But obviously without money to buy packs I am going to need some help. I'll reward you handsomely if you will help me."},                            {"type": "text", "content":"But obviously without money to buy packs I am going to need some help. I'll reward you handsomely if you will help me."},
+                {"type": "text", "content":"I am trying to collect all 5 pieces of Exodia the Forbidden One!"},
+                {"type": "text", "content":"With all 5 pieces assembled, I will be able to win any duel!"},
+                {"type": "text", "content":"However, it's incredibly difficult to assemble the set! Each piece is an Ultra Rare in the Legend of Blue-Eyes White Dragon set."},
+                {"type": "text", "content":"If you happen to pull a piece out of a pack, bring it to me and I'll trade you for it. Each piece is basically useless by itself, so you have no reason to hoarde them yourself."},
+                {"type": "text", "content":"And if I manage to assemble all 5 pieces, I promise you an unbelievable reward. What do you say?"}
+            ]
+        },
+        "setoKaibaIntro":{
+            "mdesc": "Seto Kaiba",
+            "micon": "",
+            "parts":[
+                {"type": "bust", "content":"SetoKaiba-Neutral.webp"},
+                {"type": "text", "content":"What do you want? Can't you see I'm busy?"},
+                {"type": "text", "content":"Hmm? That shirt... So you are a duelist?"},
+                {"type": "text", "content":"I am Seto Kaiba, premiere Pro Duelist."},
+                {"type": "text", "content":"I don't have time to waste on third rate duelists with fourth rate decks like you."},                            
+                {"type": "text", "content":"However, I am in a bit of a bind at the moment, so I will honor you with a mission."},
+                {"type": "text", "content":"I am currently collecting a master set of the legendary Blue-Eyes White Dragon."},
+                {"type": "text", "content":"At current, there are 3 printings of the card in existence."},
+                {"type": "text", "content":"I already have the Starter Deck Kaiba and Dark Duel Stories promotional printings."},
+                {"type": "text", "content":"However, the Ultra Rare printing of Blue-Eyes White Dragon from the Legend of Blue Eyes White Dragon booster pack eludes me."},
+                {"type": "text", "content":"If you manage to find a Blue-Eyes White Dragon (LOB), bring it to me and I will make it worth your while."},
+                {"type": "text", "content":"Now leave me dweeb; I have more important things to do than babysit all day."},
+                {"type": "text", "content":"And don't disappoint me."}
+            ]
+        },
         "tournamentPack1":{
             "parts": [
                 {"type": "bust", "content": "TP1-2.webp"},
@@ -249,7 +312,7 @@
             "vars": { "count": "<<count>>.add(1)" },
             "split": {
                 "<<count>> < 24": "pack: lobBox",
-                "<<count>> == 24": "void: resetCount"
+                "<<count>> == 24": ""
             }
         },
 
@@ -716,6 +779,44 @@
                     "chain": "void: balanceCheck25"
                 }
             ]
+        },
+        "tradeExodiaTheForbiddenOne":{
+            "mdesc": "",
+            "micon": "",
+            "skippable": true,
+            "tolls":[
+                {
+                    "cost":"Left Arm of the Forbidden One",
+                    "copiesNeeded": 1
+                },
+                {
+                    "cost":"Right Arm of the Forbidden One",
+                    "copiesNeeded": 1
+                },
+                {
+                    "cost":"Left Leg of the Forbidden One",
+                    "copiesNeeded": 1
+                },
+                {
+                    "cost":"Right Leg of the Forbidden One",
+                    "copiesNeeded": 1
+                },
+                {
+                    "cost":"Exodia the Forbidden One",
+                    "copiesNeeded": 1
+                }
+            ]
+        },
+        "tradeBlueEyesWhiteDragonLOB":{
+            "mdesc": "",
+            "micon": "",
+            "skippable": true,
+            "tolls":[
+                {
+                    "cost":"Blue-Eyes White Dragon (LOB)",
+                    "copiesNeeded": 1
+                }
+            ]
         }
     },
 
@@ -724,12 +825,13 @@
     },
 
     "void":{
-        "firstBox":{
-            "vars":{"count":0},
-            "chain":"pack: lobBox"
-        },
-        "resetCount":{
-            "vars":{"count":0}
+        "setVariables":{
+            "vars":{
+                "money": 0,
+                "spoken-Seeker": false,
+                "spoken-SetoKaiba": false
+            },
+            "chain":"text: firstEpisode"
         },
 
         "proceed":{
@@ -741,15 +843,10 @@
             "micon": "bank.webp"
         },
 
-        "resetCardStore_03-2002-2":{
-            "mdesc": "Reset Store",
+        "resetArea":{
+            "mdesc": "Reset Area",
             "micon": "refresh.webp",
-            "chain": "area: cardStore_03-2002_Week-2"
-        },
-        "resetCardStore_03-2002-3":{
-            "mdesc": "Reset Store",
-            "micon": "refresh.webp",
-            "chain": "area: cardStore_03-2002_Week-3"
+            "chain": "area: <<currentEvent>>"
         },
 
         "money-5":{
@@ -778,9 +875,28 @@
         },
 
         "productIdentify":{
+            "vars":{"count":0},
             "split":{
                 "<<purchase>> == lobPack":"pack: lobPack",
                 "<<purchase>> == lobBox":"pack: lobBox"
+            }
+        },
+
+        "RareHunter-Seeker":{
+            "micon":"RareHunter.webp",
+            "mdesc":"Speak to Rare Hunter Seeker",
+            "split":{
+                "<<spoken-Seeker>> == false":"text: rareHunterIntro",
+                "<<spoken-Seeker>> == true":"gate: tradeExodiaTheForbiddenOne"
+            }
+        },
+
+        "setoKaiba":{
+            "micon":"SetoKaiba.webp",
+            "mdesc":"Speak to Seto Kaiba",
+            "split":{
+                "<<spoken-SetoKaiba>> == false":"text: setoKaibaIntro",
+                "<<spoken-SetoKaiba>> == true":""
             }
         }
     },
