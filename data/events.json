@@ -45,7 +45,7 @@
                 "currentArea":"cardStore_03-2002_Week-3"
             },
             "mdata": [
-                ["pick: cardShop", "void: atm", "void: proceed", "area: 03-2002_Week-3"],
+                ["choice: cardShop", "void: atm", "void: proceed", "area: 03-2002_Week-3"],
                 ["void: resetArea"],
                 ["text: 03-2002-2_end"]
             ]
@@ -270,6 +270,145 @@
             ],
             "chain": "pack: tp1-1"
         },
+
+        "lgsWin":{
+            "parts":[
+                {"type": "bust", "content": ".webp"},
+                {"type": "text", "content": "Congratulations! You have won your match! You look around the store for your next opponent..."}
+            ],
+            "vars":{
+                "lgsWins": "<<lgsWins>>.add(1)"
+            },
+            "split":{
+                "<<lgsWins>> < 5 ": "rand: LGS<<tournamentPack>>",
+                "<<lgsWins>> == 5": "text: lgsFullWin"
+            }
+        },
+        "lgsFullWin":{
+            "parts":[
+                {"type": "bust", "content": ".webp"},
+                {"type": "text", "content": "Congratulations! You have won the final duel of the night. You are tonight's LGS champion!"},
+                {"type": "text", "content": "Now you get to open the tournament packs you earned!"}
+            ],
+            "chain":"pack: tp1"
+        },
+        "lgsLose":{
+            "parts":[
+                {"type": "bust", "content": ".webp"},
+                {"type": "text", "content": "You have lost this round and completed your night of play at the LGS."},
+                {"type": "text", "content": "Now you get to open the tournament packs you earned!"}
+            ],
+            "vars":{"count": 0},
+            "chain": "pack: tp1"
+        },
+        "lgsWeevilUnderwood":{
+            "parts":[
+                {"type": "bust", "content": ".webp"},
+                {"type": "text", "content": ""}
+            ],
+            "chain": "rand: lgsDecide75"
+        },
+        "lgsRexRaptor":{
+            "parts":[
+                {"type": "bust", "content": ".webp"},
+                {"type": "text", "content": ""}
+            ],
+            "chain": "rand: lgsDecide75"
+        },
+        "lgsMaiValentine":{
+            "parts":[
+                {"type": "bust", "content": ".webp"},
+                {"type": "text", "content": ""}
+            ],
+            "chain": "rand: lgsDecide75"
+        },
+        "lgsMakoTsunami":{
+            "parts":[
+                {"type": "bust", "content": ".webp"},
+                {"type": "text", "content": ""}
+            ],
+            "chain": "rand: lgsDecide75"
+        },
+        "lgsPanik":{
+            "parts":[
+                {"type": "bust", "content": ".webp"},
+                {"type": "text", "content": ""}
+            ],
+            "chain": "rand: lgsDecide75"
+        },
+        "lgsBonz":{
+            "parts":[
+                {"type": "bust", "content": ".webp"},
+                {"type": "text", "content": ""}
+            ],
+            "chain": "rand: lgsDecide75"
+        },
+        "lgsPara":{
+            "parts":[
+                {"type": "bust", "content": ".webp"},
+                {"type": "text", "content": ""}
+            ],
+            "chain": "rand: lgsDecide75"
+        },
+        "lgsDox":{
+            "parts":[
+                {"type": "bust", "content": ".webp"},
+                {"type": "text", "content": ""}
+            ],
+            "chain": "rand: lgsDecide75"
+        },
+
+        "lgsJoeyWheeler":{
+            "parts":[
+                {"type": "bust", "content": ".webp"},
+                {"type": "text", "content": ""}
+            ],
+            "chain": "rand: lgsDecide50"
+        },
+        "lgsMokubaKaiba":{
+            "parts":[
+                {"type": "bust", "content": ".webp"},
+                {"type": "text", "content": ""}
+            ],
+            "chain": "rand: lgsDecide50"
+        },
+        "lgsYamiBakura":{
+            "parts":[
+                {"type": "bust", "content": ".webp"},
+                {"type": "text", "content": ""}
+            ],
+            "chain": "rand: lgsDecide50"
+        },
+        "lgsBanditKeith":{
+            "parts":[
+                {"type": "bust", "content": ".webp"},
+                {"type": "text", "content": ""}
+            ],
+            "chain": "rand: lgsDecide50"
+        },
+
+        "lgsSetoKaiba":{
+            "parts":[
+                {"type": "bust", "content": ".webp"},
+                {"type": "text", "content": ""}
+            ],
+            "chain": "rand: lgsDecide25"
+        },
+        "lgsYamiYugi":{
+            "parts":[
+                {"type": "bust", "content": ".webp"},
+                {"type": "text", "content": ""}
+            ],
+            "chain": "rand: lgsDecide25"
+        },
+        "lgsMaximillionPegasus":{
+            "parts":[
+                {"type": "bust", "content": ".webp"},
+                {"type": "text", "content": ""}
+            ],
+            "chain": "rand: lgsDecide25"
+        },
+
         "credits":{
             "parts": [
                 {"text": "Images"},
@@ -520,22 +659,15 @@
             "composes": ["sdk"]
         },
        
-        "tp1-1": {
-            "title": "Opening Tournament Pack: 1st Season (Pack 1)",
-            "image": "ast_background.webp",
+        "tp1": {
+            "title": "Opening Tournament Pack: 1st Season (Pack <<count>>)",
+            "image": "MillenniumPuzzleHeiroglyphs.webp",
             "composes": ["tp1"],
-            "chain": "pack: tp1-2"
-        },
-        "tp1-2": {
-            "title": "Opening Tournament Pack: 1st Season (Pack 2)",
-            "image": "ast_background.webp",
-            "composes": ["tp1"],
-            "chain": "pack: tp1-3"
-        },
-        "tp1-3": {
-            "title": "Opening Tournament Pack: 1st Season (Pack 3)",
-            "image": "ast_background.webp",
-            "composes": ["tp1"]
+            "vars": { "lgsWins": "<<lgsWins>>.sub(1)", "count":"count.add(1)" },
+            "split": {
+                "<<count>> > 0": "pack: tp1",
+                "<<count>> == 0": "void: resetCount"
+            }
         }
     },
 
@@ -722,6 +854,24 @@
             ]
         },
 
+        "playLGS":{
+            "micon": "dueldisk.webp",
+            "mdesc": "Play in the LGS game night - Entry Fee: $10",
+            "vars":{
+                "lgsWins": 1
+            },
+            "skippable": true,
+            "tolls":{
+                "cost": "$$$",
+                    "copiesNeeded": 1,
+                    "vars":{
+                        "purchase": "lgsEntry",
+                        "cost": 10
+                    },
+                    "chain": "void: balanceCheck"
+            }
+        },
+
         "tradeSeeker":{
             "skippable": true,
             "tolls":[
@@ -766,7 +916,27 @@
     },
 
     "rand":{
-        "winLOB":["pick: winLOB-Secret","pick: winLOB-Ultra","pick: winLOB-Super","pick: winLOB-Rare"]
+        "winLOB":["pick: winLOB-Secret","pick: winLOB-Ultra","pick: winLOB-Super","pick: winLOB-Rare"],
+        "LGStp1":[
+            "text: lgsWeevilUnderwood",
+            "text: lgsRexRaptor",
+            "text: lgsMaiValentine",
+            "text: lgsMakoTsunami",
+            "text: lgsPanik",
+            "text: lgsBonz",
+            "text: lgsPara",
+            "text: lgsDox",
+            "text: lgsJoeyWheeler",
+            "text: lgsMokubaKaiba",
+            "text: lgsYamiBakura",
+            "text: lgsBanditKeith",
+            "text: lgsSetoKaiba",
+            "text: lgsYamiYugi",
+            "text: lgsMaximillionPegasus"
+        ],
+        "lgsDecide25":["text: lgsWin","text: lgsLose"],
+        "lgsDecide50":["text: lgsWin","text: lgsWin","text: lgsLose","text: lgsLose"],
+        "lgsDecide75":["text: lgsWin","text: lgsWin","text: lgsWin","text: lgsLose"]
     },
 
     "void":{
@@ -777,6 +947,9 @@
             "coord": [0,80],
             "vars":{
                 "money": 0,
+                "tournamentPack": "tp1",
+                "availableLocals": false,
+
                 "spokenSeeker": false,
                 "spokenSetoKaiba": false,
 
@@ -1135,6 +1308,15 @@
 
     "choice":{
         "cardShop":{
+            "micon": "gamestore.webp",
+            "mdesc": "Local Game Store",
+            "list": [
+                {"name": "Browse the Shop", "desc":"See all the products the card shop has in stock.", "img":"cash-register.webp", "chain":"choice: cardShopProducts"},
+                {"name": "Play in Locals", "desc":"Duel against other duelists in a local store tournament - Entry Fee: $10", "img":"dueldisk.webp", "chain":"gate: playLGS", "disable":[{"availableLocals":false}]},
+                {"name": "Leave", "desc":"Return to the Town Map", "img":"cityscape.webp", "chain":"area: <<currentArea>>"}
+            ]
+        },
+        "cardShopProducts":{
             "micon": "cash-register.webp",
             "mdesc": "Browse the shop",
             "list": [
@@ -1193,8 +1375,49 @@
                 {"name": "Flaming Eternity Booster Pack", "desc":"Flaming Eternity Booster Pack - $5", "img":"FET.webp", "chain":"gate: buyLOBPack", "disable":[{"availableFETPack":false}]},
                 {"name": "Flaming Eternity Booster Box", "desc":"Flaming Eternity Booster Box (24 Packs) - $120", "img":"FET-Box.webp", "chain":"gate: buyLOBPack", "disable":[{"availableFETBox":false}]},
                 {"name": "Structure Deck: Blaze of Destruction", "desc":"Structure Deck: Blaze of Destruction (40 cards) - $10", "img":"SD3.webp", "chain":"gate: buySDY", "disable":[{"availableSD3Deck":false}]},
-                {"name": "Structure Deck: Fury from the Deep", "desc":"Structure Deck: Fury from the Deep (40 cards) - $10", "img":"SD4.webp", "chain":"gate: buySDY", "disable":[{"availableSD4Deck":false}]}
+                {"name": "Structure Deck: Fury from the Deep", "desc":"Structure Deck: Fury from the Deep (40 cards) - $10", "img":"SD4.webp", "chain":"gate: buySDY", "disable":[{"availableSD4Deck":false}]},
+                
+                {"name": "Return to Shop Menu", "desc":"Stop browsing products and return to the card store main menu.", "img":"cardShop.webp", "chain":"choice: cardShop"}
             ]
+        },
+        "videogameStore":{
+            "micon": "cash-register.webp",
+            "mdesc": "Browse the shop",
+            "list": [
+                {"name": "Browse the Shop", "desc":"See all the games the store has in stock.", "img":"cash-register.webp", "chain":"choice: videogameStorProductse"},
+                {"name": "Leave", "desc":"Return to the Town Map", "img":"cityscape.webp", "chain":"area: <<currentArea>>"}
+            ]
+        },
+        "videogameStoreProducts":{
+            "list":[
+                {"name": "Yu-Gi-Oh! Dark Duel Stories (First Edition)", "desc":"Yu-Gi-Oh! Dark Duel Stories for the GameBoy Color - $25 \n This first edition version of the product includes the 3 promo cards (\"Blue-Eyes White Dragon\", \"Dark Magician\", and \"Exodia the Forbidden One\"", "img":"DDS.webp", "chain":"gate: buyVGDarkDuelStories1", "disable":[{"availableDDS1Game":false}]},
+                {"name": "Yu-Gi-Oh! Dark Duel Stories (Unlimited Edition)", "desc":"Yu-Gi-Oh! Dark Duel Stories for the GameBoy Color - $25 \n This unlimited edition version of the product includes the 3 promo cards (\"Salamandra\", \"Acid Trap Hole\", and \"Seiyaryu\"", "img":"DDS.webp", "chain":"gate: buyVGDarkDuelStories2", "disable":[{"availableDDS2Game":false}]},
+                {"name": "Yu-Gi-Oh! Forbidden Memories", "desc":"Yu-Gi-Oh! Forbidden Memories for the Sony PlayStation - $25 \n This product includes the 3 promo cards (\"Blue-Eyes White Dragon\", \"Dark Magician\", and \"Exodia the Forbidden One\"", "img":"DDS.webp", "chain":"gate: buyVGForbiddenMemories", "disable":[{"availableForbiddenMemoriesGame":false}]},
+                {"name": "Yu-Gi-Oh! Eternal Duelist Soul", "desc":"Yu-Gi-Oh! Forbidden Memories for the Sony PlayStation - $25 \n This product includes the 3 promo cards (\"Blue-Eyes White Dragon\", \"Dark Magician\", and \"Exodia the Forbidden One\"", "img":"DDS.webp", "chain":"gate: buyVGForbiddenMemories", "disable":[{"availableForbiddenMemoriesGame":false}]},
+                {"name": "Yu-Gi-Oh! Duelist of the Roses", "desc":"Yu-Gi-Oh! Forbidden Memories for the Sony PlayStation - $25 \n This product includes the 3 promo cards (\"Blue-Eyes White Dragon\", \"Dark Magician\", and \"Exodia the Forbidden One\"", "img":"DDS.webp", "chain":"gate: buyVGForbiddenMemories", "disable":[{"availableForbiddenMemoriesGame":false}]},
+                {"name": "Yu-Gi-Oh! Stairway to the Destined Duel", "desc":"Yu-Gi-Oh! Forbidden Memories for the Sony PlayStation - $25 \n This product includes the 3 promo cards (\"Blue-Eyes White Dragon\", \"Dark Magician\", and \"Exodia the Forbidden One\"", "img":"DDS.webp", "chain":"gate: buyVGForbiddenMemories", "disable":[{"availableForbiddenMemoriesGame":false}]},
+                {"name": "Yu-Gi-Oh! Falsebound Kingdom", "desc":"Yu-Gi-Oh! Forbidden Memories for the Sony PlayStation - $25 \n This product includes the 3 promo cards (\"Blue-Eyes White Dragon\", \"Dark Magician\", and \"Exodia the Forbidden One\"", "img":"DDS.webp", "chain":"gate: buyVGForbiddenMemories", "disable":[{"availableForbiddenMemoriesGame":false}]},
+                {"name": "Yu-Gi-Oh! Sacred Cards", "desc":"Yu-Gi-Oh! Forbidden Memories for the Sony PlayStation - $25 \n This product includes the 3 promo cards (\"Blue-Eyes White Dragon\", \"Dark Magician\", and \"Exodia the Forbidden One\"", "img":"DDS.webp", "chain":"gate: buyVGForbiddenMemories", "disable":[{"availableForbiddenMemoriesGame":false}]},
+                {"name": "Yu-Gi-Oh! Power of Chaos: Yugi the Destiny", "desc":"Yu-Gi-Oh! Forbidden Memories for the Sony PlayStation - $25 \n This product includes the 3 promo cards (\"Blue-Eyes White Dragon\", \"Dark Magician\", and \"Exodia the Forbidden One\"", "img":"DDS.webp", "chain":"gate: buyVGForbiddenMemories", "disable":[{"availableForbiddenMemoriesGame":false}]},
+                {"name": "Yu-Gi-Oh! World Championship Tournament 2004", "desc":"Yu-Gi-Oh! Forbidden Memories for the Sony PlayStation - $25 \n This product includes the 3 promo cards (\"Blue-Eyes White Dragon\", \"Dark Magician\", and \"Exodia the Forbidden One\"", "img":"DDS.webp", "chain":"gate: buyVGForbiddenMemories", "disable":[{"availableForbiddenMemoriesGame":false}]},
+                {"name": "Yu-Gi-Oh! The Dawn of Destiny", "desc":"Yu-Gi-Oh! Forbidden Memories for the Sony PlayStation - $25 \n This product includes the 3 promo cards (\"Blue-Eyes White Dragon\", \"Dark Magician\", and \"Exodia the Forbidden One\"", "img":"DDS.webp", "chain":"gate: buyVGForbiddenMemories", "disable":[{"availableForbiddenMemoriesGame":false}]},
+                {"name": "Yu-Gi-Oh! Power of Chaos: Kaiba the Revenge", "desc":"Yu-Gi-Oh! Forbidden Memories for the Sony PlayStation - $25 \n This product includes the 3 promo cards (\"Blue-Eyes White Dragon\", \"Dark Magician\", and \"Exodia the Forbidden One\"", "img":"DDS.webp", "chain":"gate: buyVGForbiddenMemories", "disable":[{"availableForbiddenMemoriesGame":false}]},
+                {"name": "Yu-Gi-Oh! Reshef of Destruction", "desc":"Yu-Gi-Oh! Forbidden Memories for the Sony PlayStation - $25 \n This product includes the 3 promo cards (\"Blue-Eyes White Dragon\", \"Dark Magician\", and \"Exodia the Forbidden One\"", "img":"DDS.webp", "chain":"gate: buyVGForbiddenMemories", "disable":[{"availableForbiddenMemoriesGame":false}]},
+                {"name": "Yu-Gi-Oh! Power of Chaos: Joey the Passion", "desc":"Yu-Gi-Oh! Forbidden Memories for the Sony PlayStation - $25 \n This product includes the 3 promo cards (\"Blue-Eyes White Dragon\", \"Dark Magician\", and \"Exodia the Forbidden One\"", "img":"DDS.webp", "chain":"gate: buyVGForbiddenMemories", "disable":[{"availableForbiddenMemoriesGame":false}]},
+                {"name": "Yu-Gi-Oh! Destiny Board Traveler", "desc":"Yu-Gi-Oh! Forbidden Memories for the Sony PlayStation - $25 \n This product includes the 3 promo cards (\"Blue-Eyes White Dragon\", \"Dark Magician\", and \"Exodia the Forbidden One\"", "img":"DDS.webp", "chain":"gate: buyVGForbiddenMemories", "disable":[{"availableForbiddenMemoriesGame":false}]},
+                {"name": "Yu-Gi-Oh! Capsule Monster", "desc":"Yu-Gi-Oh! Forbidden Memories for the Sony PlayStation - $25 \n This product includes the 3 promo cards (\"Blue-Eyes White Dragon\", \"Dark Magician\", and \"Exodia the Forbidden One\"", "img":"DDS.webp", "chain":"gate: buyVGForbiddenMemories", "disable":[{"availableForbiddenMemoriesGame":false}]},
+                {"name": "Yu-Gi-Oh! 7 Trials to Glory", "desc":"Yu-Gi-Oh! Forbidden Memories for the Sony PlayStation - $25 \n This product includes the 3 promo cards (\"Blue-Eyes White Dragon\", \"Dark Magician\", and \"Exodia the Forbidden One\"", "img":"DDS.webp", "chain":"gate: buyVGForbiddenMemories", "disable":[{"availableForbiddenMemoriesGame":false}]},
+                {"name": "Return to Shop Menu", "desc":"Stop browsing products and return to the card store main menu.", "img":"cardShop.webp", "chain":"choice: cardShop"}
+            ]
+        },
+        "school":{
+
+        },
+        "movieTheater":{
+
+        },
+        "home":{
+
         }
     },
     
