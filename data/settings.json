@@ -6,28 +6,28 @@
     "custom": true,
     "rarity": {
         "Rare": [
-            "Charubin the Fire Knight",
-            "Darkfire Dragon",
-            "Fusionist",
-            "Aqua Madoor",
-            "Flame Ghost",
-            "Dragon Capture Jar",
-            "Fissure",
-            "Two-Pronged Attack",
-            "Gravedigger Ghoul",
-            "Karbonala Warrior",
-            "Giant Soldier of Stone",
-            "Reaper of the Cards",
-            "Spirit of the Harp",
-            "Dragoness the Wicked Knight",
-            "Stop Defense",
-            "Goblin's Secret Remedy",
-            "Final Flame",
-            "Metal Dragon",
-            "Armed Ninja",
-            "Flower Wolf",
-            "Hane-Hane",
-            "Pot of Greed",
+            "Charubin the Fire Knight (LOB)",
+            "Darkfire Dragon (LOB)",
+            "Fusionist (LOB)",
+            "Aqua Madoor (LOB)",
+            "Flame Ghost (LOB)",
+            "Dragon Capture Jar (LOB)",
+            "Fissure (LOB)",
+            "Two-Pronged Attack (LOB)",
+            "Gravedigger Ghoul (LOB)",
+            "Karbonala Warrior (LOB)",
+            "Giant Soldier of Stone (LOB)",
+            "Reaper of the Cards (LOB)",
+            "Spirit of the Harp (LOB)",
+            "Dragoness the Wicked Knight (LOB)",
+            "Stop Defense (LOB)",
+            "Goblin's Secret Remedy (LOB)",
+            "Final Flame (LOB)",
+            "Metal Dragon (LOB)",
+            "Armed Ninja (LOB)",
+            "Flower Wolf (LOB)",
+            "Hane-Hane (LOB)",
+            "Pot of Greed (LOB)",
 
             "Elf's Light",
             "Steel Shell",
@@ -226,16 +226,16 @@
             "Soul Resurrection"
         ],
         "Super": [
-            "Flame Swordsman",
-            "Celtic Guardian",
-            "Dark Hole",
-            "Raigeki",
-            "Trap Hole",
-            "Polymerization",
-            "Mystical Elf",
-            "Curse of Dragon",
-            "Swords of Revealing Light",
-            "Man-Eater Bug",
+            "Flame Swordsman (LOB)",
+            "Celtic Guardian (LOB)",
+            "Dark Hole (LOB)",
+            "Raigeki (LOB)",
+            "Trap Hole (LOB)",
+            "Polymerization (LOB)",
+            "Mystical Elf (LOB)",
+            "Curse of Dragon (LOB)",
+            "Swords of Revealing Light (LOB)",
+            "Man-Eater Bug (LOB)",
 
             "Soul Exchange",
             "Card Destruction",
@@ -360,14 +360,14 @@
         "Ultra": [
             "Blue-Eyes White Dragon (LOB)",
             "Dark Magician (LOB)",
-            "Gaia The Fierce Knight",
-            "Red-Eyes Black Dragon",
-            "Monster Reborn",
-            "Right Leg of the Forbidden One",
-            "Left Leg of the Forbidden One",
-            "Right Arm of the Forbidden One",
-            "Left Arm of the Forbidden One",
-            "Exodia the Forbidden One",
+            "Gaia The Fierce Knight (LOB)",
+            "Red-Eyes Black Dragon (LOB)",
+            "Monster Reborn (LOB)",
+            "Right Leg of the Forbidden One (LOB)",
+            "Left Leg of the Forbidden One (LOB)",
+            "Right Arm of the Forbidden One (LOB)",
+            "Left Arm of the Forbidden One (LOB)",
+            "Exodia the Forbidden One (LOB)",
 
             "Blue-Eyes White Dragon (SDK)",
             "Dark Magician (SDY)",
@@ -485,8 +485,8 @@
             "Curse of Anubis"
         ],
         "Secret": [
-            "Tri-Horned Dragon",
-            "Gaia the Dragon Champion",
+            "Tri-Horned Dragon (LOB)",
+            "Gaia the Dragon Champion (LOB)",
 
             "Gate Guardian",
             "Thousand Dragon",
@@ -530,6 +530,44 @@
             "Red-Eyes Black Metal Dragon",
             "Harpie's Pet Dragon",
             "Metalmorph"
+        ],
+        "Ultimate": [
+
+        ],
+        "Ghost": [
+
+        ],
+        "Gold": [
+            
+        ]
+    },
+    "tag": {
+        "rarity-common":[
+
+        ],
+        "rarity-rare": [
+
+        ],
+        "rarity-super": [
+
+        ],
+        "rarity-ultra": [
+
+        ],
+        "rarity-secret": [
+
+        ],
+        "rarity-prismatic": [
+
+        ],
+        "rarity-ultimate": [
+
+        ],
+        "rarity-ghost": [
+
+        ],
+        "rarity-gold": [
+
         ]
     }
 }

@@ -2,14 +2,16 @@
     "area": {
         "START": { 
             "micon": "none",
-            "image": "Domino_City.webp",
+            "image": "mainmenu.webp",
+            "audio": "YU-GI-OH! 25th ANNIVERSARY - The Chronicles - ANIMATION INSTRUMENTAL- Passionate Duelist",
             "mdata": [
-                ["void: setVariables"]
+                ["void: startDM","void: startGX","void: start5Ds","void: startZexal","void: startArcV","void: startVRains","void: startSevens"]
             ]
         },
         "03-2002_Week-2":{
             "micon": "cityscape.webp",
             "image": "town-background_03-2002_2.webp",
+            "audio": "I'mBack(Instrumental)",
             "mdata": [ 
                 ["text: cardstoreIntro"]
             ]
@@ -26,9 +28,10 @@
             "micon": "gamestore.webp",
             "mdesc": "Local Game Store",
             "image": "cardstore-background_03-2002_2.webp",
-            "audio": "none",
+            "audio": "Yu-Gi-Oh_ Nightmare Troubadour - Shop Theme (Extended) - 6Lsdf",
             "mdata": [
-                ["gate: buyLOBBox", "void: atm"],
+                ["choice: cardShop", "void: atm"],
+                ["pool: testExodia"],
                 ["text: firstDuel"],
                 ["text: 03-2002-2_end"]
             ]
@@ -37,12 +40,12 @@
             "micon": "gamestore.webp",
             "mdesc": "Local Game Store",
             "image": "cardstore-background_03-2002_2.webp",
-            "audio": "none",
+            "audio": "Yu-Gi-Oh_ Nightmare Troubadour - Shop Theme (Extended) - 6Lsdf",
             "vars":{
                 "currentArea":"cardStore_03-2002_Week-3"
             },
             "mdata": [
-                ["gate: buyLOBPack", "gate: buyLOBBox", "void: atm", "void: proceed", "area: 03-2002_Week-3"],
+                ["pick: cardShop", "void: atm", "void: proceed", "area: 03-2002_Week-3"],
                 ["void: resetArea"],
                 ["text: 03-2002-2_end"]
             ]
@@ -51,12 +54,11 @@
             "micon": "school.webp",
             "mdesc": "School",
             "image": "school-background_03-2002_3.webp",
-            "audio": "none",
             "vars":{
                 "currentEvent": "school_03-2002_Week-3"
             },
             "mdata": [
-                ["area: 03-2002_Week-3", "void: RareHunter-Seeker"],
+                ["area: 03-2002_Week-3", "void: rareHunterSeeker"],
                 ["void: resetArea"]
 
             ]
@@ -65,7 +67,6 @@
             "micon": "vgstore.webp",
             "mdesc": "Video Game Store",
             "image": "gamestore-background_04-2002_3.webp",
-            "audio": "none",
             "vars":{
                 "currentEvent": "gameStore_03-2002_Week-3"
             },
@@ -77,12 +78,18 @@
         }
     },
     "text": {
+        "comingSoon": {
+            "parts": [
+                {"type": "text", "content": "Unfortunately, this option is not yet available."},
+                {"type": "text", "content": "Please check back at a later date."}
+            ],
+            "chain": "area: START"
+        },
         "firstEpisode": {
             "micon": "tv.webp",
             "mdesc": "Watch the first episode of Yu-Gi-Oh!",
             "image": "MillenniumPuzzleHeiroglyphs.webp",
-            "audio": "I'mBack(Instrumental).mp3",
-            "video": "Yu-Gi-Oh_Duel Monsters_Season_1_Version_1_Opening_Theme - Official_Yu-Gi-Oh(Trimmed).mp4",
+            "audio": "I'mBack(Instrumental)",
             "parts": [
                     {"type": "bust", "content": "Mickey-Laugh.webp"},
                     {"type": "text", "content": "Woah..."},
@@ -110,9 +117,9 @@
                     {"type": "bust", "content": "YuGiOh_Vol1_DVD.webp"},
                     {"type": "text", "content": "The \"Yu-Gi-Oh! Duel Monsters\" anime first aired in the United States on September 29, 2001 on the Kids' WB Television network, translated to English by 4Kids Entertainment. The animated series would see massive success with a young American audience and air weekly until its conclusion on June 10, 2006."}
             ],
-            "chain":"text: yugiKaibaFormat"
+            "chain":"text: yugiKaibaFormatIntro"
         },
-        "yugiKaibaFormat": {
+        "yugiKaibaFormatIntro": {
             "image": "MillenniumPuzzleHeiroglyphs.webp",
             "parts": [
                     {"type": "bust", "content": "LOB.webp"},
@@ -138,7 +145,13 @@
         "cardstoreIntro": {
             "micon": "gamestore.webp",
             "mdesc": "Visit the Local Game Store (LGS)",
+            "iconSize": 75,
+            "coord": [60,30],
             "image": "CardStore.webp",
+            "audio": "Yu-Gi-Oh_ Nightmare Troubadour - Shop Theme (Extended) - 6Lsdf",
+            "vars": {
+                "availableLOBBox": true
+            },
             "parts": [
                     {"type": "bust", "content": "SolomonMuto.webp"},
                     {"type": "text", "content": "Ho-oh!"},
@@ -158,9 +171,9 @@
                     {"type": "text", "content": "Ho-oh!"},
                     {"type": "text", "content": "You're in no rush, so go ahead and pick out the packs you want to buy and build your decks for tonight!"}
             ],
-            "chain":"text: allowance"
+            "chain":"text: allowanceIntro"
         },
-        "allowance": {
+        "allowanceIntro": {
             "image": "CardStore.webp",
             "parts": [
                     {"type": "bust", "content": "wallet.webp"},
@@ -174,8 +187,8 @@
             "mdesc": "It's time to duel!",
             "image": "MillenniumPuzzleHeiroglyphs.webp", 
             "parts":[
-                {"type": "bust", "content": "BanditKeith-Smile.webp"},
-                {"type": "text", "content": "Hey, it looks like our first game will be against eachother!"},
+                {"type": "bust", "content": "Mickey-Smile.webp"},
+                {"type": "text", "content": "Hey, it looks like our first game will be against each other!"},
                 {"type": "text", "content": "Don't think I'm taking it easy on you! I'm gonna win this!"}
             ],
             "chain": "duel: lob"
@@ -195,25 +208,28 @@
             ],
             "chain":"area: 03-2002_Week-3"
         },
-        "rareHunterIntro":{
-            "mdesc": "Seeker (Rare Hunter)",
-            "micon": "",
+        "seekerIntro":{
+            "vars":{
+                "spokenSeeker":true
+            },
             "parts":[
                 {"type": "bust", "content":"RareHunter-Frown.webp"},
                 {"type": "text", "content":"Hello there fellow student. I am Seeker. My mission is to collect rare and powerful Yu-Gi-oh! cards to become a legendary, undefeatable duelist!"},
                 {"type": "text", "content":"Unfortunately I am having some difficulty achieving my goals after being grounded for using Dad's credit card to buy more Yu-Gi-Oh! packs without asking..."},
                 {"type": "text", "content":"They just don't understand how valuable my collection is going to be!"},
-                {"type": "text", "content":"But obviously without money to buy packs I am going to need some help. I'll reward you handsomely if you will help me."},                            {"type": "text", "content":"But obviously without money to buy packs I am going to need some help. I'll reward you handsomely if you will help me."},
+                {"type": "text", "content":"But obviously without money to buy packs I am going to need some help. I'll reward you handsomely if you will help me."},                            
                 {"type": "text", "content":"I am trying to collect all 5 pieces of Exodia the Forbidden One!"},
                 {"type": "text", "content":"With all 5 pieces assembled, I will be able to win any duel!"},
                 {"type": "text", "content":"However, it's incredibly difficult to assemble the set! Each piece is an Ultra Rare in the Legend of Blue-Eyes White Dragon set."},
                 {"type": "text", "content":"If you happen to pull a piece out of a pack, bring it to me and I'll trade you for it. Each piece is basically useless by itself, so you have no reason to hoarde them yourself."},
                 {"type": "text", "content":"And if I manage to assemble all 5 pieces, I promise you an unbelievable reward. What do you say?"}
-            ]
+            ],
+            "chain":"gate: tradeSeeker"
         },
         "setoKaibaIntro":{
-            "mdesc": "Seto Kaiba",
-            "micon": "",
+            "vars":{
+                "spokenSetoKaiba":true
+            },
             "parts":[
                 {"type": "bust", "content":"SetoKaiba-Neutral.webp"},
                 {"type": "text", "content":"What do you want? Can't you see I'm busy?"},
@@ -229,6 +245,23 @@
                 {"type": "text", "content":"Now leave me dweeb; I have more important things to do than babysit all day."},
                 {"type": "text", "content":"And don't disappoint me."}
             ]
+        },
+
+        "seekerBuy":{
+            "parts": [
+                {"type": "bust", "content": "wallet.webp"},
+                {"type": "text", "content": "You traded <<tradedCard>> for $25!"}
+            ],
+            "chain": "void: checkSeeker"
+        },
+        "seekerDone":{
+            "parts": [
+                {"type": "bust", "content": "wallet.webp"},
+                {"type": "text", "content": "You already traded this card to Seeker..."}
+            ]
+        },
+        "seekerFinale":{
+
         },
         "tournamentPack1":{
             "parts": [
@@ -507,128 +540,15 @@
     },
 
     "pool": {
+        "testExodia":{
+            "list":["Exodia the Forbidden One", "Left Arm of the Forbidden One", "Left Leg of the Forbidden One", "Right Arm of the Forbidden One", "Right Leg of the Forbidden One", "Tri-Horned Dragon (LOB)", "Pot of Greed", "Pot of Greed", "Pot of Greed (LOB)", "Pot of Greed (LOB)"]
+        },
         "allowance-1": {
             "mdesc": "Allowance",
             "micon": "wallet.webp",
             "list":["$$$"],
             "vars":{"money":120},
             "chain":"area: cardStore_03-2002_Week-2"
-        },
-        "starterDeckYugi": {
-            "mdesc": "Starter Deck Yugi",
-            "micon": "SDY.webp",
-            "list":[
-                "Dark Magician (SDY)",
-
-                "Soul Exchange",
-                "Card Destruction",
-
-                "Mystical Elf (Common)",
-                "Feral Imp",
-                "Winged Dragon, Guardian of the Fortress #1",
-                "Summoned Skull",
-                "Beaver Warrior",
-                "Gaia The Fierce Knight (Common)",
-                "Curse of Dragon (Common)",
-                "Celtic Guardian (Common)",
-                "Mammoth Graveyard",
-                "Great White",
-                "Silver Fang",
-                "Giant Soldier of Stone (Common)",
-                "Dragon Zombie",
-                "Doma The Angel of Silence",
-                "Ansatsu",
-                "Witty Phantom",
-                "Claw Reacher",
-                "Mystic Clown",
-                "Sword of Dark Destruction",
-                "Book of Secret Arts",
-                "Dark Hole (Common)",
-                "Dian Keto the Cure Master",
-                "Ancient Elf",
-                "Magical Ghost",
-                "Fissure (Common)",
-                "Trap Hole (Common)",
-                "Two-Pronged Attack (Common)",
-                "De-Spell",
-                "Monster Reborn (Common)",
-                "Reinforcements",
-                "Change of Heart",
-                "The Stern Mystic",
-                "Wall of Illusion",
-                "Neo the Magic Swordsman",
-                "Baron of the Fiend Sword",
-                "Man-Eating Treasure Chest",
-                "Sorcerer of the Doomed",
-                "Last Will",
-                "Waboku",
-                "Trap Master",
-                "Dragon Capture Jar (Common)",
-                "Yami",
-                "Man-Eater Bug (Common)",
-                "Reverse Trap",
-                "Remove Trap",
-                "Castle Walls",
-                "Ultimate Offering"
-            ]
-        },
-        "starterDeckKaiba": {
-            "mdesc": "Starter Deck Kaiba",
-            "micon": "SDK.webp",
-            "list": [
-                "Blue-Eyes White Dragon (SDK)",
-
-                "Lord of D.",
-                "The Flute of Summoning Dragon",
-                
-                "Hitotsu-Me Giant",
-                "Ryu-Kishin",
-                "The Wicked Worm Beast",
-                "Battle Ox",
-                "Koumori Dragon",
-                "Judge Man",
-                "Rogue Doll",
-                "Kojikocy",
-                "Uraby",
-                "Gyakutenno Megami",
-                "Mystic Horseman",
-                "Terra the Terrible",
-                "Dark Titan of Terror",
-                "Dark Assailant",
-                "Master & Expert",
-                "Unknown Warrior of Fiend",
-                "Mystic Clown",
-                "Ogre of the Black Shadow",
-                "Dark Energy",
-                "Invigoration",
-                "Dark Hole (Common)",
-                "Ookazi",
-                "Ryu-Kishin Powered",
-                "Swordstalker",
-                "La Jinn the Mystical Genie of the Lamp",
-                "Rude Kaiser",
-                "Destroyer Golem",
-                "Skull Red Bird",
-                "D. Human",
-                "Pale Beast",
-                "Fissure (Common)",
-                "Trap Hole (Common)",
-                "Two-Pronged Attack (Common)",
-                "De-Spell",
-                "Monster Reborn (Common)",
-                "The Inexperienced Spy",
-                "Reinforcements",
-                "Ancient Telescope",
-                "Just Desserts",
-                "Mysterious Puppeteer",
-                "Trap Master",
-                "Sogen",
-                "Hane-Hane (Common)",
-                "Reverse Trap",
-                "Remove Trap",
-                "Castle Walls",
-                "Ultimate Offering"
-            ]
         },
         "gameDarkDuelStories1": {
             "mdesc": "Video Game Promos: Dark Duel Stories (First Set)",
@@ -658,33 +578,33 @@
             ]
         },
 
-        "balanceCheck5":{
-            "list":["$$$"],
-            "split":{ 
-                "<<money>> >= 5": "void: money-5", 
-                "<<money>> < 5":  "void: proceed"
-            }
-        },
-        "balanceCheck10":{
+        "balanceCheck":{
             "list":["$$$"],
             "split":{
-                "<<money>> >= 10": "void: money-10",
-                "<<money>> < 10":  "void: proceed"
+                "<<money>> >= <<cost>>": "void: moneySub",
+                "<<money>> < <<cost>>":  "void: proceed"
             }
         },
-        "balanceCheck25":{
-            "list":["$$$"],
-            "split":{
-                "<<money>> >= 25": "void: money-25",
-                "<<money>> < 25":  "void: proceed"
-            }
+
+        "returnExodiaLA":{
+            "list":["Left Arm of the Forbidden One"],
+            "chain":"gate: tradeSeeker"
         },
-        "balanceCheck120":{
-            "list":["$$$"],
-            "split":{
-                "<<money>> >= 120": "void: money-120",
-                "<<money>> < 120":  "void: proceed"
-            }
+        "returnExodiaLL":{
+            "list":["Left Leg of the Forbidden One"],
+            "chain":"gate: tradeSeeker"
+        },
+        "returnExodiaHead":{
+            "list":["Exodia the Forbidden One"],
+            "chain":"gate: tradeSeeker"
+        },
+        "returnExodiaRA":{
+            "list":["Right Arm of the Forbidden One"],
+            "chain":"gate: tradeSeeker"
+        },
+        "returnExodiaRL":{
+            "list":["Right Leg of the Forbidden One"],
+            "chain":"gate: tradeSeeker"
         }
     },
 
@@ -697,8 +617,11 @@
                 {
                     "cost": "$$$",
                     "copiesNeeded": 1,
-                    "vars":{"purchase": "lobBox"},
-                    "chain": "pool: balanceCheck120"
+                    "vars":{
+                        "product": "lobBox",
+                        "cost": 120
+                    },
+                    "chain": "pool: balanceCheck"
                 }
             ]
         },
@@ -710,8 +633,11 @@
                 {
                     "cost": "$$$",
                     "copiesNeeded": 1,
-                    "vars":{"purchase": "lobPack"},
-                    "chain": "void: balanceCheck5"
+                    "vars":{
+                        "product": "lobPack",
+                        "cost": 5
+                    },
+                    "chain": "void: balanceCheck"
                 }
             ]
         },
@@ -723,8 +649,11 @@
                 {
                     "cost": "$$$",
                     "copiesNeeded": 1,
-                    "vars":{"purchase": "sdy"},
-                    "chain": "void: balanceCheck10"
+                    "vars":{
+                        "product": "sdy",
+                        "cost": 10
+                    },
+                    "chain": "void: balanceCheck"
                 }
             ]
         },
@@ -736,8 +665,11 @@
                 {
                     "cost": "$$$",
                     "copiesNeeded": 1,
-                    "vars":{"purchase": "sdk"},
-                    "chain": "void: balanceCheck10"
+                    "vars":{
+                        "purchase": "sdk",
+                        "cost": 10
+                    },
+                    "chain": "void: balanceCheck"
                 }
             ]
         },
@@ -749,8 +681,11 @@
                 {
                     "cost": "$$$",
                     "copiesNeeded": 1,
-                    "vars":{"purchase": "DarkDuelStories1"},
-                    "chain": "void: balanceCheck25"
+                    "vars":{
+                        "purchase": "DarkDuelStories1",
+                        "cost": 25
+                    },
+                    "chain": "void: balanceCheck"
                 }
             ]
         },
@@ -762,8 +697,11 @@
                 {
                     "cost": "$$$",
                     "copiesNeeded": 1,
-                    "vars":{"purchase": "DarkDuelStories2"},
-                    "chain": "void: balanceCheck25"
+                    "vars":{
+                        "purchase": "DarkDuelStories2",
+                        "cost": 25
+                    },
+                    "chain": "void: balanceCheck"
                 }
             ]
         },
@@ -775,35 +713,42 @@
                 {
                     "cost": "$$$",
                     "copiesNeeded": 1,
-                    "vars":{"purchase": "ForbiddenMemories"},
-                    "chain": "void: balanceCheck25"
+                    "vars":{
+                        "purchase": "ForbiddenMemories",
+                        "cost": 25
+                    },
+                    "chain": "void: balanceCheck"
                 }
             ]
         },
-        "tradeExodiaTheForbiddenOne":{
-            "mdesc": "",
-            "micon": "",
+
+        "tradeSeeker":{
             "skippable": true,
             "tolls":[
                 {
-                    "cost":"Left Arm of the Forbidden One",
-                    "copiesNeeded": 1
+                    "cost":"Right Leg of the Forbidden One",
+                    "copiesNeeded": 1,
+                    "chain":"void: tradeSeekerRL"
                 },
                 {
                     "cost":"Right Arm of the Forbidden One",
-                    "copiesNeeded": 1
-                },
-                {
-                    "cost":"Left Leg of the Forbidden One",
-                    "copiesNeeded": 1
-                },
-                {
-                    "cost":"Right Leg of the Forbidden One",
-                    "copiesNeeded": 1
+                    "copiesNeeded": 1,
+                    "chain":"void: tradeSeekerRA"
                 },
                 {
                     "cost":"Exodia the Forbidden One",
-                    "copiesNeeded": 1
+                    "copiesNeeded": 1,
+                    "chain":"void: tradeSeekerHead"
+                },
+                {
+                    "cost":"Left Arm of the Forbidden One",
+                    "copiesNeeded": 1,
+                    "chain":"void: tradeSeekerLA"
+                },
+                {
+                    "cost":"Left Leg of the Forbidden One",
+                    "copiesNeeded": 1,
+                    "chain":"void: tradeSeekerLL"
                 }
             ]
         },
@@ -825,19 +770,195 @@
     },
 
     "void":{
-        "setVariables":{
+        "startDM":{
+            "micon": "DMera.webp",
+            "mdesc": "Begin playing in the Duel Monsters Era",
+            "iconSize": 150,
+            "coord": [0,80],
             "vars":{
                 "money": 0,
-                "spoken-Seeker": false,
-                "spoken-SetoKaiba": false
+                "spokenSeeker": false,
+                "spokenSetoKaiba": false,
+
+                "availableLOBPack": false,
+                "availableLOBBox": false,
+                "availableSDYDeck": false,
+                "availableSDKDeck": false,
+                "availableMRDPack": false,
+                "availableMRDBox": false,
+                "availableMRLPack": false,
+                "availableMRLBox": false,
+                "availableTin2002-DarkMagician": false,
+                "availableTin2002-SummonedSkull": false,
+                "availableTin2002-BlueEyesWhiteDragon": false,
+                "availableTin2002-LordOfD": false,
+                "availableTin2002-RedEyesBlackDragon": false,
+                "availableTin2002-BlackSkullDragon": false,
+                "availablePSVPack": false,
+                "availablePSVBox": false,
+                "availableLONPack": false,
+                "availableLONBox": false,
+                "availableSDJDeck": false,
+                "availableSDPDeck": false,
+                "availableLODPack": false,
+                "availableLODBox": false,
+                "availablePGDPack": false,
+                "availablePGDBox": false,
+                "availableTin2003-DarkMagician": false,
+                "availableTin2003-BusterBlader": false,
+                "availableTin2003-BlueEyesWhiteDragon": false,
+                "availableTin2003-XYZ": false,
+                "availableTin2003-Jinzo": false,
+                "availableTin2003-Gearfried": false,
+                "availableMFCPack": false,
+                "availableMFCBox": false,
+                "availableDCRPack": false,
+                "availableDCRBox": false,
+                "availableIOCPack": false,
+                "availableIOCBox": false,
+                "availableEP1Pack": false,
+                "availableTin2004-Shogun": false,
+                "availableTin2004-BladeKnight": false,
+                "availableTin2004-CommandKnight": false,
+                "availableTin2004-Gaia": false,
+                "availableTin2004-InsectQueen": false,
+                "availableTin2004-CelticGuardian": false,
+                "availableSODPack": false,
+                "availableSODBox": false,
+                "availableDB1Pack": false,
+                "availableDB1Box": false,
+                "availableRDSPack": false,
+                "availableRDSBox": false,
+                "availableRDSspecial": false,
+                "availableSD1Deck": false,
+                "availableSD2Deck": false,
+                "availableFETPack": false,
+                "availableFETBox": false,
+                "availableSD3Deck": false,
+                "availableSD4Deck": false,
+
+                "seekerRA": false,
+                "seekerRL": false,
+                "seekerHead": false,
+                "seekerLA": false,
+                "seekerLL": false
             },
             "chain":"text: firstEpisode"
+        },
+        "startGX":{
+            "micon": "GXera.webp",
+            "mdesc": "Begin playing in the GX Era",
+            "iconSize": 150,
+            "coord": [0, 55],
+            "vars":{
+                "money": 0,
+                "spokenSeeker": false,
+                "spokenSetoKaiba": false,
+
+                "seekerRA": false,
+                "seekerRL": false,
+                "seekerHead": false,
+                "seekerLA": false,
+                "seekerLL": false
+            },
+            "chain":"text: comingSoon"
+        },
+        "start5Ds":{
+            "micon": "5Dera.webp",
+            "mdesc": "Begin playing in the 5D's Era",
+            "iconSize": 150,
+            "coord": [0,30],
+            "vars":{
+                "money": 0,
+                "spokenSeeker": false,
+                "spokenSetoKaiba": false,
+
+                "seekerRA": false,
+                "seekerRL": false,
+                "seekerHead": false,
+                "seekerLA": false,
+                "seekerLL": false
+            },
+            "chain":"text: comingSoon"
+        },
+        "startZexal":{
+            "micon": "ZEXALera.webp",
+            "mdesc": "Begin playing in the Zexal Era",
+            "iconSize": 150,
+            "coord": [0,5],
+            "vars":{
+                "money": 0,
+                "spokenSeeker": false,
+                "spokenSetoKaiba": false,
+
+                "seekerRA": false,
+                "seekerRL": false,
+                "seekerHead": false,
+                "seekerLA": false,
+                "seekerLL": false
+            },
+            "chain":"text: comingSoon"
+        },
+        "startArcV":{
+            "micon": "ArcVera.webp",
+            "mdesc": "Begin playing in the Arc-V Era",
+            "iconSize": 150,
+            "coord": [20,80],
+            "vars":{
+                "money": 0,
+                "spokenSeeker": false,
+                "spokenSetoKaiba": false,
+
+                "seekerRA": false,
+                "seekerRL": false,
+                "seekerHead": false,
+                "seekerLA": false,
+                "seekerLL": false
+            },
+            "chain":"text: comingSoon"
+        },
+        "startVRains":{
+            "micon": "VRAINSera.webp",
+            "mdesc": "Begin playing in the VRains Era",
+            "iconSize": 150,
+            "coord": [20,55],
+            "vars":{
+                "money": 0,
+                "spokenSeeker": false,
+                "spokenSetoKaiba": false,
+
+                "seekerRA": false,
+                "seekerRL": false,
+                "seekerHead": false,
+                "seekerLA": false,
+                "seekerLL": false
+            },
+            "chain":"text: comingSoon"
+        },
+        "startSevens":{
+            "micon": "SEVENSera.webp",
+            "mdesc": "Begin playing in the Sevens Era",
+            "iconSize": 150,
+            "coord": [20,30],
+            "vars":{
+                "money": 0,
+                "spokenSeeker": false,
+                "spokenSetoKaiba": false,
+
+                "seekerRA": false,
+                "seekerRL": false,
+                "seekerHead": false,
+                "seekerLA": false,
+                "seekerLL": false
+            },
+            "chain":"text: comingSoon"
         },
 
         "proceed":{
             "mdesc": "Proceed",
             "micon": "checkmark.webp"
         },
+
         "atm":{
             "mdesc": "Balance: $<<money>>",
             "micon": "bank.webp"
@@ -849,45 +970,156 @@
             "chain": "area: <<currentEvent>>"
         },
 
-        "money-5":{
+        "chainEvent":{
+            "split":{
+                "<<eventType>> == area": "areas: <<eventName>>",
+                "<<eventType>> == bans": "bans: <<eventName>>",
+                "<<eventType>> == choice": "choice: <<eventName>>",
+                "<<eventType>> == duel": "duel: <<eventName>>",
+                "<<eventType>> == dupe": "dupe: <<eventName>>",
+                "<<eventType>> == ends": "ends: <<eventName>>",
+                "<<eventType>> == fork": "fork: <<eventName>>",
+                "<<eventType>> == gate": "gate: <<eventName>>",
+                "<<eventType>> == life": "life: <<eventName>>",
+                "<<eventType>> == pack": "pack: <<eventName>>",
+                "<<eventType>> == pick": "pick: <<eventName>>",
+                "<<eventType>> == pool": "pool: <<eventName>>",
+                "<<eventType>> == quiz": "quiz: <<eventName>>",
+                "<<eventType>> == rand": "rand: <<eventName>>",
+                "<<eventType>> == swap": "swap: <<eventName>>",
+                "<<eventType>> == text": "text: <<eventName>>",
+                "<<eventType>> == vars": "vars: <<eventName>>",
+                "<<eventType>> == vbox": "vbox: <<eventName>>",
+                "<<eventType>> == void": "void: <<eventName>>",
+                "<<eventType>> == wipe": "wipe: <<eventName>>"
+            }
+        },
+
+        "moneySub":{
             "vars":{
-                "money": "<<money>>.sub(5)"
+                "money": "<<money>>.sub(<<cost>>)"
             },
             "chain":"void: productIdentify"
         },
-        "money-10":{
+        "moneyAdd":{
             "vars":{
-                "money": "<<money>>.sub(10)"
-            },
-            "chain":"void: productIdentify"
-        },
-        "money-25":{
-            "vars":{
-                "money": "<<money>>.sub(25)"
-            },
-            "chain":"void: productIdentify"
-        },
-        "money-120":{
-            "vars":{
-                "money": "<<money>>.sub(120)"
-            },
-            "chain":"void: productIdentify"
+                "money": "<<money>>.add(<<cost>>)"
+            }
         },
 
         "productIdentify":{
             "vars":{"count":0},
             "split":{
-                "<<purchase>> == lobPack":"pack: lobPack",
-                "<<purchase>> == lobBox":"pack: lobBox"
+                "<<product>> == lobPack":"pack: lobPack",
+                "<<product>> == lobBox":"pack: lobBox"
             }
         },
 
-        "RareHunter-Seeker":{
+        "tradeSeekerRA":{
+            "vars":{
+                "tradedCard": "Right Arm of the Forbidden One"
+            },
+            "split":{
+                "<<seekerRA>> == false":"text: seekerBuy",
+                "<<seekerRA>> = true": "text: seekerDone"
+            }
+        },
+        "tradeSeekerRL":{
+            "vars":{
+                "tradedCard": "Right Leg of the Forbidden One",
+                "currentEvent2": "tradeSeeker"
+            },
+            "split":{
+                "<<seekerRL>> == false":"text: seekerBuy",
+                "<<seekerRL>> = true": "text: seekerDone"
+            }
+        },
+        "tradeSeekerHead":{
+            "vars":{
+                "tradedCard": "Exodia the Forbidden One"
+            },
+            "split":{
+                "<<seekerHead>> == false":"text: seekerBuy",
+                "<<seekerHead>> = true": "text: seekerDone"
+            }
+        },
+        "tradeSeekerLA":{
+            "vars":{
+                "tradedCard": "Left Arm of the Forbidden One"
+            },
+            "split":{
+                "<<seekerLA>> == false":"text: seekerBuy",
+                "<<seekerLA>> = true": "text: seekerDone"
+            }
+        },
+        "tradeSeekerLL":{
+            "vars":{
+                "tradedCard": "Left Leg of the Forbidden One"
+            },
+            "split":{
+                "<<seekerLL>> == false":"text: seekerBuy",
+                "<<seekerLL>> = true": "text: seekerDone"
+            }
+        },
+        "tradeSeekerRAConfirm":{
+            "vars":{
+                "seekerRA": true,
+                "cost": 25
+            },
+            "chain":"void: moneyAdd"
+        },
+        "tradeSeekerRLConfirm":{
+            "vars":{
+                "seekerRL": true,
+                "cost": 25
+            },
+            "chain":"void: moneyAdd"
+        },
+        "tradeSeekerHeadConfirm":{
+            "vars":{
+                "seekerHead": true,
+                "cost": 25
+            },
+            "chain":"void: moneyAdd"
+        },
+        "tradeSeekerLAConfirm":{
+            "vars":{
+                "seekerLA": true
+            },
+            "chain":"void: moneyAdd"
+        },
+        "tradeSeekerLLConfirm":{
+            "vars":{
+                "seekerLL": true
+            },
+            "chain":"void: moneyAdd"
+        },
+        "returnExodia":{
+            "split":{
+                "<<tradedCard>> == Left Arm of the Forbidden One": "pool: returnExodiaLA",
+                "<<tradedCard>> == Left Leg of the Forbidden One": "pool: returnExodiaLL",
+                "<<tradedCard>> == Exodia of the Forbidden One": "pool: returnExodiaHead",
+                "<<tradedCard>> == Right Arm of the Forbidden One": "pool: returnExodiaRA",
+                "<<tradedCard>> == Right Leg of the Forbidden One": "pool: returnExodiaRL"
+            }
+        },
+        "checkSeeker":{
+            "split":{
+                "<<seekerRL>> == false": "void: moneyAdd",
+                "<<seekerRA>> == false": "void: moneyAdd",
+                "<<seekerHead>> == false": "void: moneyAdd",
+                "<<seekerLA>> == false": "void: moneyAdd",
+                "<<seekerLL>> == false": "void: moneyAdd",
+                "<seekerHead>> == true": "text: seekerFinale"
+            }
+        },
+
+        "rareHunterSeeker":{
             "micon":"RareHunter.webp",
             "mdesc":"Speak to Rare Hunter Seeker",
             "split":{
-                "<<spoken-Seeker>> == false":"text: rareHunterIntro",
-                "<<spoken-Seeker>> == true":"gate: tradeExodiaTheForbiddenOne"
+                "<<spokenSeeker>> == false":"text: seekerIntro",
+                "<<spokenSeeker>> == true":"gate: tradeSeeker"
             }
         },
 
@@ -902,21 +1134,66 @@
     },
 
     "choice":{
-        "vgFirstGames":{
-            "image":"MillenniumPuzzleHeiroglyphs.webp",
-            "title":"Choose a video game",
-            "list":[
-                {"desc":"Do you want Dark Duel Stories (First Wave)?", "name": "Dark Duel Stories (First Wave)", "img": "gameDDS.webp", "chain": "pool: gameDarkDuelStories1"},
-                {"desc": "Do you want Dark Duel Stories (Second Wave)?", "name": "Dark Duel Stories (Second Wave)", "img": "gameDDS.webp", "chain": "pool: gameDarkDuelStories2"},
-                {"desc": "Do you want Forbidden Memories?", "name": "Forbidden Memories", "img": "ForbiddenMemories.webp", "chain": "pool: gameForbiddenMemories"}
-            ]
-        },
-        "SDYK":{
-            "image":"MillenniumPuzzleHeiroglyphs.webp",
-            "title":"Choose a Starter Deck",
-            "list":[
-                {"desc":"Do you want Starter Deck Yugi?", "name": "Starter Deck Yugi", "img": "SDY.webp", "chain": "pool: starterDeckYugi"},
-                {"desc":"Do you want Starter Deck Kaiba?", "name": "Starter Deck Kaiba", "img": "SDK.webp", "chain": "pool: starterDeckKaiba"}
+        "cardShop":{
+            "micon": "cash-register.webp",
+            "mdesc": "Browse the shop",
+            "list": [
+                {"name": "Legend of Blue Eyes White Dragon Booster Pack", "desc":"Legend of Blue Eyes White Dragon Booster Pack - $5", "img":"LOB.webp", "chain":"gate: buyLOBPack", "disable":[{"availableLOBPack":false}]},
+                {"name": "Legend of Blue Eyes White Dragon Booster Box", "desc":"Legend of Blue Eyes White Dragon Booster Box (24 Packs) - $120", "img":"LOB-Box.webp", "chain":"gate: buyLOBBox", "disable":[{"availableLOBBox":false}]},
+                {"name": "Starter Deck Yugi", "desc":"Starter Deck Yugi (50 cards) - $10", "img":"SDY.webp", "chain":"gate: buySDY", "disable":[{"availableSDYDeck":false}]},
+                {"name": "Starter Deck Kaiba", "desc":"Starter Deck Kaiba (50 cards) - $10", "img":"SDK.webp", "chain":"gate: buySDK", "disable":[{"availableSDKDeck":false}]},
+                {"name": "Metal Raiders Booster Pack", "desc":"Metal Raiders Booster Pack - $5", "img":"MRD.webp", "chain":"gate: buyLOBPack", "disable":[{"availableMRDPack":false}]},
+                {"name": "Metal Raiders Booster Box", "desc":"Metal Raiders Booster Box (24 packs) - $120", "img":"MRD-Box.webp", "chain":"gate: buyLOBPack", "disable":[{"availableMRDBox":false}]},
+                {"name": "Magic Ruler Booster Pack", "desc":"Magic Ruler Booster Pack - $5", "img":"MRL.webp", "chain":"gate: buyLOBPack", "disable":[{"availableMRLPack":false}]},
+                {"name": "Magic Ruler Booster Box", "desc":"Magic Ruler Booster Box (24 Packs) - $120", "img":"MRL-Box.webp", "chain":"gate: buyLOBPack", "disable":[{"availableMRLBox":false}]},
+                {"name": "Collectible Tin 2002 - Dark Magician", "desc":"Collectible Tin 2002 - Dark Magician (1 Promo + 5 Packs) - $25", "img":"Tin2002-DarkMagician.webp", "chain":"gate: buyLOBPack", "disable":[{"availableTin2002-DarkMagician":false}]},
+                {"name": "Collectible Tin 2002 - Summoned Skull", "desc":"Collectible Tin 2002 - Summoned Skull (1 Promo + 5 Packs) - $25", "img":"Tin2002-SummonedSkull.webp", "chain":"gate: buyLOBPack", "disable":[{"availableTin2002-SummonedSkull":false}]},
+                {"name": "Collectible Tin 2002 - Blue-Eyes White Dragon", "desc":"Collectible Tin 2002 - Blue-Eyes White Dragon (1 Promo + 5 Packs) - $25", "img":"Tin2002-BlueEyesWhiteDragon.webp", "chain":"gate: buyLOBPack", "disable":[{"availableTin2002-BlueEyesWhiteDragon":false}]},
+                {"name": "Collectible Tin 2002 - Lord of D.", "desc":"Collectible Tin 2002 - Lord of D. (1 Promo + 5 Packs) - $25", "img":"Tin2002-LordOfD.webp", "chain":"gate: buyLOBPack", "disable":[{"availableTin2002-LordOfD":false}]},
+                {"name": "Collectible Tin 2002 - Red-Eyes B. Dragon", "desc":"Collectible Tin 2002 - Red-Eyes B. Dragon (1 Promo + 5 Packs) - $25", "img":"Tin2002-RedEyesBlackDragon.webp", "chain":"gate: buyLOBPack", "disable":[{"availableTin2002-RedEyesBlackDragon":false}]},
+                {"name": "Collectible Tin 2002 - B. Skull Dragon", "desc":"Collectible Tin 2002 - B. Skull Dragon (1 Promo + 5 Packs) - $25", "img":"Tin2002-BlackSkullDragon.webp", "chain":"gate: buyLOBPack", "disable":[{"availableTin2002-BlackSkullDragon":false}]},
+                {"name": "Pharaoh's Servant Booster Pack", "desc":"Pharaoh's Servant Booster Pack - $5", "img":"PSV.webp", "chain":"gate: buyLOBPack", "disable":[{"availablePSVPack":false}]},
+                {"name": "Pharaoh's Servant Booster Box", "desc":"Pharaoh's Servant Booster Box (24 Packs) - $120", "img":"PSV-Box.webp", "chain":"gate: buyLOBPack", "disable":[{"availablePSVBox":false}]},
+                {"name": "Labyrinth of Nightmare Booster Pack", "desc":"Labyrinth of Nightmare Booster Pack - $5", "img":"LON.webp", "chain":"gate: buyLOBPack", "disable":[{"availableLONPack":false}]},
+                {"name": "Labyrinth of Nightmare Booster Box", "desc":"Labyrinth of Nightmare Booster Box (24 Packs) - $120", "img":"LON-Box.webp", "chain":"gate: buyLOBPack", "disable":[{"availableLONBox":false}]},
+                {"name": "Starter Deck Joey", "desc":"Starter Deck Joey (50 cards) - $10", "img":"SDJ.webp", "chain":"gate: buySDY", "disable":[{"availableSDJDeck":false}]},
+                {"name": "Starter Deck Pegasus", "desc":"Starter Deck Pegasus (50 cards) - $10", "img":"SDP.webp", "chain":"gate: buySDY", "disable":[{"availableSDPDeck":false}]},
+                {"name": "Legacy of Darkness Booster Pack", "desc":"Legacy of Darkness Booster Pack - $5", "img":"LOD.webp", "chain":"gate: buyLOBPack", "disable":[{"availableLODPack":false}]},
+                {"name": "Legacy of Darkness Booster Box", "desc":"Legacy of Darkness Booster Box (24 Packs) - $120", "img":"LOD-Box.webp", "chain":"gate: buyLOBPack", "disable":[{"availableLODBox":false}]},
+                {"name": "Pharaonic Guardian Booster Pack", "desc":"Pharaonic Guardian Booster Pack - $5", "img":"PGD.webp", "chain":"gate: buyLOBPack", "disable":[{"availablePGDPack":false}]},
+                {"name": "Pharaonic Guardian Booster Box", "desc":"Pharaonic Guardian Booster Box (24 Packs) - $120", "img":"PGD-Box.webp", "chain":"gate: buyLOBPack", "disable":[{"availablePGDBox":false}]},
+                {"name": "Collectible Tin 2003 - Dark Magician", "desc":"Collectible Tin 2003 - Dark Magician (1 Promo + 5 Packs) - $25", "img":"Tin2003-DarkMagician.webp", "chain":"gate: buyLOBPack", "disable":[{"availableTin2003-DarkMagician":false}]},
+                {"name": "Collectible Tin 2003 - Buster Blader", "desc":"Collectible Tin 2003 - Buster Blader (1 Promo + 5 Packs) - $25", "img":"Tin2003-BusterBlader.webp", "chain":"gate: buyLOBPack", "disable":[{"availableTin2003-BusterBlader":false}]},
+                {"name": "Collectible Tin 2003 - Blue-Eyes White Dragon", "desc":"Collectible Tin 2003 - Blue-Eyes White Dragon (1 Promo + 5 Packs) - $25", "img":"Tin2003-BlueEyesWhiteDragon.webp", "chain":"gate: buyLOBPack", "disable":[{"availableTin2003-BlueEyesWhiteDragon":false}]},
+                {"name": "Collectible Tin 2003 - XYZ-Dragon Cannon", "desc":"Collectible Tin 2003 - XYZ-Dragon Cannon (1 Promo + 5 Packs) - $25", "img":"Tin2003-XYZ.webp", "chain":"gate: buyLOBPack", "disable":[{"availableTin2003-XYZ":false}]},
+                {"name": "Collectible Tin 2003 - Jinzo", "desc":"Collectible Tin 2003 - Jinzo (1 Promo + 5 Packs) - $25", "img":"Tin2003-Jinzo.webp", "chain":"gate: buyLOBPack", "disable":[{"availableTin2003-Jinzo":false}]},
+                {"name": "Collectible Tin 2003 - Gearfried the Iron Knight", "desc":"Collectible Tin 2003 - Gearfried the Iron Knight (1 Promo + 5 Packs) - $25", "img":"Tin2003-Gearfried.webp", "chain":"gate: buyLOBPack", "disable":[{"availableTin2003-Gearfried":false}]},
+                {"name": "Magician's Force Booster Box", "desc":"Magician's Force Booster Pack - $5", "img":"MFC.webp", "chain":"gate: buyLOBPack", "disable":[{"availableMFCPack":false}]},
+                {"name": "Magician's Force Booster Box", "desc":"Magician's Force Booster Box (24 Packs) - $120", "img":"MFC-Box.webp", "chain":"gate: buyLOBPack", "disable":[{"availableMFCBox":false}]},
+                {"name": "Dark Crisis Booster Pack", "desc":"Dark Crisis Booster Pack - $5", "img":"DCR.webp", "chain":"gate: buyLOBPack", "disable":[{"availableDCRPack":false}]},
+                {"name": "Dark Crisis Booster Box", "desc":"Dark Crisis Booster Box (24 Packs) - $120", "img":"DCR-Box.webp", "chain":"gate: buyLOBPack", "disable":[{"availableDCRBox":false}]},
+                {"name": "Invasion of Chaos Booster Pack", "desc":"Invasion of Chaos Booster Pack - $5", "img":"IOC.webp", "chain":"gate: buyLOBPack", "disable":[{"availableIOCPack":false}]},
+                {"name": "Invasion of Chaos Booster Box", "desc":"Invasion of Chaos Booster Box (24 Packs) - $120", "img":"IOC-Box.webp", "chain":"gate: buyLOBPack", "disable":[{"availableIOCBox":false}]},
+                {"name": "Exclusive Pack", "desc":"Exclusive Pack (8 Cards)", "img":"EP1.webp", "chain":"gate: buyLOBPack", "disable":[{"availableEP1Pack":false}]},
+                {"name": "Collectible Tin 2004 - Total Defense Shogun", "desc":"Collectible Tin 2004 - Total Defense Shogun (1 Promo + 5 Packs) - $25", "img":"Tin2004-Shogun.webp", "chain":"gate: buyLOBPack", "disable":[{"availableTin2004-Shogun":false}]},
+                {"name": "Collectible Tin 2004 - Blade Knight", "desc":"Collectible Tin 2004 - Blade Knight (1 Promo + 5 Packs) - $25", "img":"Tin2004-BladeKnight.webp", "chain":"gate: buyLOBPack", "disable":[{"availableTin2004-BladeKnight":false}]},
+                {"name": "Collectible Tin 2004 - Command Knight", "desc":"Collectible Tin 2004 - Command Knight (1 Promo + 5 Packs) - $25", "img":"Tin2004-CommandKnight.webp", "chain":"gate: buyLOBPack", "disable":[{"availableTin2004-CommandKnight":false}]},
+                {"name": "Collectible Tin 2004 - Swift Gaia the Fierce Knight", "desc":"Collectible Tin 2004 - Swift Gaia the Fierce Knight (1 Promo + 5 Packs) - $25", "img":"Tin2004-Gaia.webp", "chain":"gate: buyLOBPack", "disable":[{"availableTin2004-Gaia":false}]},
+                {"name": "Collectible Tin 2004 - Insect Queen", "desc":"Collectible Tin 2004 - Insect Queen (1 Promo + 5 Packs) - $25", "img":"Tin2004-InsectQueen.webp", "chain":"gate: buyLOBPack", "disable":[{"availableTin2004-InsectQueen":false}]},
+                {"name": "Collectible Tin 2004 - Obnoxious Celtic Guardian", "desc":"Collectible Tin 2004 - Obnoxious Celtic Guardian (1 Promo + 5 Packs) - $25", "img":"Tin2004-CelticGuardian.webp", "chain":"gate: buyLOBPack", "disable":[{"availableTin2004-CelticGuardian":false}]},
+                {"name": "Soul of the Duelist Booster Pack", "desc":"Soul of the Duelist Booster Pack - $120", "img":"SOD.webp", "chain":"gate: buyLOBPack", "disable":[{"availableSODPack":false}]},
+                {"name": "Soul of the Duelist Booster Box", "desc":"Soul of the Duelist Booster Box (24 Packs) - $120", "img":"SOD-Box.webp", "chain":"gate: buyLOBPack", "disable":[{"availableSODBox":false}]},
+                {"name": "Dark Beginning 1 Booster Pack", "desc":"Dark Beginning 1 Booster Pack - $120", "img":"DB1.webp", "chain":"gate: buyLOBPack", "disable":[{"availableDB1Pack":false}]},
+                {"name": "Dark Beginning 1 Booster Box", "desc":"Dark Beginning 1 Booster Box (24 Packs) - $120", "img":"DB1-Box.webp", "chain":"gate: buyLOBPack", "disable":[{"availableDB1Box":false}]},
+                {"name": "Rise of Destiny Booster Pack", "desc":"Rise of Destiny Booster Pack - $5", "img":"RDS.webp", "chain":"gate: buyLOBPack", "disable":[{"availableRDSPack":false}]},
+                {"name": "Rise of Destiny Booster Box", "desc":"Rise of Destiny Booster Box - $120", "img":"RDS-Box.webp", "chain":"gate: buyLOBPack", "disable":[{"availableRDSBox":false}]},
+                {"name": "Rise of Destiny Special Edition", "desc":"Rise of Destiny Special Edition (1 Promo + 3 Packs) - $15", "img":"RDS-SE.webp", "chain":"gate: buyLOBPack", "disable":[{"availableRDSspecial":false}]},
+                {"name": "Structure Deck: Dragon's Roar", "desc":"Structure Deck: Dragon's Roar (40 cards) - $10", "img":"SD1.webp", "chain":"gate: buySDY", "disable":[{"availableSD1Deck":false}]},
+                {"name": "Structure Deck: Zombie Madness", "desc":"Structure Deck: Zombie Madness (40 cards) - $10", "img":"SD2.webp", "chain":"gate: buySDY", "disable":[{"availableSD2Deck":false}]},
+                {"name": "Flaming Eternity Booster Pack", "desc":"Flaming Eternity Booster Pack - $5", "img":"FET.webp", "chain":"gate: buyLOBPack", "disable":[{"availableFETPack":false}]},
+                {"name": "Flaming Eternity Booster Box", "desc":"Flaming Eternity Booster Box (24 Packs) - $120", "img":"FET-Box.webp", "chain":"gate: buyLOBPack", "disable":[{"availableFETBox":false}]},
+                {"name": "Structure Deck: Blaze of Destruction", "desc":"Structure Deck: Blaze of Destruction (40 cards) - $10", "img":"SD3.webp", "chain":"gate: buySDY", "disable":[{"availableSD3Deck":false}]},
+                {"name": "Structure Deck: Fury from the Deep", "desc":"Structure Deck: Fury from the Deep (40 cards) - $10", "img":"SD4.webp", "chain":"gate: buySDY", "disable":[{"availableSD4Deck":false}]}
             ]
         }
     },
