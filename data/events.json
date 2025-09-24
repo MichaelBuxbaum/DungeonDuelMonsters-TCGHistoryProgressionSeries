@@ -5,7 +5,7 @@
             "image": "mainmenu.webp",
             "audio": "YU-GI-OH! 25th ANNIVERSARY - The Chronicles - ANIMATION INSTRUMENTAL- Passionate Duelist",
             "mdata": [
-                ["void: startDM","void: startGX","void: start5Ds","void: startZexal","void: startArcV","void: startVRains","void: startSevens"]
+                ["void: startDM","void: startGX","void: start5Ds","void: startZexal","void: startArcV","void: startVRains","void: startSevens", "area: dev"]
             ]
         },
         "03-2002_Week-2":{
@@ -75,6 +75,16 @@
                 ["void: resetArea"]
 
             ]
+        },
+        "dev":{
+            "micon": "VideoGame.webp",
+            "mdesc": "An area for testing new features",
+            "iconSize": 150,
+            "coord": [100,80],
+            "image": "Synchro_Summon.webp",
+            "mdata": [
+                ["text: lgsYamiYugi"]
+            ]
         }
     },
     "text": {
@@ -91,7 +101,7 @@
             "image": "MillenniumPuzzleHeiroglyphs.webp",
             "audio": "I'mBack(Instrumental)",
             "parts": [
-                    {"type": "bust", "content": "Mickey-Laugh.webp"},
+                    {"type": "bust", "content": "MokubaKaiba-Smile.webp"},
                     {"type": "text", "content": "Woah..."},
                     {"type": "text", "content": "That was awesome!!!"},
                     {"type": "text", "content": "The intro theme, the Blue-Eyes White Dragon, all of it! It was so awesome!"},
@@ -268,7 +278,7 @@
                 {"type": "bust", "content": "TP1-2.webp"},
                 {"type": "text", "content": "You get to open 3 tournament packs!"}
             ],
-            "chain": "pack: tp1-1"
+            "chain": "pack: tp1"
         },
 
         "lgsWin":{
@@ -395,9 +405,20 @@
             "chain": "rand: lgsDecide25"
         },
         "lgsYamiYugi":{
+            "image": "CardStore.webp",
             "parts":[
-                {"type": "bust", "content": ".webp"},
-                {"type": "text", "content": ""}
+                {"type": "bust", "content": "YugiMuto-Laugh.webp"},
+                {"type": "text", "content": "Ah, so you're my opponent! \n I wish you the best of luck."},
+                {"type": "bust", "content": "YugiMuto-Serious.webp"},
+                {"type": "text", "content": "But don't think just because we are friends that I am going to go easy on you."}
+            ],
+            "chain": "void: lgsYamiYugiTransform"
+        },
+        "lgsYamiYugi2":{
+            "image": "CardStore.webp",
+            "parts":[
+                {"type": "bust", "content": "YamiYugi-Shout.webp"},
+                {"type": "text", "content": "It's Time to Duel!!!"}
             ],
             "chain": "rand: lgsDecide25"
         },
@@ -1303,6 +1324,11 @@
                 "<<spoken-SetoKaiba>> == false":"text: setoKaibaIntro",
                 "<<spoken-SetoKaiba>> == true":""
             }
+        },
+
+        "lgsYamiYugiTransform":{
+            "video": "YugiTransformationColorCorrected.mp4",
+            "chain": "text: lgsYamiYugi2"
         }
     },
 
@@ -1397,7 +1423,7 @@
                 {"name": "Yu-Gi-Oh! Duelist of the Roses", "desc":"Yu-Gi-Oh! Forbidden Memories for the Sony PlayStation - $25 \n This product includes the 3 promo cards (\"Blue-Eyes White Dragon\", \"Dark Magician\", and \"Exodia the Forbidden One\"", "img":"DDS.webp", "chain":"gate: buyVGForbiddenMemories", "disable":[{"availableForbiddenMemoriesGame":false}]},
                 {"name": "Yu-Gi-Oh! Stairway to the Destined Duel", "desc":"Yu-Gi-Oh! Forbidden Memories for the Sony PlayStation - $25 \n This product includes the 3 promo cards (\"Blue-Eyes White Dragon\", \"Dark Magician\", and \"Exodia the Forbidden One\"", "img":"DDS.webp", "chain":"gate: buyVGForbiddenMemories", "disable":[{"availableForbiddenMemoriesGame":false}]},
                 {"name": "Yu-Gi-Oh! Falsebound Kingdom", "desc":"Yu-Gi-Oh! Forbidden Memories for the Sony PlayStation - $25 \n This product includes the 3 promo cards (\"Blue-Eyes White Dragon\", \"Dark Magician\", and \"Exodia the Forbidden One\"", "img":"DDS.webp", "chain":"gate: buyVGForbiddenMemories", "disable":[{"availableForbiddenMemoriesGame":false}]},
-                {"name": "Yu-Gi-Oh! Sacred Cards", "desc":"Yu-Gi-Oh! Forbidden Memories for the Sony PlayStation - $25 \n This product includes the 3 promo cards (\"Blue-Eyes White Dragon\", \"Dark Magician\", and \"Exodia the Forbidden One\"", "img":"DDS.webp", "chain":"gate: buyVGForbiddenMemories", "disable":[{"availableForbiddenMemoriesGame":false}]},
+                {"name": "Yu-Gi-Oh! The Sacred Cards", "desc":"Yu-Gi-Oh! Forbidden Memories for the Sony PlayStation - $25 \n This product includes the 3 promo cards (\"Blue-Eyes White Dragon\", \"Dark Magician\", and \"Exodia the Forbidden One\"", "img":"DDS.webp", "chain":"gate: buyVGForbiddenMemories", "disable":[{"availableForbiddenMemoriesGame":false}]},
                 {"name": "Yu-Gi-Oh! Power of Chaos: Yugi the Destiny", "desc":"Yu-Gi-Oh! Forbidden Memories for the Sony PlayStation - $25 \n This product includes the 3 promo cards (\"Blue-Eyes White Dragon\", \"Dark Magician\", and \"Exodia the Forbidden One\"", "img":"DDS.webp", "chain":"gate: buyVGForbiddenMemories", "disable":[{"availableForbiddenMemoriesGame":false}]},
                 {"name": "Yu-Gi-Oh! World Championship Tournament 2004", "desc":"Yu-Gi-Oh! Forbidden Memories for the Sony PlayStation - $25 \n This product includes the 3 promo cards (\"Blue-Eyes White Dragon\", \"Dark Magician\", and \"Exodia the Forbidden One\"", "img":"DDS.webp", "chain":"gate: buyVGForbiddenMemories", "disable":[{"availableForbiddenMemoriesGame":false}]},
                 {"name": "Yu-Gi-Oh! The Dawn of Destiny", "desc":"Yu-Gi-Oh! Forbidden Memories for the Sony PlayStation - $25 \n This product includes the 3 promo cards (\"Blue-Eyes White Dragon\", \"Dark Magician\", and \"Exodia the Forbidden One\"", "img":"DDS.webp", "chain":"gate: buyVGForbiddenMemories", "disable":[{"availableForbiddenMemoriesGame":false}]},
